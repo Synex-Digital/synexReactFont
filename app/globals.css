@@ -24,27 +24,27 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
-    background: hsla(184, 100%, 15%, 1);
+    background: hsla(285, 83%, 12%, 1);
 
     background: linear-gradient(
         225deg,
-        hsla(184, 100%, 15%, 1) 0%,
-        hsla(165, 34%, 25%, 1) 100%
+        hsla(285, 83%, 12%, 1) 0%,
+        hsla(265, 66%, 6%, 1) 100%
     );
 
     background: -moz-linear-gradient(
         225deg,
-        hsla(184, 100%, 15%, 1) 0%,
-        hsla(165, 34%, 25%, 1) 100%
+        hsla(285, 83%, 12%, 1) 0%,
+        hsla(265, 66%, 6%, 1) 100%
     );
 
     background: -webkit-linear-gradient(
         225deg,
-        hsla(184, 100%, 15%, 1) 0%,
-        hsla(165, 34%, 25%, 1) 100%
+        hsla(285, 83%, 12%, 1) 0%,
+        hsla(265, 66%, 6%, 1) 100%
     );
 
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00474C", endColorstr="#295449", GradientType=1 );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2A0536", endColorstr="#0D0518", GradientType=1 );
     background-repeat: no-repeat;
 }
 
@@ -61,17 +61,17 @@ body {
 }
 
 .narhoverAni:hover {
-    color: #C2E812;
+    color: #c2e812;
 }
 
 .narhoverAni span {
     position: absolute;
-    top: 0;
+    top: 2px;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-    border-bottom: 3px solid #C2E812;
+    border-bottom: 3px solid #c2e812;
     border-radius: 15px;
     transform: scale(0) translateY(50px);
     opacity: 0;
