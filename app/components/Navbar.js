@@ -39,7 +39,7 @@ const Navbar = () => {
                             </Link>
                         </li>
                     </ul>
-                    <button className="px-7 py-2 bg-[#C2E812] hover:bg-[#bcdd2d] text-white rounded-lg">
+                    <button className="px-7 py-2 bg-primary hover:bg-[#bcdd2d] text-white rounded-lg">
                         Let's Talk
                     </button>
                 </div>

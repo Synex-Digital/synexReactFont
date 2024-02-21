@@ -1,8 +1,8 @@
-import { Inter } from "next/font/google";
+import { Inter_Tight } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const intertight = Inter_Tight({ subsets: ["latin"] });
 
 export const metadata = {
     title: "Synex Digital",
@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className={inter.className}>
+            <body className={intertight.className}>
                 <Navbar />
                 {children}
             </body>
