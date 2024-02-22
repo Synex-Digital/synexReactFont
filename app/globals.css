@@ -83,6 +83,37 @@ body {
     transform: scale(1) translateY(0);
 }
 
+#card {
+    box-shadow: 10px 10px 5px 0px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(255, 0, 0, 0.75);
+}
+
+
+.swiper {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
 /* extra css
 
  .contentdiv {
@@ -131,4 +162,35 @@ body {
             0% 100%
         );
     }
+
+
+    .card {
+    width: 400px;
+    height: 550px;
+    background: red;
+    margin: 0 20px;
+    border-radius: 10px;
+    border: 1px solid greenyellow;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: rgb(255, 111, 0);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%,-50%);
+    background: radial-gradient(var(--clr), transparent);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
 } */
