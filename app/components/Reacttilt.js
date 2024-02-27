@@ -18,7 +18,7 @@ const defaultOptions = {
 const Reacttilt = ({ children }) => {
     return (
         <div>
-            <Tilt options={defaultOptions} id="card">{children}</Tilt>
+            <Tilt options={defaultOptions}>{children}</Tilt>
         </div>
     );
 };

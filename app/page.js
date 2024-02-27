@@ -4,6 +4,9 @@ import Reacttilt from "./components/Reacttilt";
 import Head from "next/head";
 import Script from "next/script";
 import Swiperslider from "./components/Swiperslider";
+import TiltAnimation from "./components/TiltAnimation";
+import recordimg from "@/public/assets/thumbBody.jpg";
+import SimpleHook from "./components/SimpleHook";
 
 export default function Home() {
     return (
@@ -66,107 +69,30 @@ export default function Home() {
                                 Elevating Your Business with Innovative Services
                             </h4>
                         </div>
-                        <div className="flex justify-between gap-y-5 flex-wrap">
-                            {/* <div className="w-[32%]">
-                                <Reacttilt>
-                                    <div className="text-black h-64 bg-[#edd6cf] rounded-xl p-7">
-                                        <h2 className="text-center text-2xl font-semibold">
-                                            Website Development
-                                        </h2>
-                                        <h3 className="text-justify mt-5 font-medium">
-                                            Synex Digital develops dynamic
-                                            websites with React on the front end
-                                            and PHP-Laravel on the back end.
-                                            Strengthen your digital identity
-                                            with our creative web...
-                                        </h3>
-                                    </div>
-                                </Reacttilt>
-                            </div>
-                            <div className="w-[32%]">
-                                <Reacttilt>
-                                    <div className="text-black h-64 bg-[#edd6cf] rounded-xl p-7">
-                                        <h2 className="text-center text-2xl font-semibold">
-                                            Website Development
-                                        </h2>
-                                        <h3 className="text-justify mt-5 font-medium">
-                                            Synex Digital develops dynamic
-                                            websites with React on the front end
-                                            and PHP-Laravel on the back end.
-                                            Strengthen your digital identity
-                                            with our creative web...
-                                        </h3>
-                                    </div>
-                                </Reacttilt>
-                            </div>
-                            <div className="w-[32%]">
-                                <Reacttilt>
-                                    <div className="text-black h-64 bg-[#edd6cf] rounded-xl p-7">
-                                        <h2 className="text-center text-2xl font-semibold">
-                                            Website Development
-                                        </h2>
-                                        <h3 className="text-justify mt-5 font-medium">
-                                            Synex Digital develops dynamic
-                                            websites with React on the front end
-                                            and PHP-Laravel on the back end.
-                                            Strengthen your digital identity
-                                            with our creative web...
-                                        </h3>
-                                    </div>
-                                </Reacttilt>
-                            </div>
-                            <div className="w-[32%]">
-                                <Reacttilt>
-                                    <div className="text-black h-64 bg-[#edd6cf] rounded-xl p-7">
-                                        <h2 className="text-center text-2xl font-semibold">
-                                            Website Development
-                                        </h2>
-                                        <h3 className="text-justify mt-5 font-medium">
-                                            Synex Digital develops dynamic
-                                            websites with React on the front end
-                                            and PHP-Laravel on the back end.
-                                            Strengthen your digital identity
-                                            with our creative web...
-                                        </h3>
-                                    </div>
-                                </Reacttilt>
-                            </div>
-                            <div className="w-[32%]">
-                                <Reacttilt>
-                                    <div className="text-black h-64 bg-[#edd6cf] rounded-xl p-7">
-                                        <h2 className="text-center text-2xl font-semibold">
-                                            Website Development
-                                        </h2>
-                                        <h3 className="text-justify mt-5 font-medium">
-                                            Synex Digital develops dynamic
-                                            websites with React on the front end
-                                            and PHP-Laravel on the back end.
-                                            Strengthen your digital identity
-                                            with our creative web...
-                                        </h3>
-                                    </div>
-                                </Reacttilt>
-                            </div>
-                            <div className="w-[32%]">
-                                <Reacttilt>
-                                    <div className="text-black h-64 bg-[#edd6cf] rounded-xl p-7">
-                                        <h2 className="text-center text-2xl font-semibold">
-                                            Website Development
-                                        </h2>
-                                        <h3 className="text-justify mt-5 font-medium">
-                                            Synex Digital develops dynamic
-                                            websites with React on the front end
-                                            and PHP-Laravel on the back end.
-                                            Strengthen your digital identity
-                                            with our creative web...
-                                        </h3>
-                                    </div>
-                                </Reacttilt>
-                            </div> */}
+                        <div className="flex justify-between gap-y-5 flex-wrap ">
+                            <Reacttilt>
+                                <div className="cardHover">
+                                    <TiltAnimation color="rgb(255, 0, 0)">
+                                        <div className="text-white rounded-xl p-7">
+                                            <h2 className="text-center text-2xl font-semibold">
+                                                Website Development
+                                            </h2>
+                                            <h3 className="text-justify mt-5 font-medium">
+                                                Synex Digital develops dynamic
+                                                websites with React on the front
+                                                end and PHP-Laravel on the back
+                                                end. Strengthen your digital
+                                                identity with our creative
+                                                web...
+                                            </h3>
+                                        </div>
+                                    </TiltAnimation>
+                                </div>
+                            </Reacttilt>
                         </div>
                     </div>
                 </section>
-                <section>
+                {/* <section>
                     <Swiperslider>
                         <div>
                             <Reacttilt>
@@ -185,10 +111,81 @@ export default function Home() {
                             </Reacttilt>
                         </div>
                     </Swiperslider>
+                </section> */}
+                <section className="py-16">
+                    <div className="container mx-auto px-2">
+                        <h4 className="text-primary text-3xl font-semibold text-center">
+                            Our Records
+                        </h4>
+                        <div className="flex justify-between">
+                            <div className="w-[48%] mt-10">
+                                <Image
+                                    src={recordimg}
+                                    alt="Reacording Image"
+                                    priority
+                                    placeholder="blur"
+                                    quality={80}
+                                    className="rounded-xl"
+                                />
+                            </div>
+                            <div className="w-[48%]">
+                                <h5 className="font-semibold text-white mt-10 mb-5 text-4xl">
+                                    Navigating the IT Landscape with Precision
+                                </h5>
+                                <p className="text-white leading-7">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Cumque animi magni
+                                    dignissimos est molestias, nihil officia
+                                    nemo consequuntur neque iusto ipsa illo
+                                    corrupti quam quasi. Aut, eaque voluptatum.
+                                    Amet similique nihil ducimus eius nobis?
+                                    Magni architecto corporis praesentium
+                                    facere? In debitis libero quasi magni? Quam
+                                    aut, laborum ab expedita pariatur, quos
+                                    minus nulla autem enim rerum neque sit
+                                    distinctio. Rerum, voluptatem asperiores
+                                    maiores ea inventore temporibus fuga, quia
+                                    magnam corporis nam itaque quas
+                                    consequuntur, dicta nemo cum numquam ad
+                                    deleniti nobis eos obcaecati maxime? Sequi
+                                    aliquid, repudiandae doloribus eos molestias
+                                    rerum necessitatibus cupiditate enim, rem
+                                    corrupti dolor quisquam doloremque autem!
+                                </p>
+                                <div className="flex justify-between mt-7">
+                                    <div className="bg-primary px-2 py-5 font-semibold text-center w-[32%] rounded-xl">
+                                        <div className="flex gap-1 text-2xl items-center justify-center mb-2">
+                                            <SimpleHook endtime={5} />
+                                            <span>+</span>{" "}
+                                        </div>
+                                        <p className="text-xl">
+                                            YEARS OF EXPERIENCE
+                                        </p>
+                                    </div>
+                                    <div className="bg-primary px-2 py-5 font-semibold  text-center w-[32%] rounded-xl">
+                                        <div className="flex gap-1 text-2xl items-center justify-center mb-2">
+                                            <SimpleHook endtime={89} />
+                                            <span>+</span>{" "}
+                                        </div>
+                                        <p className="text-xl uppercase">
+                                            Project Complete
+                                        </p>
+                                    </div>
+                                    <div className="bg-primary px-2 py-5 font-semibold  text-center w-[32%] rounded-xl">
+                                        <div className="flex gap-1 text-2xl items-center justify-center mb-2">
+                                            <SimpleHook endtime={22} />
+                                            <span>+</span>{" "}
+                                        </div>
+                                        <p className="text-xl">
+                                            DESIGNERS AND DEVELOPERS
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <section className="h-96 bg-transparent">
-
-                </section>
+                <section className="h-96 bg-transparent"></section>
             </main>
         </>
     );
