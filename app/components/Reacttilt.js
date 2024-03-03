@@ -5,10 +5,10 @@ import { Tilt } from "react-tilt";
 
 const defaultOptions = {
     reverse: false,
-    max: 20,
+    max: 25,
     perspective: 1000,
     scale: 1,
-    speed: 1500,
+    speed: 1000,
     transition: true,
     axis: null,
     reset: true,
@@ -16,11 +16,7 @@ const defaultOptions = {
 };
 
 const Reacttilt = ({ children }) => {
-    return (
-        <div>
-            <Tilt options={defaultOptions}>{children}</Tilt>
-        </div>
-    );
+    return <Tilt options={defaultOptions}>{children}</Tilt>;
 };
 
 export default Reacttilt;

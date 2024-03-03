@@ -1,12 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import Reacttilt from "./components/Reacttilt";
-import Head from "next/head";
-import Script from "next/script";
-import Swiperslider from "./components/Swiperslider";
-import TiltAnimation from "./components/TiltAnimation";
 import recordimg from "@/public/assets/thumbBody.jpg";
+import webicon from "@/public/assets/webicon.png";
 import SimpleHook from "./components/SimpleHook";
+import ReactSlick from "./components/ReactSlick";
 
 export default function Home() {
     return (
@@ -59,6 +57,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
+
                 <section>
                     <div className="container mx-auto px-2">
                         <div>
@@ -70,11 +69,11 @@ export default function Home() {
                             </h4>
                         </div>
                         <div className="flex justify-between gap-y-5 flex-wrap ">
-                            <Reacttilt>
-                                <div className="cardHover">
-                                    <TiltAnimation color="rgb(255, 0, 0)">
-                                        <div className="text-white rounded-xl p-7">
-                                            <h2 className="text-center text-2xl font-semibold">
+                            <ReactSlick>
+                                <div className="p-5 cursor-grab">
+                                    <Reacttilt>
+                                        <div className=" rounded-xl p-7 bg-[#c0dbe2]">
+                                            <h2 className="text-center text-3xl font-semibold">
                                                 Website Development
                                             </h2>
                                             <h3 className="text-justify mt-5 font-medium">
@@ -85,33 +84,147 @@ export default function Home() {
                                                 identity with our creative
                                                 web...
                                             </h3>
+                                            <Image
+                                                width={250}
+                                                alt="Web Image"
+                                                priority
+                                                placeholder="blur"
+                                                quality={80}
+                                                src={webicon}
+                                            />
                                         </div>
-                                    </TiltAnimation>
+                                    </Reacttilt>
                                 </div>
-                            </Reacttilt>
+                                <div className="p-5 cursor-grab">
+                                    <Reacttilt>
+                                        <div className=" rounded-xl p-7 bg-[#e0bb7b]">
+                                            <h2 className="text-center text-3xl font-semibold">
+                                                Website Development
+                                            </h2>
+                                            <h3 className="text-justify mt-5 font-medium">
+                                                Synex Digital develops dynamic
+                                                websites with React on the front
+                                                end and PHP-Laravel on the back
+                                                end. Strengthen your digital
+                                                identity with our creative
+                                                web...
+                                            </h3>
+                                            <Image
+                                                width={250}
+                                                alt="Reacording Image"
+                                                priority
+                                                placeholder="blur"
+                                                quality={80}
+                                                src={webicon}
+                                            />
+                                        </div>
+                                    </Reacttilt>
+                                </div>
+                                <div className="p-5 cursor-grab">
+                                    <Reacttilt>
+                                        <div className=" rounded-xl p-7 bg-[#adc7a5]">
+                                            <h2 className="text-center text-3xl font-semibold">
+                                                Website Development
+                                            </h2>
+                                            <h3 className="text-justify mt-5 font-medium">
+                                                Synex Digital develops dynamic
+                                                websites with React on the front
+                                                end and PHP-Laravel on the back
+                                                end. Strengthen your digital
+                                                identity with our creative
+                                                web...
+                                            </h3>
+                                            <Image
+                                                width={250}
+                                                alt="Reacording Image"
+                                                priority
+                                                placeholder="blur"
+                                                quality={80}
+                                                src={webicon}
+                                            />
+                                        </div>
+                                    </Reacttilt>
+                                </div>
+                                <div className="p-5 cursor-grab">
+                                    <Reacttilt>
+                                        <div className=" rounded-xl p-7 bg-[#adc7a5]">
+                                            <h2 className="text-center text-3xl font-semibold">
+                                                Website Development
+                                            </h2>
+                                            <h3 className="text-justify mt-5 font-medium">
+                                                Synex Digital develops dynamic
+                                                websites with React on the front
+                                                end and PHP-Laravel on the back
+                                                end. Strengthen your digital
+                                                identity with our creative
+                                                web...
+                                            </h3>
+                                            <Image
+                                                width={250}
+                                                alt="Reacording Image"
+                                                priority
+                                                placeholder="blur"
+                                                quality={80}
+                                                src={webicon}
+                                            />
+                                        </div>
+                                    </Reacttilt>
+                                </div>
+                                <div className="p-5 cursor-grab">
+                                    <Reacttilt>
+                                        <div className=" rounded-xl p-7 bg-[#adc7a5]">
+                                            <h2 className="text-center text-3xl font-semibold">
+                                                Website Development
+                                            </h2>
+                                            <h3 className="text-justify mt-5 font-medium">
+                                                Synex Digital develops dynamic
+                                                websites with React on the front
+                                                end and PHP-Laravel on the back
+                                                end. Strengthen your digital
+                                                identity with our creative
+                                                web...
+                                            </h3>
+                                            <Image
+                                                width={250}
+                                                alt="Reacording Image"
+                                                priority
+                                                placeholder="blur"
+                                                quality={80}
+                                                src={webicon}
+                                            />
+                                        </div>
+                                    </Reacttilt>
+                                </div>
+                                <div className="p-5 cursor-grab">
+                                    <Reacttilt>
+                                        <div className=" rounded-xl p-7 bg-[#e0bb7b]">
+                                            <h2 className="text-center text-3xl font-semibold">
+                                                Website Development
+                                            </h2>
+                                            <h3 className="text-justify mt-5 font-medium">
+                                                Synex Digital develops dynamic
+                                                websites with React on the front
+                                                end and PHP-Laravel on the back
+                                                end. Strengthen your digital
+                                                identity with our creative
+                                                web...
+                                            </h3>
+                                            <Image
+                                                width={250}
+                                                alt="Reacording Image"
+                                                priority
+                                                placeholder="blur"
+                                                quality={80}
+                                                src={webicon}
+                                            />
+                                        </div>
+                                    </Reacttilt>
+                                </div>
+                            </ReactSlick>
                         </div>
                     </div>
                 </section>
-                {/* <section>
-                    <Swiperslider>
-                        <div>
-                            <Reacttilt>
-                                <div className="text-black h-64 bg-[#edd6cf] rounded-xl p-7">
-                                    <h2 className="text-center text-2xl font-semibold">
-                                        Website Development
-                                    </h2>
-                                    <h3 className="text-justify mt-5 font-medium">
-                                        Synex Digital develops dynamic websites
-                                        with React on the front end and
-                                        PHP-Laravel on the back end. Strengthen
-                                        your digital identity with our creative
-                                        web...
-                                    </h3>
-                                </div>
-                            </Reacttilt>
-                        </div>
-                    </Swiperslider>
-                </section> */}
+
                 <section className="py-16">
                     <div className="container mx-auto px-2">
                         <h4 className="text-primary text-3xl font-semibold text-center">
@@ -185,7 +298,19 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <section className="h-96 bg-transparent"></section>
+                <section>
+                    <div className="container mx-auto px-2">
+                        <div>
+                            <h4 className="text-primary text-3xl font-semibold text-center">
+                                Our Project
+                            </h4>
+                            <h4 className="font-medium text-2xl text-center text-white mt-5 mb-10">
+                                Crafting Tailored Business IT Solutions
+                            </h4>
+                        </div>
+                        <div></div>
+                    </div>
+                </section>
             </main>
         </>
     );

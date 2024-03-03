@@ -105,37 +105,7 @@ body {
     object-fit: cover;
 }
 
-.cardHover .card {
-    position: relative;
-    width: 300px;
-    height: 350px;
-    background: rgb(0, 0, 0);
-    border-radius: 20px;
-    overflow: hidden;
-}
-.cardHover .card::before {
-    content: "";
-    position: relative;
-    top: var(--y);
-    left: var(--x);
-    transform: translate(-50%, -50%);
-    background: radial-gradient(var(--clr), transparent, transparent);
-    width: 400px;
-    height: 400px;
-    border-radius: 100%;
-    opacity: 0;
-    transition: 0.5s, top 0s, left 0s;
-}
-.cardHover .card:hover::before {
-    opacity: 1;
-}
-.cardHover .card::after {
-    content: "";
-    position: relative;
-    inset: 2px;
-    background: rgba(26, 26, 26, 0.798);
-    border-radius: 20px;
-}
+
 
 /* extra css
 
