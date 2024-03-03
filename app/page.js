@@ -5,6 +5,7 @@ import recordimg from "@/public/assets/thumbBody.jpg";
 import webicon from "@/public/assets/webicon.png";
 import SimpleHook from "./components/SimpleHook";
 import ReactSlick from "./components/ReactSlick";
+import AosAnimation from "./components/AosAnimation";
 
 export default function Home() {
     return (
@@ -300,15 +301,18 @@ export default function Home() {
                 </section>
                 <section>
                     <div className="container mx-auto px-2">
-                        <div>
+                        <div className="relative">
                             <h4 className="text-primary text-3xl font-semibold text-center">
                                 Our Project
                             </h4>
+                            <AosAnimation aosvalue={"fade-up"}>
+                                <div className="bg-[#c1e81296] translate-x-2/4 -top-[46px] right-1/2 w-14 h-14 absolute rounded-full"></div>
+                            </AosAnimation>
                             <h4 className="font-medium text-2xl text-center text-white mt-5 mb-10">
                                 Crafting Tailored Business IT Solutions
                             </h4>
                         </div>
-                        <div></div>
+                        <div className="h-[500px]"></div>
                     </div>
                 </section>
             </main>
