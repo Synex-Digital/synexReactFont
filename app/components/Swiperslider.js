@@ -1,26 +1,24 @@
 "use client";
 
 import React from "react";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/pagination";
-
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper/modules";
 
 const Swiperslider = ({ children }) => {
     const handleSwiperScrollEnd = () => {
-        window.scrollTo({
-            top: document.body.scrollHeight,
-            behavior: "smooth",
-        });
+        const nextSlide = document.querySelector(".swiper-slide-next");
+        if (nextSlide) {
+            nextSlide.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
     };
+
     const handleSwiperScrollEndtwo = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+        const prevSlide = document.querySelector(".swiper-slide-prev");
+        if (prevSlide) {
+            prevSlide.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
     };
     return (
         <>
