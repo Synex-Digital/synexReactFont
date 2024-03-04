@@ -13,7 +13,7 @@ const TiltAnimation = ({ color, children, bgcolor }) => {
     };
     return (
         <div
-            className="card w-[24%] h-[540px] relative rounded-xl overflow-hidden"
+            className="card w-[24%] h-[540px] xl:h-[580px] relative rounded-xl overflow-hidden"
             ref={cardRef}
             style={{
                 "--clr": color,

@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const ReactSlick = ({ children }) => {
+const ReactSlick = ({ children,className }) => {
     let settings = {
         dots: false,
         infinite: true,
@@ -22,7 +22,7 @@ const ReactSlick = ({ children }) => {
         <Slider
             arrows={false}
             pause-on-hover="false"
-            className="w-full h-full "
+            className={className}
             {...settings}
         >
             {children}
