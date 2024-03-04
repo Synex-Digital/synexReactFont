@@ -2,16 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 import Reacttilt from "./components/Reacttilt";
 import recordimg from "@/public/assets/thumbBody.jpg";
+import anisvg from "@/public/assets/animation.svg";
 import webicon from "@/public/assets/webicon.png";
 import SimpleHook from "./components/SimpleHook";
 import ReactSlick from "./components/ReactSlick";
 import AosAnimation from "./components/AosAnimation";
+import TiltAnimation from "./components/TiltAnimation";
 
 export default function Home() {
     return (
         <>
             <main>
-                <section className="pt-10 pb-12">
+                <section className="pt-10 pb-14">
                     <div className="container flex mx-auto px-2 py-16">
                         <div className="w-1/2">
                             <h1 className="text-5xl text-white font-bold leading-snug">
@@ -61,10 +63,22 @@ export default function Home() {
 
                 <section>
                     <div className="container mx-auto px-2">
-                        <div>
+                        <div className="relative">
                             <h4 className="text-primary text-3xl font-semibold text-center">
                                 Our Service
                             </h4>
+                            <AosAnimation aosvalue={"fade-up"}>
+                                <div className="bg-transparent translate-x-2/4 -top-[45px] right-1/2 absolute "></div>
+                                <div className="blob translate-x-2/4 -top-[100px] right-1/2">
+                                    <Image
+                                        src={anisvg}
+                                        alt="Reacording Image"
+                                        priority
+                                        quality={80}
+                                        className="rounded-xl"
+                                    />
+                                </div>
+                            </AosAnimation>
                             <h4 className="font-medium text-2xl text-center text-white mt-5 mb-10">
                                 Elevating Your Business with Innovative Services
                             </h4>
@@ -226,13 +240,27 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section className="py-16">
+                <section className="py-20">
                     <div className="container mx-auto px-2">
-                        <h4 className="text-primary text-3xl font-semibold text-center">
-                            Our Records
-                        </h4>
-                        <div className="flex justify-between">
-                            <div className="w-[48%] mt-10">
+                        <div className="relative">
+                            <h4 className="text-primary text-3xl font-semibold text-center">
+                                Our Records
+                            </h4>
+                            <AosAnimation aosvalue={"fade-up"}>
+                                <div className="bg-transparent translate-x-2/4 -top-[45px] right-1/2 absolute "></div>
+                                <div className="blob translate-x-2/4 -top-[100px] right-1/2">
+                                    <Image
+                                        src={anisvg}
+                                        alt="Reacording Image"
+                                        priority
+                                        quality={80}
+                                        className="rounded-xl"
+                                    />
+                                </div>
+                            </AosAnimation>
+                        </div>
+                        <div className="flex justify-between mt-20">
+                            <div className="w-[48%] ">
                                 <Image
                                     src={recordimg}
                                     alt="Reacording Image"
@@ -243,7 +271,7 @@ export default function Home() {
                                 />
                             </div>
                             <div className="w-[48%]">
-                                <h5 className="font-semibold text-white mt-10 mb-5 text-4xl">
+                                <h5 className="font-semibold text-white mb-5 text-4xl">
                                     Navigating the IT Landscape with Precision
                                 </h5>
                                 <p className="text-white leading-7">
@@ -299,6 +327,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
+
                 <section>
                     <div className="container mx-auto px-2">
                         <div className="relative">
@@ -306,15 +335,152 @@ export default function Home() {
                                 Our Project
                             </h4>
                             <AosAnimation aosvalue={"fade-up"}>
-                                <div className="bg-[#c1e81296] translate-x-2/4 -top-[46px] right-1/2 w-14 h-14 absolute rounded-full"></div>
+                                <div className="bg-transparent translate-x-2/4 -top-[45px] right-1/2 absolute "></div>
+                                <div className="blob translate-x-2/4 -top-[100px] right-1/2">
+                                    <Image
+                                        src={anisvg}
+                                        alt="Reacording Image"
+                                        priority
+                                        quality={80}
+                                        className="rounded-xl"
+                                    />
+                                </div>
                             </AosAnimation>
-                            <h4 className="font-medium text-2xl text-center text-white mt-5 mb-10">
+                            <h4 className="font-medium text-2xl text-center text-white mt-10 mb-10">
                                 Crafting Tailored Business IT Solutions
                             </h4>
                         </div>
-                        <div className="h-[500px]"></div>
+                        <div>
+                            <div className="flex justify-between">
+                                <TiltAnimation
+                                    color={"#00b9ff"}
+                                    bgcolor={
+                                        "linear-gradient(80deg, rgba(3,91,125,1) 0%, rgba(0,133,80,1) 100%)"
+                                    }
+                                >
+                                    <div className="p-1 absolute z-20 ">
+                                        <Image
+                                            src={recordimg}
+                                            alt="Reacording Image"
+                                            priority
+                                            placeholder="blur"
+                                            quality={80}
+                                            className="rounded-xl object-cover"
+                                        />
+                                        <div className="p-3 pt-8 text-center">
+                                            <time className="bg-[#007d58] text-white font-light text-sm py-2 px-5 rounded-3xl">
+                                                28 sep 2023
+                                            </time>
+                                            <h4 className="text-white text-xl font-semibold text-center mt-5 mb-3">
+                                                Nugor Tech - Company portfolio
+                                            </h4>
+                                            <p className="text-white text-center">
+                                                company in bangladesh since 2019
+                                                in Bangladesh by synex Digital.
+                                                A Service provider company
+                                                portfolio
+                                            </p>
+                                        </div>
+                                    </div>
+                                </TiltAnimation>
+                                <TiltAnimation
+                                    color={"#ff00db"}
+                                    bgcolor={
+                                        "linear-gradient(90deg, rgba(215,0,0,0.5) 0%, rgba(173,0,149,1) 100%)"
+                                    }
+                                >
+                                    <div className="p-1 absolute z-20 ">
+                                        <Image
+                                            src={recordimg}
+                                            alt="Reacording Image"
+                                            priority
+                                            placeholder="blur"
+                                            quality={80}
+                                            className="rounded-xl object-cover"
+                                        />
+                                        <div className="p-3 pt-8 text-center">
+                                            <time className="bg-[#ac009286] text-white font-light text-sm py-2 px-5 rounded-3xl">
+                                                28 sep 2023
+                                            </time>
+                                            <h4 className="text-white text-xl font-semibold text-center mt-5 mb-3">
+                                                Nugor Tech - Company portfolio
+                                            </h4>
+                                            <p className="text-white text-center">
+                                                company in bangladesh since 2019
+                                                in Bangladesh by synex Digital.
+                                                A Service provider company
+                                                portfolio
+                                            </p>
+                                        </div>
+                                    </div>
+                                </TiltAnimation>
+                                <TiltAnimation
+                                    color={"#00d7ff"}
+                                    bgcolor={
+                                        "linear-gradient(147deg, rgba(0,11,215,1) 0%, rgba(0,134,255,0.8071603641456583) 100%)"
+                                    }
+                                >
+                                    <div className="p-1 absolute z-20 ">
+                                        <Image
+                                            src={recordimg}
+                                            alt="Reacording Image"
+                                            priority
+                                            placeholder="blur"
+                                            quality={80}
+                                            className="rounded-xl object-cover "
+                                        />
+                                        <div className="p-3 pt-8 text-center">
+                                            <time className="bg-[#00d9ffa0] py-2 text-white font-light text-sm px-5 rounded-3xl">
+                                                28 sep 2023
+                                            </time>
+                                            <h4 className="text-white text-xl font-semibold text-center mt-5 mb-3">
+                                                Nugor Tech - Company portfolio
+                                            </h4>
+                                            <p className="text-white text-center">
+                                                company in bangladesh since 2019
+                                                in Bangladesh by synex Digital.
+                                                A Service provider company
+                                                portfolio
+                                            </p>
+                                        </div>
+                                    </div>
+                                </TiltAnimation>
+                                <TiltAnimation
+                                    color={"#fd7700"}
+                                    bgcolor={
+                                        "linear-gradient(258deg, rgba(215,0,0,1) 0%, rgba(255,124,0,0.6) 100%)"
+                                    }
+                                >
+                                    <div className="p-1 absolute z-20 ">
+                                        <Image
+                                            src={recordimg}
+                                            alt="Reacording Image"
+                                            priority
+                                            placeholder="blur"
+                                            quality={80}
+                                            className="rounded-xl object-cover"
+                                        />
+                                        <div className="p-3 pt-8 text-center">
+                                            <time className="bg-[#ff7b00b1] text-white font-light text-sm py-2 px-5 rounded-3xl">
+                                                28 sep 2023
+                                            </time>
+                                            <h4 className="text-white text-xl font-semibold text-center mt-5 mb-3">
+                                                Nugor Tech - Company portfolio
+                                            </h4>
+                                            <p className="text-white text-center">
+                                                company in bangladesh since 2019
+                                                in Bangladesh by synex Digital.
+                                                A Service provider company
+                                                portfolio
+                                            </p>
+                                        </div>
+                                    </div>
+                                </TiltAnimation>
+                            </div>
+                        </div>
                     </div>
                 </section>
+                <section className="py-16"></section>
             </main>
         </>
     );

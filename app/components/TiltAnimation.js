@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import React, { useRef } from "react";
 
-const TiltAnimation = ({ color, children }) => {
+const TiltAnimation = ({ color, children, bgcolor }) => {
     const cardRef = useRef(null);
 
     const handleMouseMove = (e) => {
@@ -13,9 +13,12 @@ const TiltAnimation = ({ color, children }) => {
     };
     return (
         <div
-            className="card"
+            className="card w-[24%] h-[540px] relative rounded-xl overflow-hidden"
             ref={cardRef}
-            style={{ "--clr": color }}
+            style={{
+                "--clr": color,
+                background: bgcolor,
+            }}
             onMouseMove={handleMouseMove}
         >
             {children}
