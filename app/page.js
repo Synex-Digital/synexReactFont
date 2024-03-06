@@ -365,7 +365,7 @@ export default function Home() {
                             </h4>
                         </div>
 
-                        <div className="text-center pt-20 relative">
+                        <div className="text-center pt-20">
                             <div className="flex justify-between ">
                                 <TiltAnimation
                                     color={"#00b9ff"}
@@ -878,8 +878,33 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section className="py-16">
-                    <div className="h-[500px]"></div>
+                <section className="py-20 bg-[#1d2934]">
+                    <div className="container mx-auto px-2">
+                        <div className="text-white text-center">
+                            <h6 className="text-3xl font-semibold">
+                                Ready to Collaborate with us?
+                            </h6>
+                            <p className="font-light mt-5">
+                                Let's unite and craft something truly
+                                remarkable. We're excited to collaborate and
+                                bring visionary ideas to life.
+                            </p>
+                        </div>
+                        <div className="flex gap-x-5 justify-center mt-10">
+                            <Link
+                                href={"#"}
+                                className="px-7 py-3 border border-primary text-white hover:shadow hover:shadow-primary transition duration-300 ease-in-out"
+                            >
+                                Contact Us
+                            </Link>
+                            <Link
+                                className="px-7 py-3 border border-primary bg-primary text-black hover:shadow hover:shadow-primary transition duration-300 ease-in-out"
+                                href={"#"}
+                            >
+                                Schedule Meeting
+                            </Link>
+                        </div>
+                    </div>
                 </section>
             </main>
         </>

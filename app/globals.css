@@ -150,6 +150,12 @@ body {
     background-repeat: no-repeat;
 }
 
+#footerbg {
+    background: url("../public/assets/footerbg.svg");
+    background-repeat: no-repeat;
+    background-position: center 5vh;
+}
+
 /* extra css
 
  .contentdiv {
