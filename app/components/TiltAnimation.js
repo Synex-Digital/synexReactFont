@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useRef } from "react";
 
 const TiltAnimation = ({ color, children, bgcolor }) => {
@@ -11,9 +12,11 @@ const TiltAnimation = ({ color, children, bgcolor }) => {
         cardRef.current.style.setProperty("--x", `${x}px`);
         cardRef.current.style.setProperty("--y", `${y}px`);
     };
+
     return (
         <div
-            className="card w-[24%] h-[540px] xl:h-[580px] relative rounded-xl overflow-hidden"
+            id="card"
+            className="w-[24%] h-[540px] 2xl:h-[580px] relative rounded-xl overflow-hidden"
             ref={cardRef}
             style={{
                 "--clr": color,

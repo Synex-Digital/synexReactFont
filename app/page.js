@@ -373,7 +373,7 @@ export default function Home() {
                                         "linear-gradient(80deg, rgba(3,91,125,1) 0%, rgba(0,133,80,1) 100%)"
                                     }
                                 >
-                                    <div className="p-1 absolute z-20 ">
+                                    <div className="p-1 absolute z-20">
                                         <Image
                                             src={recordimg}
                                             alt="Reacording Image"
@@ -877,6 +877,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
+
                 <section className="py-16">
                     <div className="h-[500px]"></div>
                 </section>

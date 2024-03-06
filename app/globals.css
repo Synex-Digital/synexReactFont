@@ -115,7 +115,7 @@ body {
     filter: blur(10px);
 }
 
-.card::before {
+#card::before {
     content: "";
     position: absolute;
     top: var(--y);
@@ -128,10 +128,11 @@ body {
     opacity: 0;
     transition: 0.5s, top 0s, left 0s;
 }
-.card:hover::before {
+#card:hover::before {
     opacity: 1;
 }
-.card::after {
+
+#card::after {
     content: "";
     position: absolute;
     inset: 4px;
@@ -197,35 +198,4 @@ body {
             0% 100%
         );
     }
-
-
-    .card {
-    width: 400px;
-    height: 550px;
-    background: red;
-    margin: 0 20px;
-    border-radius: 10px;
-    border: 1px solid greenyellow;
-}
-
-.card {
-    position: relative;
-    width: 300px;
-    height: 350px;
-    background: rgb(255, 111, 0);
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.card::before {
-    content: "";
-    position: absolute;
-    top: var(--y);
-    left: var(--x);
-    transform: translate(-50%,-50%);
-    background: radial-gradient(var(--clr), transparent);
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-}
-} */
+ */
