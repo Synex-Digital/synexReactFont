@@ -5,17 +5,26 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const ReactSlick = ({ children }) => {
+const ReactSlick = ({ children,className }) => {
     let settings = {
         dots: false,
-        infinite: false,
-        slidesToShow: 3.2,
-        slidesToScroll: 1,
-        speed: 100,
-        
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 0.5,
+        speed: 500,
+        autoplaySpeed: 0,
+        cssEase: "linear",
+        centerMode: true,
+        focusOnSelect: true,
+        pauseOnHover: false,
     };
     return (
-        <Slider arrows={false} className="w-full h-full " {...settings}>
+        <Slider
+            arrows={false}
+            pause-on-hover="false"
+            className={className}
+            {...settings}
+        >
             {children}
         </Slider>
     );

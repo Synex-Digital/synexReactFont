@@ -16,7 +16,7 @@ const defaultOptions = {
 };
 
 const Reacttilt = ({ children }) => {
-    return <Tilt options={defaultOptions}>{children}</Tilt>;
+    return <Tilt className="tilt" options={defaultOptions}>{children}</Tilt>;
 };
 
 export default Reacttilt;
