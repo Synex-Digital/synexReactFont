@@ -17,13 +17,6 @@
 }
 
 body {
-    /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
     background: hsl(285, 84%, 12%);
 
     background: linear-gradient(
@@ -46,6 +39,16 @@ body {
 
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2A0536", endColorstr="#0D0518", GradientType=1 );
     background-repeat: no-repeat;
+}
+
+::-moz-selection {
+    background: #c2e812;
+    color: black;
+}
+
+::selection {
+    background: #c2e812;
+    color: black;
 }
 
 @layer utilities {
@@ -115,7 +118,7 @@ body {
     filter: blur(10px);
 }
 
-.card::before {
+#card::before {
     content: "";
     position: absolute;
     top: var(--y);
@@ -128,10 +131,11 @@ body {
     opacity: 0;
     transition: 0.5s, top 0s, left 0s;
 }
-.card:hover::before {
+#card:hover::before {
     opacity: 1;
 }
-.card::after {
+
+#card::after {
     content: "";
     position: absolute;
     inset: 4px;
@@ -147,6 +151,12 @@ body {
     background: url("../public/assets/worldmap.svg") no-repeat center;
     width: 100%;
     background-repeat: no-repeat;
+}
+
+#footerbg {
+    background: url("../public/assets/footerbg.svg");
+    background-repeat: no-repeat;
+    background-position: center 5vh;
 }
 
 /* extra css
@@ -197,35 +207,4 @@ body {
             0% 100%
         );
     }
-
-
-    .card {
-    width: 400px;
-    height: 550px;
-    background: red;
-    margin: 0 20px;
-    border-radius: 10px;
-    border: 1px solid greenyellow;
-}
-
-.card {
-    position: relative;
-    width: 300px;
-    height: 350px;
-    background: rgb(255, 111, 0);
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.card::before {
-    content: "";
-    position: absolute;
-    top: var(--y);
-    left: var(--x);
-    transform: translate(-50%,-50%);
-    background: radial-gradient(var(--clr), transparent);
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-}
-} */
+ */
