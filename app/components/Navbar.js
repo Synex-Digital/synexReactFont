@@ -58,8 +58,7 @@ const Navbar = () => {
                         </ul>
                     ) : (
                         <ul
-                            id="navbgsmall"
-                            className="text-white lg:hidden absolute  w-full top-0 h-screen pt-40 flex flex-col gap-y-7 text-center"
+                            className="text-white lg:hidden absolute w-full top-0 h-screen pt-40 flex flex-col gap-y-7 bg-[#1d2934] text-center"
                         >
                             <li>
                                 <Link

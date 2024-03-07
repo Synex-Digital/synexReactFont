@@ -57,10 +57,12 @@ body {
     }
 }
 
-#navbgsmall {
-    background: url("../public/assets/navbg.svg");
+/* #navbgsmall {
+    background: url("../public/assets/navbg.svg") ;
     background-repeat: no-repeat;
-}
+    object-fit: cover;
+    width: 100%;
+} */
 
 .narhoverAni {
     position: relative;
