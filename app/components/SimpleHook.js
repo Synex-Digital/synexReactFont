@@ -8,9 +8,11 @@ const SimpleHook = ({ endtime }) => {
     useEffect(() => {
         const handleScroll = () => {
             const element = countRef.current;
-            const top = element.getBoundingClientRect().top;
-            const windowHeight = window.innerHeight;
-            setIsVisible(top < windowHeight);
+            if (element) {
+                const top = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                setIsVisible(top < windowHeight);
+            }
         };
 
         handleScroll();
@@ -20,8 +22,6 @@ const SimpleHook = ({ endtime }) => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
-
-    // useCountUp({ ref: "counter", end: endtime });
 
     return (
         <div ref={countRef}>

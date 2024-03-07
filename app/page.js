@@ -893,7 +893,7 @@ export default function Home() {
                         </div>
                         <div className="flex gap-x-5 justify-center mt-10">
                             <Link
-                                href={"#"}
+                                href={"/contact"}
                                 className="px-7 py-3 border border-primary text-white hover:shadow hover:shadow-primary transition duration-300 ease-in-out flex items-center gap-x-3"
                             >
                                 Contact Us
