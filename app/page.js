@@ -9,6 +9,7 @@ import SimpleHook from "./components/SimpleHook";
 import ReactSlick from "./components/ReactSlick";
 import AosAnimation from "./components/AosAnimation";
 import TiltAnimation from "./components/TiltAnimation";
+import { GoArrowRight,GoArrowUpRight } from "react-icons/go";
 
 export default function Home() {
     return (
@@ -728,7 +729,7 @@ export default function Home() {
                         <div className="flex justify-between pt-16 ">
                             <AosAnimation
                                 aosvalue={"zoom-in-up"}
-                                className="w-[38%]"
+                                className="w-[49.5%]"
                             >
                                 <div className=" p-3 pb-5 rounded-xl cursor-pointer shadow-xl shadow-[#03010588] hover:shadow-[#030105e2] ease-out duration-300 hover:-translate-y-1 hover:-translate-x-1 bg-[#4cc39430] h-full">
                                     <Image
@@ -743,7 +744,7 @@ export default function Home() {
                                         <p className="bg-primary px-3 py-1 rounded-full text-sm inline-block mt-5 text-black">
                                             Development
                                         </p>
-                                        <time className="block text-sm my-3 ">
+                                        <time className="block text-sm my-3 text-gray-400">
                                             15 Nov 2023
                                         </time>
                                         <h5 className="font-medium text-xl mb-1">
@@ -764,7 +765,7 @@ export default function Home() {
                                     </div>
                                 </div>
                             </AosAnimation>
-                            <div className="w-[60%] flex flex-wrap gap-y-4 justify-between">
+                            <div className="w-[49.5%] flex flex-wrap gap-y-4 justify-between">
                                 <AosAnimation
                                     aosvalue={"zoom-in-up"}
                                     className="w-[49%]"
@@ -779,10 +780,10 @@ export default function Home() {
                                             className="rounded-xl"
                                         />
                                         <div className="text-white">
-                                            <time className="block my-3 text-sm">
+                                            <time className="block my-3 text-sm text-gray-400">
                                                 15 Nov 2023
                                             </time>
-                                            <h5 className="font-medium text-lg ">
+                                            <h5 className=" font-medium">
                                                 Optimizing Laravel for Search
                                                 Engines: Advanced SEO Strategies
                                                 and Best Practices
@@ -804,10 +805,10 @@ export default function Home() {
                                             className="rounded-xl"
                                         />
                                         <div className="text-white">
-                                            <time className="block my-3 text-sm">
+                                            <time className="block my-3 text-sm text-gray-400">
                                                 15 Nov 2023
                                             </time>
-                                            <h5 className="font-medium text-lg ">
+                                            <h5 className="font-medium ">
                                                 Optimizing Laravel for Search
                                                 Engines: Advanced SEO Strategies
                                                 and Best Practices
@@ -829,10 +830,10 @@ export default function Home() {
                                             className="rounded-xl"
                                         />
                                         <div className="text-white">
-                                            <time className="block my-3 text-sm">
+                                            <time className="block my-3 text-sm text-gray-400">
                                                 15 Nov 2023
                                             </time>
-                                            <h5 className="font-medium text-lg ">
+                                            <h5 className="font-medium  ">
                                                 Optimizing Laravel for Search
                                                 Engines: Advanced SEO Strategies
                                                 and Best Practices
@@ -854,10 +855,10 @@ export default function Home() {
                                             className="rounded-xl"
                                         />
                                         <div className="text-white">
-                                            <time className="block my-3 text-sm">
+                                            <time className="block my-3 text-sm text-gray-400">
                                                 15 Nov 2023
                                             </time>
-                                            <h5 className="font-medium text-lg">
+                                            <h5 className="font-medium ">
                                                 Optimizing Laravel for Search
                                                 Engines: Advanced SEO Strategies
                                                 and Best Practices
@@ -893,15 +894,20 @@ export default function Home() {
                         <div className="flex gap-x-5 justify-center mt-10">
                             <Link
                                 href={"#"}
-                                className="px-7 py-3 border border-primary text-white hover:shadow hover:shadow-primary transition duration-300 ease-in-out"
+                                className="px-7 py-3 border border-primary text-white hover:shadow hover:shadow-primary transition duration-300 ease-in-out flex items-center gap-x-3"
                             >
                                 Contact Us
+                                <span>
+                                    <GoArrowRight className="text-2xl"/>
+                                </span>
                             </Link>
                             <Link
-                                className="px-7 py-3 border border-primary bg-primary text-black hover:shadow hover:shadow-primary transition duration-300 ease-in-out"
+                                className="px-7 py-3 border border-primary bg-primary text-black hover:shadow hover:shadow-primary transition duration-300 ease-in-out flex items-center gap-x-3"
                                 href={"#"}
                             >
-                                Schedule Meeting
+                                Schedule Meeting<span>
+                                    <GoArrowUpRight className="text-2xl"/>
+                                </span>
                             </Link>
                         </div>
                     </div>

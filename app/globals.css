@@ -17,13 +17,6 @@
 }
 
 body {
-    /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
     background: hsl(285, 84%, 12%);
 
     background: linear-gradient(
@@ -46,6 +39,16 @@ body {
 
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2A0536", endColorstr="#0D0518", GradientType=1 );
     background-repeat: no-repeat;
+}
+
+::-moz-selection {
+    background: #c2e812;
+    color: black;
+}
+
+::selection {
+    background: #c2e812;
+    color: black;
 }
 
 @layer utilities {
