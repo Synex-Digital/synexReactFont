@@ -14,8 +14,8 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer id="footerbg" className="py-20 h-[500px]">
-            <div className="container mx-auto px-2 flex justify-between">
+        <footer id="footerbg" className="pt-20">
+            <div className="container mx-auto px-2 pb-16 flex justify-between">
                 <div className="w-[30%]">
                     <Image
                         priority={true}
@@ -88,7 +88,7 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="w-[20%]">
+                <div className="w-[15%]">
                     <strong className="text-white text-xl">
                         Important Link
                     </strong>
@@ -119,7 +119,7 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="w-[20%]">
+                <div className="w-[25%]">
                     <strong className="text-white text-xl">Join Us</strong>
                     <p className="text-white font-light mb-5 mt-1">
                         Catch the Latest Updates, Insights, and Exclusive
@@ -152,6 +152,21 @@ const Footer = () => {
                             </a>
                         </li>
                     </ul>
+                </div>
+            </div>
+            <div>
+                <div className="border-t border-t-primary w-80 mx-auto"></div>
+                <div className="text-center py-5">
+                    <h6 className="text-white">
+                        Copyright © 2024{" "}
+                        <a
+                            target="_black"
+                            href="https://synexdigital.com/"
+                            className="text-primary hover:underline"
+                        >
+                            Synex Digital
+                        </a>
+                    </h6>
                 </div>
             </div>
         </footer>
