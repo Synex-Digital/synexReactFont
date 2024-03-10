@@ -28,7 +28,7 @@ export default function Home() {
                                 <br />
                                 Your Technological Needs
                             </h1>
-                            <h2 className="text-white my-5 max-md:font-light max-lg:text-center">
+                            <h2 className="text-white mt-5 mb-8 max-md:font-light max-lg:text-center">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Fuga maiores iusto, error
                                 reprehenderit suscipit perferendis omnis alias
@@ -57,7 +57,7 @@ export default function Home() {
                                 </Link>
                             </div>
                         </div>
-                        <div className="lg:w-[48%] max-lg:mt-7">
+                        <div className="lg:w-[48%] max-lg:mt-7 flex justify-center">
                             <Image
                                 src={recordimg}
                                 alt="Reacording Image"
@@ -241,28 +241,13 @@ export default function Home() {
 
                 <section className="py-20">
                     <div className="container mx-auto px-2">
-                        <div className="mx-auto flex flex-col justify-center items-center">
-                            <h4 className="text-primary text-3xl font-semibold text-center z-50 ">
-                                Our Records
-                            </h4>
-                            <AosAnimation
-                                aosvalue={"fade-up"}
-                                className="relative"
-                            >
-                                <div className="bg-transparent"></div>
-                                <div className="blob -translate-x-[50%]">
-                                    <Image
-                                        src={anisvg}
-                                        alt="Reacording Image"
-                                        priority
-                                        quality={80}
-                                    />
-                                </div>
-                            </AosAnimation>
-                        </div>
-                        <div className="flex justify-between mt-20">
-                            <div className="w-[48%] ">
-                                <AosAnimation aosvalue={"fade-right"}>
+                        <Heading
+                            title="Our Records"
+                            subtitle="Elevating Your Business with Innovative Services"
+                        />
+                        <div className="lg:flex justify-between">
+                            <div className="lg:w-[48%] ">
+                                <AosAnimation aosvalue={"fade-right"} className="flex justify-center">
                                     <Image
                                         src={recordimg}
                                         alt="Reacording Image"
@@ -273,13 +258,13 @@ export default function Home() {
                                     />
                                 </AosAnimation>
                             </div>
-                            <div className="w-[48%]">
+                            <div className="lg:w-[48%] max-lg:mt-7 max-lg:text-center">
                                 <AosAnimation aosvalue={"fade-up"}>
-                                    <h5 className="font-semibold text-white mb-5 text-4xl">
+                                    <h5 className="font-semibold max-lg:font-medium text-white lg:mb-5 mb-3 xl:text-4xl lg:text-3xl text-2xl">
                                         Navigating the IT Landscape with
                                         Precision
                                     </h5>
-                                    <p className="text-white leading-7">
+                                    <p className="text-white leading-7 max-lg:font-light">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Cumque animi magni
                                         dignissimos est molestias, nihil officia
