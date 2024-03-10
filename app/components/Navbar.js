@@ -14,12 +14,8 @@ const Navbar = () => {
     };
     return (
         <header>
-            <nav>
-                <div
-                    className={`container mx-auto ${
-                        isactive ? "px-2" : "px-0"
-                    } py-3 flex justify-between items-center max-lg:relative `}
-                >
+            <nav className={`${isactive ? "" : "bg-[#1d2934] h-screen"} `}>
+                <div className="container mx-auto py-3 px-2 flex justify-between items-center max-lg:relative">
                     <Link href={"/"}>
                         <Image
                             priority={true}
@@ -57,9 +53,7 @@ const Navbar = () => {
                             </li>
                         </ul>
                     ) : (
-                        <ul
-                            className="text-white lg:hidden absolute w-full top-0 h-screen pt-40 flex flex-col gap-y-7 bg-[#1d2934] text-center"
-                        >
+                        <ul className="text-white lg:hidden absolute w-full top-0 h-screen pt-40 flex flex-col gap-y-7 bg-[#1d2934] text-center">
                             <li>
                                 <Link
                                     href={"/"}
@@ -106,7 +100,7 @@ const Navbar = () => {
                         ) : (
                             <MdOutlineClose
                                 onClick={handleClick}
-                                className="text-primary text-3xl cursor-pointer max-lg:pl-2 w-10 h-10"
+                                className="text-primary text-3xl cursor-pointer"
                             />
                         )}
                     </div>

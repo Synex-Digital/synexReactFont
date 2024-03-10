@@ -9,16 +9,17 @@ import SimpleHook from "./components/SimpleHook";
 import ReactSlick from "./components/ReactSlick";
 import AosAnimation from "./components/AosAnimation";
 import TiltAnimation from "./components/TiltAnimation";
-import { GoArrowRight,GoArrowUpRight } from "react-icons/go";
+import { GoArrowRight, GoArrowUpRight } from "react-icons/go";
+import Heading from "./components/Heading";
 
 export default function Home() {
     return (
         <>
             <main>
                 <section className="pt-10 pb-16">
-                    <div className="container flex mx-auto px-2 py-16">
-                        <div className="w-1/2">
-                            <h1 className="text-5xl text-white font-bold leading-snug">
+                    <div className="container lg:flex mx-auto px-2 lg:py-16 justify-between">
+                        <div className="lg:w-[48%]">
+                            <h1 className="xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl text-2xl text-white font-bold max-lg:text-center leading-snug">
                                 Business IT Solutions:
                                 <br />{" "}
                                 <span className="text-primary">
@@ -27,7 +28,7 @@ export default function Home() {
                                 <br />
                                 Your Technological Needs
                             </h1>
-                            <h2 className="text-white my-5 ">
+                            <h2 className="text-white my-5 max-md:font-light max-lg:text-center">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Fuga maiores iusto, error
                                 reprehenderit suscipit perferendis omnis alias
@@ -45,42 +46,36 @@ export default function Home() {
                                 dignissimos qui ipsum officiis pariatur expedita
                                 odio veniam cupiditate esse dolorem? Officiis,
                                 necessitatibus. Doloribus accusamus quibusdam
-                                explicabo qui vero ex minima et.
+                                explicabo qui vero ex minimaet.
                             </h2>
-                            <Link
-                                href={"project"}
-                                className="bg-primary hover:bg-[#bcdd2d] py-2 px-7 rounded-full text-lg font-medium"
-                            >
-                                Explore Our Service
-                            </Link>
+                            <div className="max-lg:text-center">
+                                <Link
+                                    href={"project"}
+                                    className="bg-primary hover:bg-[#bcdd2d] py-2 px-7 rounded-full text-lg font-medium"
+                                >
+                                    Explore Our Service
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="lg:w-[48%] max-lg:mt-7">
+                            <Image
+                                src={recordimg}
+                                alt="Reacording Image"
+                                priority
+                                placeholder="blur"
+                                quality={80}
+                                className="rounded-xl"
+                            />
                         </div>
                     </div>
                 </section>
 
                 <section>
                     <div className="container mx-auto px-2">
-                        <div className="mx-auto flex flex-col justify-center items-center">
-                            <h4 className="text-primary text-3xl font-semibold text-center z-50 ">
-                                Our Service
-                            </h4>
-                            <AosAnimation
-                                aosvalue={"fade-up"}
-                                className="relative"
-                            >
-                                <div className="bg-transparent"></div>
-                                <div className="blob -translate-x-[50%]">
-                                    <Image
-                                        src={anisvg}
-                                        alt="Reacording Image"
-                                        priority
-                                        quality={80}
-                                    />
-                                </div>
-                            </AosAnimation>
-                            <h4 className="font-medium text-2xl text-center text-white z-50 mt-5">
-                                Elevating Your Business with Innovative Services
-                            </h4>
-                        </div>
+                        <Heading
+                            title="Our Service"
+                            subtitle="Elevating Your Business with Innovative Services"
+                        />
                         <div className="flex justify-between gap-y-5 pt-16 flex-wrap ">
                             <ReactSlick className="w-full h-full">
                                 <div className="p-5 cursor-grab">
@@ -898,15 +893,16 @@ export default function Home() {
                             >
                                 Contact Us
                                 <span>
-                                    <GoArrowRight className="text-2xl"/>
+                                    <GoArrowRight className="text-2xl" />
                                 </span>
                             </Link>
                             <Link
                                 className="px-7 py-3 border border-primary bg-primary text-black hover:shadow hover:shadow-primary transition duration-300 ease-in-out flex items-center gap-x-3"
                                 href={"#"}
                             >
-                                Schedule Meeting<span>
-                                    <GoArrowUpRight className="text-2xl"/>
+                                Schedule Meeting
+                                <span>
+                                    <GoArrowUpRight className="text-2xl" />
                                 </span>
                             </Link>
                         </div>
