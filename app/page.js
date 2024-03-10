@@ -76,11 +76,11 @@ export default function Home() {
                             title="Our Service"
                             subtitle="Elevating Your Business with Innovative Services"
                         />
-                        <div className="flex justify-between gap-y-5 pt-16 flex-wrap ">
+                        <div className="flex justify-between flex-wrap ">
                             <ReactSlick className="w-full h-full">
-                                <div className="p-5 cursor-grab">
+                                <div className="xl:p-5 lg:p-4 md:p-3 p-2 cursor-grab">
                                     <Reacttilt>
-                                        <div className=" rounded-xl p-7 bg-[#c0dbe2]">
+                                        <div className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#c0dbe2]">
                                             <h2 className="text-center text-3xl font-semibold">
                                                 Website Development
                                             </h2>
@@ -104,9 +104,9 @@ export default function Home() {
                                         </div>
                                     </Reacttilt>
                                 </div>
-                                <div className="p-5 cursor-grab">
+                                <div className="xl:p-5 lg:p-4 md:p-3 p-2 cursor-grab">
                                     <Reacttilt>
-                                        <div className=" rounded-xl p-7 bg-[#e0bb7b]">
+                                        <div className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#e0bb7b]">
                                             <h2 className="text-center text-3xl font-semibold">
                                                 Website Development
                                             </h2>
@@ -130,9 +130,9 @@ export default function Home() {
                                         </div>
                                     </Reacttilt>
                                 </div>
-                                <div className="p-5 cursor-grab">
+                                <div className="xl:p-5 lg:p-4 md:p-3 p-2 cursor-grab">
                                     <Reacttilt>
-                                        <div className=" rounded-xl p-7 bg-[#adc7a5]">
+                                        <div className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#adc7a5]">
                                             <h2 className="text-center text-3xl font-semibold">
                                                 Website Development
                                             </h2>
@@ -156,9 +156,9 @@ export default function Home() {
                                         </div>
                                     </Reacttilt>
                                 </div>
-                                <div className="p-5 cursor-grab">
+                                <div className="xl:p-5 lg:p-4 md:p-3 p-2 cursor-grab">
                                     <Reacttilt>
-                                        <div className=" rounded-xl p-7 bg-[#adc7a5]">
+                                        <div className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#adc7a5]">
                                             <h2 className="text-center text-3xl font-semibold">
                                                 Website Development
                                             </h2>
@@ -182,9 +182,9 @@ export default function Home() {
                                         </div>
                                     </Reacttilt>
                                 </div>
-                                <div className="p-5 cursor-grab">
+                                <div className="xl:p-5 lg:p-4 md:p-3 p-2 cursor-grab">
                                     <Reacttilt>
-                                        <div className=" rounded-xl p-7 bg-[#adc7a5]">
+                                        <div className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#adc7a5]">
                                             <h2 className="text-center text-3xl font-semibold">
                                                 Website Development
                                             </h2>
@@ -208,9 +208,9 @@ export default function Home() {
                                         </div>
                                     </Reacttilt>
                                 </div>
-                                <div className="p-5 cursor-grab">
+                                <div className="xl:p-5 lg:p-4 md:p-3 p-2 cursor-grab">
                                     <Reacttilt>
-                                        <div className=" rounded-xl p-7 bg-[#e0bb7b]">
+                                        <div className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#e0bb7b]">
                                             <h2 className="text-center text-3xl font-semibold">
                                                 Website Development
                                             </h2>

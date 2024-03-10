@@ -5,7 +5,7 @@ import anisvg from "@/public/assets/animation.svg";
 
 const Heading = ({ title, subtitle }) => {
     return (
-        <div className="mx-auto flex flex-col justify-center items-center">
+        <div className="mx-auto flex flex-col justify-center items-center mb-10">
             <h4 className="text-primary md:text-3xl text-2xl font-semibold text-center z-50 ">
                 {title}
             </h4>
