@@ -57,8 +57,6 @@ body {
     }
 }
 
-
-
 .narhoverAni {
     position: relative;
     transition: 0.6s;
@@ -150,9 +148,15 @@ body {
 }
 
 .Testimonial {
-    background: url("../public/assets/worldmap.svg") no-repeat center;
+    background: linear-gradient(
+            0deg,
+            hsla(265, 66%, 6%, .7) 0%,
+            hsla(265, 66%, 6%, .7) 100%
+        ),
+        url("../public/assets/worldmap.svg") no-repeat center;
     width: 100%;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #footerbg {
@@ -166,4 +170,3 @@ body {
     -webkit-transform: scale(-1, 1);
     transform: scale(-1, 1);
 }
-

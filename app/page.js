@@ -50,7 +50,7 @@ export default function Home() {
                             </h2>
                             <div className="max-lg:text-center">
                                 <Link
-                                    href={"project"}
+                                    href="project"
                                     className="bg-primary hover:bg-[#bcdd2d] py-2 px-7 rounded-full text-lg font-medium"
                                 >
                                     Explore Our Service
@@ -334,7 +334,7 @@ export default function Home() {
                         <div className="text-center">
                             <div className="flex justify-between flex-wrap gap-y-5">
                                 <TiltAnimation
-                                    color={"#00b9ff"}
+                                    color={"#00d7ff"}
                                     bgcolor={
                                         "linear-gradient(80deg, rgba(3,91,125,1) 0%, rgba(0,133,80,1) 100%)"
                                     }
@@ -365,9 +365,10 @@ export default function Home() {
                                     </div>
                                 </TiltAnimation>
                                 <TiltAnimation
-                                    color={"#ff00db"}
+                                    color={"#00d7ff"}
                                     bgcolor={
-                                        "linear-gradient(90deg, rgba(215,0,0,0.5) 0%, rgba(173,0,149,1) 100%)"
+                                        "linear-gradient(80deg, rgba(3,91,125,1) 0%, rgba(0,133,80,1) 100%)"
+                                        // "linear-gradient(90deg, rgba(215,0,0,0.5) 0%, rgba(173,0,149,1) 100%)"
                                     }
                                 >
                                     <div className="p-1 absolute z-20 ">
@@ -380,7 +381,7 @@ export default function Home() {
                                             className="rounded-xl object-cover"
                                         />
                                         <div className="p-3 pt-8 text-center">
-                                            <time className="bg-[#ac009286] text-white font-light text-sm py-2 px-5 rounded-3xl">
+                                            <time className="bg-[#007d58] text-white font-light text-sm py-2 px-5 rounded-3xl">
                                                 28 sep 2023
                                             </time>
                                             <h4 className="text-white text-xl font-semibold text-center mt-5 mb-3">
@@ -398,7 +399,8 @@ export default function Home() {
                                 <TiltAnimation
                                     color={"#00d7ff"}
                                     bgcolor={
-                                        "linear-gradient(147deg, rgba(0,11,215,1) 0%, rgba(0,134,255,0.8071603641456583) 100%)"
+                                        "linear-gradient(80deg, rgba(3,91,125,1) 0%, rgba(0,133,80,1) 100%)"
+                                        // "linear-gradient(147deg, rgba(0,11,215,1) 0%, rgba(0,134,255,0.8071603641456583) 100%)"
                                     }
                                 >
                                     <div className="p-1 absolute z-20 ">
@@ -411,7 +413,7 @@ export default function Home() {
                                             className="rounded-xl object-cover "
                                         />
                                         <div className="p-3 pt-8 text-center">
-                                            <time className="bg-[#00d9ffa0] py-2 text-white font-light text-sm px-5 rounded-3xl">
+                                            <time className="bg-[#007d58] py-2 text-white font-light text-sm px-5 rounded-3xl">
                                                 28 sep 2023
                                             </time>
                                             <h4 className="text-white text-xl font-semibold text-center mt-5 mb-3">
@@ -427,9 +429,10 @@ export default function Home() {
                                     </div>
                                 </TiltAnimation>
                                 <TiltAnimation
-                                    color={"#fd7700"}
+                                    color={"#00d7ff"}
                                     bgcolor={
-                                        "linear-gradient(258deg, rgba(215,0,0,1) 0%, rgba(255,124,0,0.6) 100%)"
+                                        "linear-gradient(80deg, rgba(3,91,125,1) 0%, rgba(0,133,80,1) 100%)"
+                                        // "linear-gradient(258deg, rgba(215,0,0,1) 0%, rgba(255,124,0,0.6) 100%)"
                                     }
                                 >
                                     <div className="p-1 absolute z-20 ">
@@ -442,7 +445,7 @@ export default function Home() {
                                             className="rounded-xl object-cover"
                                         />
                                         <div className="p-3 pt-8 text-center">
-                                            <time className="bg-[#ff7b00b1] text-white font-light text-sm py-2 px-5 rounded-3xl">
+                                            <time className="bg-[#007d58] text-white font-light text-sm py-2 px-5 rounded-3xl">
                                                 28 sep 2023
                                             </time>
                                             <h4 className="text-white text-xl font-semibold text-center mt-5 mb-3">
@@ -470,34 +473,20 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section className="py-20 mt-16 Testimonial">
+                <section className="py-20 ">
                     <div className="container mx-auto px-2">
-                        <div className="mx-auto flex flex-col justify-center items-center">
-                            <h4 className="text-primary text-3xl font-semibold text-center z-50 ">
-                                Testimonial
-                            </h4>
-                            <AosAnimation
-                                aosvalue={"fade-up"}
-                                className="relative"
-                            >
-                                <div className="bg-transparent"></div>
-                                <div className="blob -translate-x-[50%]">
-                                    <Image
-                                        src={anisvg}
-                                        alt="Reacording Image"
-                                        priority
-                                        quality={80}
-                                    />
-                                </div>
-                            </AosAnimation>
-                            <h4 className="font-medium text-2xl text-center text-white z-50 mt-5">
-                                Genesys Engage: Redefining Customer Contact
-                            </h4>
-                        </div>
-                        <ReactSlick className="w-full h-full !flex !justify-center !items-end mt-10">
+                        <Heading
+                            title={"Testimonial"}
+                            subtitle={
+                                "Genesys Engage: Redefining Customer Contact"
+                            }
+                        />
+                    </div>
+                    <div className="container mx-auto px-2 Testimonial py-16">
+                        <ReactSlick className="w-full h-full !flex !justify-center !items-end">
                             <div className="p-5 cursor-grab ">
                                 <Reacttilt className="w-full h-full flex">
-                                    <div className="rounded-xl p-7 text-white bg-transparent border-primary border">
+                                    <div className="rounded-xl p-7 text-white bg-[#adc7a5]">
                                         <div className="flex gap-5 items-center">
                                             <Image
                                                 width={40}
@@ -513,7 +502,7 @@ export default function Home() {
                                                 </p>
                                             </div>
                                         </div>
-                                        <h3 className="text-justify mt-5 font-medium">
+                                        <h3 className="text-justify mt-5 ">
                                             Synex Digital develops dynamic
                                             websites with React on the front end
                                             and PHP-Laravel on the back end.
@@ -525,7 +514,7 @@ export default function Home() {
                             </div>
                             <div className="p-5 cursor-grab">
                                 <Reacttilt className="w-full h-full flex">
-                                    <div className="rounded-xl p-7 text-white bg-transparent border border-primary">
+                                    <div className="rounded-xl p-7 text-white bg-[#e0bb7b]">
                                         <div className="flex gap-5 items-center">
                                             <Image
                                                 width={40}
@@ -541,63 +530,7 @@ export default function Home() {
                                                 </p>
                                             </div>
                                         </div>
-                                        <h3 className="text-justify mt-5 font-medium">
-                                            Synex Digital develops dynamic
-                                            websites with React on the front end
-                                            and PHP-Laravel on the back end.
-                                            Strengthen your digital identity
-                                            with our creative web...
-                                        </h3>
-                                    </div>
-                                </Reacttilt>
-                            </div>
-                            <div className="p-5 cursor-grab">
-                                <Reacttilt className="w-full h-full flex">
-                                    <div className="rounded-xl p-7 text-white bg-transparent border border-primary">
-                                        <div className="flex gap-5 items-center">
-                                            <Image
-                                                width={40}
-                                                alt="Web Image"
-                                                priority
-                                                placeholder="blur"
-                                                quality={80}
-                                                src={webicon}
-                                            />
-                                            <div>
-                                                <p className="font-medium text-lg">
-                                                    ABM Shawon Islam
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <h3 className="text-justify mt-5 font-medium">
-                                            Synex Digital develops dynamic
-                                            websites with React on the front end
-                                            and PHP-Laravel on the back end.
-                                            Strengthen your digital identity
-                                            with our creative web...
-                                        </h3>
-                                    </div>
-                                </Reacttilt>
-                            </div>
-                            <div className="p-5 cursor-grab">
-                                <Reacttilt className="w-full h-full flex">
-                                    <div className="rounded-xl p-7 text-white bg-transparent border border-primary">
-                                        <div className="flex gap-5 items-center">
-                                            <Image
-                                                width={40}
-                                                alt="Web Image"
-                                                priority
-                                                placeholder="blur"
-                                                quality={80}
-                                                src={webicon}
-                                            />
-                                            <div>
-                                                <p className="font-medium text-lg">
-                                                    ABM Shawon Islam
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <h3 className="text-justify mt-5 font-medium">
+                                        <h3 className="text-justify mt-5 ">
                                             Synex Digital develops dynamic
                                             websites with React on the front end
                                             and PHP-Laravel on the back end.
@@ -625,7 +558,7 @@ export default function Home() {
                                                 </p>
                                             </div>
                                         </div>
-                                        <h3 className="text-justify mt-5 font-medium">
+                                        <h3 className="text-justify mt-5 ">
                                             Synex Digital develops dynamic
                                             websites with React on the front end
                                             and PHP-Laravel on the back end.
@@ -653,7 +586,63 @@ export default function Home() {
                                                 </p>
                                             </div>
                                         </div>
-                                        <h3 className="text-justify mt-5 font-medium">
+                                        <h3 className="text-justify mt-5 ">
+                                            Synex Digital develops dynamic
+                                            websites with React on the front end
+                                            and PHP-Laravel on the back end.
+                                            Strengthen your digital identity
+                                            with our creative web...
+                                        </h3>
+                                    </div>
+                                </Reacttilt>
+                            </div>
+                            <div className="p-5 cursor-grab">
+                                <Reacttilt className="w-full h-full flex">
+                                    <div className="rounded-xl p-7 text-white bg-transparent border-primary border">
+                                        <div className="flex gap-5 items-center">
+                                            <Image
+                                                width={40}
+                                                alt="Web Image"
+                                                priority
+                                                placeholder="blur"
+                                                quality={80}
+                                                src={webicon}
+                                            />
+                                            <div>
+                                                <p className="font-medium text-lg">
+                                                    ABM Shawon Islam
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h3 className="text-justify mt-5 ">
+                                            Synex Digital develops dynamic
+                                            websites with React on the front end
+                                            and PHP-Laravel on the back end.
+                                            Strengthen your digital identity
+                                            with our creative web...
+                                        </h3>
+                                    </div>
+                                </Reacttilt>
+                            </div>
+                            <div className="p-5 cursor-grab">
+                                <Reacttilt className="w-full h-full flex">
+                                    <div className="rounded-xl p-7 text-white bg-transparent border-primary border">
+                                        <div className="flex gap-5 items-center">
+                                            <Image
+                                                width={40}
+                                                alt="Web Image"
+                                                priority
+                                                placeholder="blur"
+                                                quality={80}
+                                                src={webicon}
+                                            />
+                                            <div>
+                                                <p className="font-medium text-lg">
+                                                    ABM Shawon Islam
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h3 className="text-justify mt-5 ">
                                             Synex Digital develops dynamic
                                             websites with React on the front end
                                             and PHP-Laravel on the back end.
@@ -696,7 +685,7 @@ export default function Home() {
                                 aosvalue={"zoom-in-up"}
                                 className="w-[49.5%]"
                             >
-                                <div className=" p-3 pb-5 rounded-xl cursor-pointer shadow-xl shadow-[#03010588] hover:shadow-[#030105e2] ease-out duration-300 hover:-translate-y-1 hover:-translate-x-1 bg-[#4cc39430] h-full">
+                                <div className=" p-3 pb-5  cursor-pointer shadow-xl shadow-[#03010588] hover:shadow-[#030105e2] ease-out duration-300 hover:-translate-y-1 hover:-translate-x-1 bg-[#4cc39430] h-full">
                                     <Image
                                         src={blogimg}
                                         alt="Reacording Image"
@@ -735,7 +724,7 @@ export default function Home() {
                                     aosvalue={"zoom-in-up"}
                                     className="w-[49%]"
                                 >
-                                    <div className=" p-3 pb-5 rounded-xl cursor-pointer shadow-xl shadow-[#03010588] hover:shadow-[#030105e2] ease-in-out duration-300 hover:-translate-y-1 hover:-translate-x-1 bg-[#4cc39430] h-fit">
+                                    <div className=" p-3 pb-5  cursor-pointer shadow-xl shadow-[#03010588] hover:shadow-[#030105e2] ease-in-out duration-300 hover:-translate-y-1 hover:-translate-x-1 bg-[#4cc39430] h-fit">
                                         <Image
                                             src={blogimg}
                                             alt="Reacording Image"
@@ -760,7 +749,7 @@ export default function Home() {
                                     aosvalue={"zoom-in-up"}
                                     className="w-[49%]"
                                 >
-                                    <div className=" p-3 pb-5 rounded-xl cursor-pointer shadow-xl shadow-[#03010588] hover:shadow-[#030105e2] ease-in-out duration-300 hover:-translate-y-1 hover:-translate-x-1 bg-[#4cc39430] h-fit">
+                                    <div className=" p-3 pb-5 cursor-pointer shadow-xl shadow-[#03010588] hover:shadow-[#030105e2] ease-in-out duration-300 hover:-translate-y-1 hover:-translate-x-1 bg-[#4cc39430] h-fit">
                                         <Image
                                             src={blogimg}
                                             alt="Reacording Image"
@@ -785,7 +774,7 @@ export default function Home() {
                                     aosvalue={"zoom-in-up"}
                                     className="w-[49%]"
                                 >
-                                    <div className=" p-3 pb-5 rounded-xl cursor-pointer shadow-xl shadow-[#03010588] hover:shadow-[#030105e2] ease-in-out duration-300 hover:-translate-y-1 hover:-translate-x-1 bg-[#4cc39430] h-fit">
+                                    <div className=" p-3 pb-5 cursor-pointer shadow-xl shadow-[#03010588] hover:shadow-[#030105e2] ease-in-out duration-300 hover:-translate-y-1 hover:-translate-x-1 bg-[#4cc39430] h-fit">
                                         <Image
                                             src={blogimg}
                                             alt="Reacording Image"
@@ -810,7 +799,7 @@ export default function Home() {
                                     aosvalue={"zoom-in-up"}
                                     className="w-[49%]"
                                 >
-                                    <div className=" p-3 pb-5 rounded-xl cursor-pointer shadow-xl shadow-[#03010588] hover:shadow-[#030105e2] ease-in-out duration-300 hover:-translate-y-1 hover:-translate-x-1 bg-[#4cc39430] h-fit">
+                                    <div className=" p-3 pb-5 cursor-pointer shadow-xl shadow-[#03010588] hover:shadow-[#030105e2] ease-in-out duration-300 hover:-translate-y-1 hover:-translate-x-1 bg-[#005B4C] h-fit">
                                         <Image
                                             src={blogimg}
                                             alt="Reacording Image"
