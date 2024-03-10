@@ -19,7 +19,7 @@ export default function Home() {
                 <section className="pt-10 pb-16">
                     <div className="container lg:flex mx-auto px-2 lg:py-16 justify-between">
                         <div className="lg:w-[48%]">
-                            <h1 className="xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl text-2xl text-white font-bold max-lg:text-center leading-snug">
+                            <h1 className="xl:text-5xl lg:text-4xl text-3xl text-white font-bold max-lg:text-center leading-snug">
                                 Business IT Solutions:
                                 <br />{" "}
                                 <span className="text-primary">
@@ -247,7 +247,10 @@ export default function Home() {
                         />
                         <div className="lg:flex justify-between">
                             <div className="lg:w-[48%] ">
-                                <AosAnimation aosvalue={"fade-right"} className="flex justify-center">
+                                <AosAnimation
+                                    aosvalue={"fade-right"}
+                                    className="flex justify-center"
+                                >
                                     <Image
                                         src={recordimg}
                                         alt="Reacording Image"
@@ -286,31 +289,31 @@ export default function Home() {
                                         rem corrupti dolor quisquam doloremque
                                         autem!
                                     </p>
-                                    <div className="flex justify-between mt-7">
-                                        <div className="bg-primary px-2 py-5 font-semibold text-center w-[32%] rounded-xl">
+                                    <div className="flex justify-between mt-7 ">
+                                        <div className="bg-primary px-2 md:py-5 py-3 md:font-semibold font-medium text-center w-[32%] rounded-xl">
                                             <div className="flex gap-1 text-2xl items-center justify-center mb-2">
                                                 <SimpleHook endtime={5} />
                                                 <span>+</span>{" "}
                                             </div>
-                                            <p className="text-xl">
+                                            <p className="md:text-xl text-lg">
                                                 YEARS OF EXPERIENCE
                                             </p>
                                         </div>
-                                        <div className="bg-primary px-2 py-5 font-semibold  text-center w-[32%] rounded-xl">
+                                        <div className="bg-primary px-2 md:py-5 py-3 md:font-semibold font-medium  text-center w-[32%] rounded-xl">
                                             <div className="flex gap-1 text-2xl items-center justify-center mb-2">
                                                 <SimpleHook endtime={89} />
                                                 <span>+</span>{" "}
                                             </div>
-                                            <p className="text-xl uppercase">
+                                            <p className="md:text-xl text-lg uppercase">
                                                 Project Complete
                                             </p>
                                         </div>
-                                        <div className="bg-primary px-2 py-5 font-semibold  text-center w-[32%] rounded-xl">
+                                        <div className="bg-primary px-2 md:py-5 py-3 md:font-semibold font-medium  text-center w-[32%] rounded-xl">
                                             <div className="flex gap-1 text-2xl items-center justify-center mb-2">
                                                 <SimpleHook endtime={22} />
                                                 <span>+</span>{" "}
                                             </div>
-                                            <p className="text-xl">
+                                            <p className="md:text-xl text-lg max-sm:leading-6">
                                                 DESIGNERS AND DEVELOPERS
                                             </p>
                                         </div>
@@ -323,31 +326,13 @@ export default function Home() {
 
                 <section>
                     <div className="container mx-auto px-2">
-                        <div className="mx-auto flex flex-col justify-center items-center">
-                            <h4 className="text-primary text-3xl font-semibold text-center z-50 ">
-                                Our Project
-                            </h4>
-                            <AosAnimation
-                                aosvalue={"fade-up"}
-                                className="relative"
-                            >
-                                <div className="bg-transparent"></div>
-                                <div className="blob -translate-x-[50%]">
-                                    <Image
-                                        src={anisvg}
-                                        alt="Reacording Image"
-                                        priority
-                                        quality={80}
-                                    />
-                                </div>
-                            </AosAnimation>
-                            <h4 className="font-medium text-2xl text-center text-white z-50 mt-5">
-                                Crafting Tailored Business IT Solutions
-                            </h4>
-                        </div>
+                        <Heading
+                            title="Our Project"
+                            subtitle="Crafting Tailored Business IT Solutions"
+                        />
 
-                        <div className="text-center pt-20">
-                            <div className="flex justify-between ">
+                        <div className="text-center">
+                            <div className="flex justify-between flex-wrap gap-y-5">
                                 <TiltAnimation
                                     color={"#00b9ff"}
                                     bgcolor={
