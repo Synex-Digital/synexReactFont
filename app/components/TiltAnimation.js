@@ -16,7 +16,7 @@ const TiltAnimation = ({ color, children, bgcolor }) => {
     return (
         <div
             id="card"
-            className="w-[24%] h-[540px] 2xl:h-[580px] relative rounded-xl overflow-hidden"
+            className="lg:w-[24%] sm:w-[48%] w-full xl:h-[540px] 2xl:h-[580px] lg:h-[500px] md:h-[550px] h-[580px] relative rounded-xl overflow-hidden"
             ref={cardRef}
             style={{
                 "--clr": color,

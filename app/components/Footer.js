@@ -14,8 +14,8 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer id="footerbg" className="py-20 h-[500px]">
-            <div className="container mx-auto px-2 flex justify-between">
+        <footer id="footerbg" className="pt-20">
+            <div className="container mx-auto px-2 pb-16 flex justify-between">
                 <div className="w-[30%]">
                     <Image
                         priority={true}
@@ -44,61 +44,82 @@ const Footer = () => {
                 </div>
                 <div className="w-[20%] ">
                     <strong className="text-white text-xl">Services</strong>
-                    <Link
-                        href={"#"}
-                        className="text-white block mt-7 font-light hover:underline hover:decoration-primary cursor-pointer"
-                    >
-                        Website Development
-                    </Link>
-                    <Link
-                        href={"#"}
-                        className="text-white block my-3 font-light hover:underline hover:decoration-primary cursor-pointer"
-                    >
-                        Digital Marketing
-                    </Link>
-                    <Link
-                        href={"#"}
-                        className="text-white block font-light hover:underline hover:decoration-primary cursor-pointer"
-                    >
-                        Mobile App Development
-                    </Link>
-                    <Link
-                        href={"#"}
-                        className="text-white block my-3 font-light hover:underline hover:decoration-primary cursor-pointer"
-                    >
-                        UI/UX Design
-                    </Link>
-                    <Link
-                        href={"#"}
-                        className="text-white block font-light hover:underline hover:decoration-primary cursor-pointer"
-                    >
-                        Graphics Design
-                    </Link>
+                    <ul>
+                        <li className=" mt-7">
+                            <Link
+                                href={"#"}
+                                className="text-white font-light hover:underline hover:decoration-primary cursor-pointer"
+                            >
+                                Website Development
+                            </Link>
+                        </li>
+                        <li className="my-3">
+                            <Link
+                                href={"#"}
+                                className="text-white font-light hover:underline hover:decoration-primary cursor-pointer"
+                            >
+                                Digital Marketing
+                            </Link>
+                        </li>
+                        <li>
+                            {" "}
+                            <Link
+                                href={"#"}
+                                className="text-white  font-light hover:underline hover:decoration-primary cursor-pointer"
+                            >
+                                Mobile App Development
+                            </Link>
+                        </li>
+                        <li className="my-3">
+                            <Link
+                                href={"#"}
+                                className="text-white   font-light hover:underline hover:decoration-primary cursor-pointer"
+                            >
+                                UI/UX Design
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href={"#"}
+                                className="text-white font-light hover:underline hover:decoration-primary cursor-pointer"
+                            >
+                                Graphics Design
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
-                <div className="w-[20%]">
+                <div className="w-[15%]">
                     <strong className="text-white text-xl">
                         Important Link
                     </strong>
-                    <Link
-                        href={"#"}
-                        className="text-white block mt-7 font-light hover:underline hover:decoration-primary cursor-pointer"
-                    >
-                        About
-                    </Link>
-                    <Link
-                        href={"#"}
-                        className="text-white block mt-3 font-light hover:underline hover:decoration-primary cursor-pointer"
-                    >
-                        Privacy Policy
-                    </Link>
-                    <Link
-                        href={"#"}
-                        className="text-white block my-3 font-light hover:underline hover:decoration-primary cursor-pointer"
-                    >
-                        Contact us
-                    </Link>
+                    <ul>
+                        <li className="mt-7 mb-3">
+                            <Link
+                                href={"#"}
+                                className="text-white  font-light hover:underline hover:decoration-primary cursor-pointer"
+                            >
+                                About
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href={"#"}
+                                className="text-white font-light hover:underline hover:decoration-primary cursor-pointer"
+                            >
+                                Privacy Policy
+                            </Link>
+                        </li>
+                        <li className="my-3">
+                            <Link
+                                href={"#"}
+                                className="text-white   font-light hover:underline hover:decoration-primary cursor-pointer"
+                            >
+                                Contact us
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
-                <div className="w-[20%]">
+                <div className="w-[25%]">
                     <strong className="text-white text-xl">Join Us</strong>
                     <p className="text-white font-light mb-5 mt-1">
                         Catch the Latest Updates, Insights, and Exclusive
@@ -113,16 +134,39 @@ const Footer = () => {
                             <FaTelegramPlane className="text-white text-xl p-2 w-[42px] h-[42px] bg-primary rounded-r cursor-pointer" />
                         </span>
                     </div>
-                    <a className="text-white flex items-center gap-x-3 mt-8 hover:underline hover:decoration-primary cursor-pointer">
-                        <FaWhatsapp className="text-white text-xl" />
-                        <span className="font-light">+8801613408101</span>
-                    </a>
-                    <a className="text-white flex items-center gap-x-3 mt-1 hover:underline hover:decoration-primary cursor-pointer">
-                        <FiMail className="text-white text-xl" />
-                        <span className="font-light">
-                            office@synexdigital.com
-                        </span>
-                    </a>
+                    <ul>
+                        <li>
+                            <a className="text-white flex items-center gap-x-3 mt-8 hover:underline hover:decoration-primary cursor-pointer ">
+                                <FaWhatsapp className="text-white text-xl" />
+                                <span className="font-light">
+                                    +8801613408101
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a className="text-white flex items-center gap-x-3 mt-1 hover:underline hover:decoration-primary cursor-pointer">
+                                <FiMail className="text-white text-xl" />
+                                <span className="font-light">
+                                    office@synexdigital.com
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div className="border-t border-t-primary w-80 mx-auto"></div>
+                <div className="text-center py-5">
+                    <h6 className="text-white">
+                        Copyright © 2024{" "}
+                        <a
+                            target="_black"
+                            href="https://synexdigital.com/"
+                            className="text-primary hover:underline"
+                        >
+                            Synex Digital
+                        </a>
+                    </h6>
                 </div>
             </div>
         </footer>
