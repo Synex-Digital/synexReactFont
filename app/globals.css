@@ -149,9 +149,9 @@ body {
 
 .Testimonial {
     background: linear-gradient(
-            0deg,
-            hsla(265, 66%, 6%, .7) 0%,
-            hsla(265, 66%, 6%, .7) 100%
+            90deg,
+            hsla(265, 66%, 6%, 0.4) 0%,
+            hsla(265, 66%, 6%, 0.4) 100%
         ),
         url("../public/assets/worldmap.svg") no-repeat center;
     width: 100%;
@@ -169,4 +169,21 @@ body {
     -moz-transform: scale(-1, 1);
     -webkit-transform: scale(-1, 1);
     transform: scale(-1, 1);
+}
+
+#hover_img figure {
+    overflow: hidden;
+}
+
+#hover_img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#hover_img figure img {
+    transform: scale(1);
+    transition: 0.4s ease-in-out;
+}
+#hover_img:hover img {
+    transform: scale(1.1);
 }
