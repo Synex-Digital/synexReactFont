@@ -3,14 +3,13 @@ import Link from "next/link";
 import Reacttilt from "./components/Reacttilt";
 import recordimg from "@/public/assets/thumbBody.jpg";
 import blogimg from "@/public/assets/blogimg.webp";
-import anisvg from "@/public/assets/animation.svg";
 import webicon from "@/public/assets/webicon.png";
 import SimpleHook from "./components/SimpleHook";
 import ReactSlick from "./components/ReactSlick";
 import AosAnimation from "./components/AosAnimation";
 import TiltAnimation from "./components/TiltAnimation";
-import { GoArrowRight, GoArrowUpRight } from "react-icons/go";
 import Heading from "./components/Heading";
+import Collaborate from "./components/Collaborate";
 
 export default function Home() {
     return (
@@ -690,7 +689,7 @@ export default function Home() {
                                             Engines: Advanced SEO Strategies and
                                             Best Practices
                                         </h5>
-                                        <p className="font-light mt-3">
+                                        <p className="font-light mt-3 max-md:hidden">
                                             Explore advanced SEO strategies
                                             tailored for Laravel development to
                                             enhance website visibility and
@@ -833,40 +832,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section className="py-20 bg-[#1d2934]">
-                    <div className="container mx-auto px-2">
-                        <div className="text-white text-center">
-                            <h6 className="lg:text-3xl text-2xl font-semibold">
-                                Ready to Collaborate with us?
-                            </h6>
-                            <p className="font-light mt-5">
-                                Let's unite and craft something truly
-                                remarkable. We're excited to collaborate and
-                                bring visionary ideas to life.
-                            </p>
-                        </div>
-                        <div className="sm:flex gap-x-5 justify-center mt-10">
-                            <Link
-                                href={"/contact"}
-                                className="px-7 py-3 border border-primary text-white hover:shadow hover:shadow-primary transition duration-300 ease-in-out flex items-center gap-x-3  max-sm:w-fit max-sm:mx-auto"
-                            >
-                                Contact Us
-                                <span>
-                                    <GoArrowRight className="text-2xl" />
-                                </span>
-                            </Link>
-                            <Link
-                                className="px-7 py-3 border border-primary bg-primary text-black hover:shadow hover:shadow-primary transition duration-300 ease-in-out flex items-center gap-x-3  max-sm:w-fit max-sm:mx-auto max-sm:mt-5"
-                                href={"#"}
-                            >
-                                Schedule Meeting
-                                <span>
-                                    <GoArrowUpRight className="text-2xl" />
-                                </span>
-                            </Link>
-                        </div>
-                    </div>
-                </section>
+                <Collaborate />
             </main>
         </>
     );

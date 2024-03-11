@@ -17,7 +17,7 @@ const Footer = () => {
         <footer id="footerbg" className="pt-20">
             <div className="container mx-auto px-2 pb-16 lg:flex justify-between max-lg:text-center">
                 <div className="lg:w-[30%] max-lg:mt-5 ">
-                    <div className="flex justify-center max-lg:mb-7">
+                    <div className="flex max-lg:justify-center max-lg:mb-7">
                         <Image
                             priority={true}
                             alt="synex logo"

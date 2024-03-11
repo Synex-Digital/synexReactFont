@@ -15,6 +15,9 @@ module.exports = {
             colors: {
                 primary: "#c2e812",
             },
+            listStyleType: {
+                square: 'square',
+              }
         },
     },
     plugins: [],

@@ -40,16 +40,23 @@ const Navbar = () => {
                                 >
                                     Services
                                     <span></span>
-                                    <MdArrowDropDown id="serviceicon" className="text-2xl"/>
+                                    <MdArrowDropDown
+                                        id="serviceicon"
+                                        className="text-2xl"
+                                    />
                                 </Link>
                                 <ul className="dropdown">
                                     <li>
-                                        <Link href={"/services"}>
+                                        <Link
+                                            href={
+                                                "/services/websitedevelopment"
+                                            }
+                                        >
                                             Website Development
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href={"#"}>
+                                        <Link href={"/services/uxuidesign"}>
                                             Digital Marketing
                                         </Link>
                                     </li>
@@ -59,7 +66,7 @@ const Navbar = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href={"#"}>UI/UX Design</Link>
+                                        <Link href={"/services/uxuidesign"}>UI/UX Design</Link>
                                     </li>
                                     <li>
                                         <Link href={"#"}>Graphics Design</Link>
