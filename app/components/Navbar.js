@@ -56,20 +56,30 @@ const Navbar = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href={"/services/uxuidesign"}>
+                                        <Link
+                                            href={"/services/digitalmarketing"}
+                                        >
                                             Digital Marketing
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href={"#"}>
+                                        <Link
+                                            href={
+                                                "/services/mobileappdevelopment"
+                                            }
+                                        >
                                             Mobile App Development
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href={"/services/uxuidesign"}>UI/UX Design</Link>
+                                        <Link href={"/services/uxuidesign"}>
+                                            UI/UX Design
+                                        </Link>
                                     </li>
                                     <li>
-                                        <Link href={"#"}>Graphics Design</Link>
+                                        <Link href={"/services/graphicsdesign"}>
+                                            Graphics Design
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>

@@ -12,10 +12,10 @@ const Breadcrumbs = ({ title }) => {
                 className="w-full h-[300px] object-cover bg-[#1d2934]"
             />
             <div className="absolute top-1/2 right-1/2 ">
-                <h2 className="text-white lg:text-5xl md:text-4xl sm:text-3xl text-xl  translate-x-1/2 -translate-y-14 font-semibold">
+                <h2 className="text-white lg:text-5xl md:text-4xl sm:text-3xl text-xl  translate-x-1/2 -translate-y-14 font-semibold text-center">
                     {title}
                 </h2>
-                <p className="text-white text-center translate-x-1/2 text-lg font-light">
+                <p className="text-white text-center translate-x-1/2 md:text-lg font-light">
                     <span>
                         <Link
                             href={"/"}

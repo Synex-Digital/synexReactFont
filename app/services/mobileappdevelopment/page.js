@@ -5,10 +5,10 @@ import { PiWebhooksLogo } from "react-icons/pi";
 import Collaborate from "@/app/components/Collaborate";
 import Breadcrumbs from "@/app/components/Breadcrumbs";
 
-export default function uxuidesign() {
+export default function mobileapp() {
     return (
         <section>
-            <Breadcrumbs title={"UX UI Design"} />
+            <Breadcrumbs title={"Mobile Apps Development"} />
             <div className="container mx-auto px-2 lg:mt-28 md:mt-20 mt-16">
                 <Image
                     alt="contact picture"
@@ -17,7 +17,7 @@ export default function uxuidesign() {
                 />
                 <div className="mt-10 text-white pb-20">
                     <h2 className=" text-4xl text-primary font-semibold mb-5 flex justify-center items-center gap-x-3">
-                        <PiWebhooksLogo /> UX UI Design
+                        <PiWebhooksLogo /> Mobile Apps Development
                     </h2>
                     <p className=" font-light">
                         Flaidex is a top web architecture and web advancement

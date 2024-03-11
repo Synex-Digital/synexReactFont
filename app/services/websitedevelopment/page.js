@@ -9,7 +9,7 @@ export default function websitedevelopment() {
     return (
         <section>
             <Breadcrumbs title={"Web Development"} />
-            <div className="container mx-auto px-2 mt-28">
+            <div className="container mx-auto px-2 lg:mt-28 md:mt-20 mt-16">
                 <Image
                     alt="contact picture"
                     src={webimg}
