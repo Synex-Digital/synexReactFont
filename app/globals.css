@@ -246,7 +246,7 @@ nav .dropdown li:hover {
 #serviseslink::after {
     width: 0px;
     height: 40px;
-    background: #c2e812;
+    background: #f2f4e8;
     top: -6px;
     right: -22px;
     content: "";
@@ -257,7 +257,7 @@ nav .dropdown li:hover {
     transition: 0.7s;
 }
 #serviseslinkdiv:hover #serviseslink::after {
-    background: #c2e812;
+    background: #f2f4e8;
     width: 150%;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;

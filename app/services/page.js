@@ -38,9 +38,9 @@ export default function Services() {
                     You can see many service of us which we have done with our
                     previous clients.
                 </p>
-                <div className="mb-20 mt-10 flex flex-wrap gap-5 justify-center">
+                <div className="mb-20 mt-10 flex flex-wrap max-sm:flex-col gap-5 justify-center">
                     <div
-                        className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#c0dbe2] w-[32%] text-black"
+                        className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#c0dbe2] xl:w-[32%] sm:w-[48%] text-black"
                         id="serviseslinkdiv"
                     >
                         <Image
@@ -72,7 +72,7 @@ export default function Services() {
                         </div>
                     </div>
                     <div
-                        className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#e0bb7b] w-[32%] text-black"
+                        className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#e0bb7b] xl:w-[32%] sm:w-[48%] text-black"
                         id="serviseslinkdiv"
                     >
                         <Image
@@ -104,7 +104,7 @@ export default function Services() {
                         </div>
                     </div>
                     <div
-                        className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#adc7a5] w-[32%] text-black"
+                        className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#adc7a5] xl:w-[32%] sm:w-[48%] text-black"
                         id="serviseslinkdiv"
                     >
                         <Image
@@ -136,7 +136,7 @@ export default function Services() {
                         </div>
                     </div>
                     <div
-                        className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#e0bb7b] w-[32%] text-black"
+                        className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#e0bb7b] xl:w-[32%] sm:w-[48%] text-black"
                         id="serviseslinkdiv"
                     >
                         <Image
@@ -168,7 +168,7 @@ export default function Services() {
                         </div>
                     </div>
                     <div
-                        className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#adc7a5] w-[32%] text-black"
+                        className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#adc7a5] xl:w-[32%] sm:w-[48%] text-black"
                         id="serviseslinkdiv"
                     >
                         <Image
