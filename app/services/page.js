@@ -1,3 +1,7 @@
 export default function Services() {
-    return <section className="text-white">dgdfg</section>;
+    return (
+        <section>
+            <div className="container mx-auto px-2"></div>
+        </section>
+    );
 }

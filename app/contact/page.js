@@ -1,19 +1,40 @@
+"use client";
 import Image from "next/image";
 import bgcontact from "@/public/assets/bgcontact.svg";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+import { useState } from "react";
+import Link from "next/link";
 
 export default function Contact() {
+    let [state, setState] = useState("");
+
+    let hendleChange = (e) => {
+        setState(e);
+    };
     return (
-        <section className="">
+        <section>
             <div className="relative">
                 <Image
                     alt="contact picture"
                     src={bgcontact}
-                    className="w-full h-[300px] object-cover bg-[#1d2934] shadow-2xl"
+                    className="w-full h-[300px] object-cover bg-[#1d2934]"
                 />
                 <div className="absolute top-1/2 right-1/2">
-                    <h2 className="text-white text-5xl translate-x-1/2 font-semibold">
+                    <h2 className="text-white lg:text-5xl md:text-4xl sm:text-3xl text-xl translate-x-1/2 -translate-y-14 font-semibold">
                         Get in touch
                     </h2>
+                    <p className="text-white text-center translate-x-1/2 md:text-lg font-light">
+                        <span>
+                            <Link
+                                href={"/"}
+                                className="hover:underline hover:text-primary"
+                            >
+                                Home
+                            </Link>
+                        </span>{" "}
+                        / <span>Contact</span>
+                    </p>
                 </div>
             </div>
             <div className="container mx-auto px-40 mt-28 pb-20">
@@ -37,10 +58,10 @@ export default function Contact() {
                 <div className="flex justify-between text-white mt-8">
                     <div className="w-[49%]">
                         <p className="text-xl font-medium mb-3">Your Number</p>
-                        <input
-                            type="number"
-                            className="w-full bg-transparent border border-primary p-5"
-                            placeholder="+1 1 . . . ."
+                        <PhoneInput
+                            country={"bd"}
+                            value={state}
+                            onChange={hendleChange}
                         />
                     </div>
                     <div className="w-[49%]">

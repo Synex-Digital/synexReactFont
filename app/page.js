@@ -3,21 +3,20 @@ import Link from "next/link";
 import Reacttilt from "./components/Reacttilt";
 import recordimg from "@/public/assets/thumbBody.jpg";
 import blogimg from "@/public/assets/blogimg.webp";
-import anisvg from "@/public/assets/animation.svg";
 import webicon from "@/public/assets/webicon.png";
 import SimpleHook from "./components/SimpleHook";
 import ReactSlick from "./components/ReactSlick";
 import AosAnimation from "./components/AosAnimation";
 import TiltAnimation from "./components/TiltAnimation";
-import { GoArrowRight, GoArrowUpRight } from "react-icons/go";
 import Heading from "./components/Heading";
+import Collaborate from "./components/Collaborate";
 
 export default function Home() {
     return (
         <>
             <main>
                 <section className="pt-10 pb-16">
-                    <div className="container lg:flex mx-auto px-2 lg:py-16 justify-between">
+                    <div className="container lg:flex mx-auto px-2 lg:py-16 justify-between max-lg:flex max-lg:flex-col-reverse">
                         <div className="lg:w-[48%]">
                             <h1 className="xl:text-5xl lg:text-4xl text-3xl text-white font-bold max-lg:text-center leading-snug">
                                 Business IT Solutions:
@@ -57,7 +56,7 @@ export default function Home() {
                                 </Link>
                             </div>
                         </div>
-                        <div className="lg:w-[48%] max-lg:mt-7 flex justify-center">
+                        <div className="lg:w-[48%] max-lg:mt-7 max-lg:mb-7 flex justify-center">
                             <Image
                                 src={recordimg}
                                 alt="Reacording Image"
@@ -368,7 +367,6 @@ export default function Home() {
                                     color={"#00d7ff"}
                                     bgcolor={
                                         "linear-gradient(80deg, rgba(3,91,125,1) 0%, rgba(0,133,80,1) 100%)"
-                                        // "linear-gradient(90deg, rgba(215,0,0,0.5) 0%, rgba(173,0,149,1) 100%)"
                                     }
                                 >
                                     <div className="p-1 absolute z-20 ">
@@ -400,7 +398,6 @@ export default function Home() {
                                     color={"#00d7ff"}
                                     bgcolor={
                                         "linear-gradient(80deg, rgba(3,91,125,1) 0%, rgba(0,133,80,1) 100%)"
-                                        // "linear-gradient(147deg, rgba(0,11,215,1) 0%, rgba(0,134,255,0.8071603641456583) 100%)"
                                     }
                                 >
                                     <div className="p-1 absolute z-20 ">
@@ -432,7 +429,6 @@ export default function Home() {
                                     color={"#00d7ff"}
                                     bgcolor={
                                         "linear-gradient(80deg, rgba(3,91,125,1) 0%, rgba(0,133,80,1) 100%)"
-                                        // "linear-gradient(258deg, rgba(215,0,0,1) 0%, rgba(255,124,0,0.6) 100%)"
                                     }
                                 >
                                     <div className="p-1 absolute z-20 ">
@@ -486,7 +482,7 @@ export default function Home() {
                         <ReactSlick className="w-full h-full !flex !justify-center !items-end">
                             <div className="p-5 cursor-grab ">
                                 <Reacttilt className="w-full h-full flex">
-                                    <div className="rounded-xl p-7 text-white bg-[#adc7a5]">
+                                    <div className="rounded-xl p-7 text-black bg-[#adc7a5]">
                                         <div className="flex gap-5 items-center">
                                             <Image
                                                 width={40}
@@ -514,7 +510,7 @@ export default function Home() {
                             </div>
                             <div className="p-5 cursor-grab">
                                 <Reacttilt className="w-full h-full flex">
-                                    <div className="rounded-xl p-7 text-white bg-[#e0bb7b]">
+                                    <div className="rounded-xl p-7 text-black bg-[#e0bb7b]">
                                         <div className="flex gap-5 items-center">
                                             <Image
                                                 width={40}
@@ -542,7 +538,35 @@ export default function Home() {
                             </div>
                             <div className="p-5 cursor-grab">
                                 <Reacttilt className="w-full h-full flex">
-                                    <div className="rounded-xl p-7 text-white bg-transparent border-primary border">
+                                    <div className="rounded-xl p-7 text-black bg-[#89afb4]">
+                                        <div className="flex gap-5 items-center">
+                                            <Image
+                                                width={40}
+                                                alt="Web Image"
+                                                priority
+                                                placeholder="blur"
+                                                quality={80}
+                                                src={webicon}
+                                            />
+                                            <div>
+                                                <p className="font-medium text-lg">
+                                                    ABM Shawon Islam
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h3 className="text-justify mt-5 ">
+                                            Synex Digital develops dynamic
+                                            websites with React on the front end
+                                            and PHP-Laravel on the back end.
+                                            Strengthen your digital identity
+                                            with our creative web...
+                                        </h3>
+                                    </div>
+                                </Reacttilt>
+                            </div>
+                            <div className="p-5 cursor-grab ">
+                                <Reacttilt className="w-full h-full flex">
+                                    <div className="rounded-xl p-7 text-black bg-[#adc7a5]">
                                         <div className="flex gap-5 items-center">
                                             <Image
                                                 width={40}
@@ -570,7 +594,7 @@ export default function Home() {
                             </div>
                             <div className="p-5 cursor-grab">
                                 <Reacttilt className="w-full h-full flex">
-                                    <div className="rounded-xl p-7 text-white bg-transparent border-primary border">
+                                    <div className="rounded-xl p-7 text-black bg-[#e0bb7b]">
                                         <div className="flex gap-5 items-center">
                                             <Image
                                                 width={40}
@@ -598,35 +622,7 @@ export default function Home() {
                             </div>
                             <div className="p-5 cursor-grab">
                                 <Reacttilt className="w-full h-full flex">
-                                    <div className="rounded-xl p-7 text-white bg-transparent border-primary border">
-                                        <div className="flex gap-5 items-center">
-                                            <Image
-                                                width={40}
-                                                alt="Web Image"
-                                                priority
-                                                placeholder="blur"
-                                                quality={80}
-                                                src={webicon}
-                                            />
-                                            <div>
-                                                <p className="font-medium text-lg">
-                                                    ABM Shawon Islam
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <h3 className="text-justify mt-5 ">
-                                            Synex Digital develops dynamic
-                                            websites with React on the front end
-                                            and PHP-Laravel on the back end.
-                                            Strengthen your digital identity
-                                            with our creative web...
-                                        </h3>
-                                    </div>
-                                </Reacttilt>
-                            </div>
-                            <div className="p-5 cursor-grab">
-                                <Reacttilt className="w-full h-full flex">
-                                    <div className="rounded-xl p-7 text-white bg-transparent border-primary border">
+                                    <div className="rounded-xl p-7 text-black bg-[#89afb4]">
                                         <div className="flex gap-5 items-center">
                                             <Image
                                                 width={40}
@@ -658,42 +654,29 @@ export default function Home() {
 
                 <section className="py-20">
                     <div className="container mx-auto px-2">
-                        <div className="mx-auto flex flex-col justify-center items-center">
-                            <h4 className="text-primary text-3xl font-semibold text-center z-50 ">
-                                Our Blog
-                            </h4>
-                            <AosAnimation
-                                aosvalue={"fade-up"}
-                                className="relative"
-                            >
-                                <div className="bg-transparent"></div>
-                                <div className="blob -translate-x-[50%]">
-                                    <Image
-                                        src={anisvg}
-                                        alt="Reacording Image"
-                                        priority
-                                        quality={80}
-                                    />
-                                </div>
-                            </AosAnimation>
-                            <h4 className="font-medium text-2xl text-center text-white z-50 mt-5">
-                                Latest Blog and Articles
-                            </h4>
-                        </div>
-                        <div className="flex justify-between pt-16 ">
+                        <Heading
+                            title={"Our Blog"}
+                            subtitle={"Latest Blog and Articles"}
+                        />
+                        <div className="lg:flex justify-between">
                             <AosAnimation
                                 aosvalue={"zoom-in-up"}
-                                className="w-[49.5%]"
+                                className="lg:w-[49.5%]"
                             >
-                                <div className=" p-3 pb-5  cursor-pointer shadow-xl shadow-[#03010588] hover:shadow-[#030105e2] ease-out duration-300 hover:-translate-y-1 hover:-translate-x-1 bg-[#4cc39430] h-full">
-                                    <Image
-                                        src={blogimg}
-                                        alt="Reacording Image"
-                                        priority
-                                        placeholder="blur"
-                                        quality={80}
-                                        className="rounded-xl"
-                                    />
+                                <div
+                                    className=" p-3 pb-5  cursor-pointer bg-[#4cc39430] h-full"
+                                    id="hover_img"
+                                >
+                                    <figure>
+                                        <Image
+                                            src={blogimg}
+                                            alt="Reacording Image"
+                                            priority
+                                            placeholder="blur"
+                                            quality={80}
+                                        />
+                                    </figure>
+
                                     <div className="text-white">
                                         <p className="bg-primary px-3 py-1 rounded-full text-sm inline-block mt-5 text-black">
                                             Development
@@ -706,7 +689,7 @@ export default function Home() {
                                             Engines: Advanced SEO Strategies and
                                             Best Practices
                                         </h5>
-                                        <p className="font-light mt-3">
+                                        <p className="font-light mt-3 max-md:hidden">
                                             Explore advanced SEO strategies
                                             tailored for Laravel development to
                                             enhance website visibility and
@@ -719,45 +702,24 @@ export default function Home() {
                                     </div>
                                 </div>
                             </AosAnimation>
-                            <div className="w-[49.5%] flex flex-wrap gap-y-4 justify-between">
+                            <div className="lg:w-[49.5%] flex flex-wrap gap-y-4 justify-between max-lg:mt-5">
                                 <AosAnimation
                                     aosvalue={"zoom-in-up"}
-                                    className="w-[49%]"
+                                    className="sm:w-[49%]"
                                 >
-                                    <div className=" p-3 pb-5  cursor-pointer shadow-xl shadow-[#03010588] hover:shadow-[#030105e2] ease-in-out duration-300 hover:-translate-y-1 hover:-translate-x-1 bg-[#4cc39430] h-fit">
-                                        <Image
-                                            src={blogimg}
-                                            alt="Reacording Image"
-                                            priority
-                                            placeholder="blur"
-                                            quality={80}
-                                            className="rounded-xl"
-                                        />
-                                        <div className="text-white">
-                                            <time className="block my-3 text-sm text-gray-400">
-                                                15 Nov 2023
-                                            </time>
-                                            <h5 className=" font-medium">
-                                                Optimizing Laravel for Search
-                                                Engines: Advanced SEO Strategies
-                                                and Best Practices
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </AosAnimation>
-                                <AosAnimation
-                                    aosvalue={"zoom-in-up"}
-                                    className="w-[49%]"
-                                >
-                                    <div className=" p-3 pb-5 cursor-pointer shadow-xl shadow-[#03010588] hover:shadow-[#030105e2] ease-in-out duration-300 hover:-translate-y-1 hover:-translate-x-1 bg-[#4cc39430] h-fit">
-                                        <Image
-                                            src={blogimg}
-                                            alt="Reacording Image"
-                                            priority
-                                            placeholder="blur"
-                                            quality={80}
-                                            className="rounded-xl"
-                                        />
+                                    <div
+                                        className=" p-3 pb-5 cursor-pointer  bg-[#4cc39430] h-fit"
+                                        id="hover_img"
+                                    >
+                                        <figure>
+                                            <Image
+                                                src={blogimg}
+                                                alt="Reacording Image"
+                                                priority
+                                                placeholder="blur"
+                                                quality={80}
+                                            />
+                                        </figure>
                                         <div className="text-white">
                                             <time className="block my-3 text-sm text-gray-400">
                                                 15 Nov 2023
@@ -772,22 +734,26 @@ export default function Home() {
                                 </AosAnimation>
                                 <AosAnimation
                                     aosvalue={"zoom-in-up"}
-                                    className="w-[49%]"
+                                    className="sm:w-[49%]"
                                 >
-                                    <div className=" p-3 pb-5 cursor-pointer shadow-xl shadow-[#03010588] hover:shadow-[#030105e2] ease-in-out duration-300 hover:-translate-y-1 hover:-translate-x-1 bg-[#4cc39430] h-fit">
-                                        <Image
-                                            src={blogimg}
-                                            alt="Reacording Image"
-                                            priority
-                                            placeholder="blur"
-                                            quality={80}
-                                            className="rounded-xl"
-                                        />
+                                    <div
+                                        className=" p-3 pb-5 cursor-pointer  bg-[#4cc39430] h-fit"
+                                        id="hover_img"
+                                    >
+                                        <figure>
+                                            <Image
+                                                src={blogimg}
+                                                alt="Reacording Image"
+                                                priority
+                                                placeholder="blur"
+                                                quality={80}
+                                            />
+                                        </figure>
                                         <div className="text-white">
                                             <time className="block my-3 text-sm text-gray-400">
                                                 15 Nov 2023
                                             </time>
-                                            <h5 className="font-medium  ">
+                                            <h5 className="font-medium ">
                                                 Optimizing Laravel for Search
                                                 Engines: Advanced SEO Strategies
                                                 and Best Practices
@@ -797,17 +763,50 @@ export default function Home() {
                                 </AosAnimation>
                                 <AosAnimation
                                     aosvalue={"zoom-in-up"}
-                                    className="w-[49%]"
+                                    className="sm:w-[49%]"
                                 >
-                                    <div className=" p-3 pb-5 cursor-pointer shadow-xl shadow-[#03010588] hover:shadow-[#030105e2] ease-in-out duration-300 hover:-translate-y-1 hover:-translate-x-1 bg-[#005B4C] h-fit">
-                                        <Image
-                                            src={blogimg}
-                                            alt="Reacording Image"
-                                            priority
-                                            placeholder="blur"
-                                            quality={80}
-                                            className="rounded-xl"
-                                        />
+                                    <div
+                                        className=" p-3 pb-5 cursor-pointer  bg-[#4cc39430] h-fit"
+                                        id="hover_img"
+                                    >
+                                        <figure>
+                                            <Image
+                                                src={blogimg}
+                                                alt="Reacording Image"
+                                                priority
+                                                placeholder="blur"
+                                                quality={80}
+                                            />
+                                        </figure>
+                                        <div className="text-white">
+                                            <time className="block my-3 text-sm text-gray-400">
+                                                15 Nov 2023
+                                            </time>
+                                            <h5 className="font-medium ">
+                                                Optimizing Laravel for Search
+                                                Engines: Advanced SEO Strategies
+                                                and Best Practices
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </AosAnimation>
+                                <AosAnimation
+                                    aosvalue={"zoom-in-up"}
+                                    className="sm:w-[49%]"
+                                >
+                                    <div
+                                        className=" p-3 pb-5 cursor-pointer  bg-[#4cc39430] h-fit"
+                                        id="hover_img"
+                                    >
+                                        <figure>
+                                            <Image
+                                                src={blogimg}
+                                                alt="Reacording Image"
+                                                priority
+                                                placeholder="blur"
+                                                quality={80}
+                                            />
+                                        </figure>
                                         <div className="text-white">
                                             <time className="block my-3 text-sm text-gray-400">
                                                 15 Nov 2023
@@ -833,40 +832,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section className="py-20 bg-[#1d2934]">
-                    <div className="container mx-auto px-2">
-                        <div className="text-white text-center">
-                            <h6 className="text-3xl font-semibold">
-                                Ready to Collaborate with us?
-                            </h6>
-                            <p className="font-light mt-5">
-                                Let's unite and craft something truly
-                                remarkable. We're excited to collaborate and
-                                bring visionary ideas to life.
-                            </p>
-                        </div>
-                        <div className="flex gap-x-5 justify-center mt-10">
-                            <Link
-                                href={"/contact"}
-                                className="px-7 py-3 border border-primary text-white hover:shadow hover:shadow-primary transition duration-300 ease-in-out flex items-center gap-x-3"
-                            >
-                                Contact Us
-                                <span>
-                                    <GoArrowRight className="text-2xl" />
-                                </span>
-                            </Link>
-                            <Link
-                                className="px-7 py-3 border border-primary bg-primary text-black hover:shadow hover:shadow-primary transition duration-300 ease-in-out flex items-center gap-x-3"
-                                href={"#"}
-                            >
-                                Schedule Meeting
-                                <span>
-                                    <GoArrowUpRight className="text-2xl" />
-                                </span>
-                            </Link>
-                        </div>
-                    </div>
-                </section>
+                <Collaborate />
             </main>
         </>
     );
