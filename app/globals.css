@@ -116,27 +116,6 @@ nav .dropdown li:hover {
     text-decoration: underline #c2e812;
 }
 
-.swiper {
-    width: 100%;
-    height: 500px;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .blob {
     opacity: 0.6;
     top: -80px;
@@ -239,4 +218,5 @@ nav .dropdown li:hover {
 .flag-dropdown {
     background-color: #c2e812 !important;
     color: black !important;
+    border: 1px solid #c2e812 !important;
 }

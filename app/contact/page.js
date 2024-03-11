@@ -18,7 +18,7 @@ export default function Contact() {
                 <Image
                     alt="contact picture"
                     src={bgcontact}
-                    className="w-full h-[300px] object-cover bg-[#1d2934]"
+                    className="w-full h-[350px] object-cover "
                 />
                 <div className="absolute top-1/2 right-1/2">
                     <h2 className="text-white lg:text-5xl md:text-4xl sm:text-3xl text-xl translate-x-1/2 -translate-y-14 font-semibold">
@@ -37,7 +37,7 @@ export default function Contact() {
                     </p>
                 </div>
             </div>
-            <div className="container mx-auto px-40 mt-28 pb-20">
+            <div className="container mx-auto px-40 py-20">
                 <div className="flex justify-between text-white">
                     <div className="w-[49%]">
                         <p className="text-xl font-medium mb-3">Your Name</p>

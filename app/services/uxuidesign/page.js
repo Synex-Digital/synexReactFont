@@ -9,7 +9,7 @@ export default function uxuidesign() {
     return (
         <section>
             <Breadcrumbs title={"UX UI Design"} />
-            <div className="container mx-auto px-2 lg:mt-28 md:mt-20 mt-16">
+            <div className="container mx-auto px-2">
                 <Image
                     alt="contact picture"
                     src={webimg}
