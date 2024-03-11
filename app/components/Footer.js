@@ -15,16 +15,18 @@ import Link from "next/link";
 const Footer = () => {
     return (
         <footer id="footerbg" className="pt-20">
-            <div className="container mx-auto px-2 pb-16 flex justify-between">
-                <div className="w-[30%]">
-                    <Image
-                        priority={true}
-                        alt="synex logo"
-                        width={140}
-                        className="cursor-pointer"
-                        src={logo}
-                    />
-                    <p className="text-white font-light mt-5">
+            <div className="container mx-auto px-2 pb-16 lg:flex justify-between max-lg:text-center">
+                <div className="lg:w-[30%] max-lg:mt-5 ">
+                    <div className="flex justify-center max-lg:mb-7">
+                        <Image
+                            priority={true}
+                            alt="synex logo"
+                            width={140}
+                            className="cursor-pointer"
+                            src={logo}
+                        />
+                    </div>
+                    <p className="text-white font-light lg:mt-5 mt-3">
                         Embark on a transformative journey with Synex Digital.
                         Experience the power of Business IT Solutions that
                         redefine service businesses. Activate now and let's
@@ -35,17 +37,17 @@ const Footer = () => {
                     <p className="text-white text-sm font-medium mt-7">
                         Follow Synex Digital
                     </p>
-                    <div className="text-2xl flex gap-x-3 mt-3">
+                    <div className="text-2xl flex gap-x-3 max-lg:justify-center mt-3">
                         <FaLinkedinIn className="text-white hover:bg-[#151e26] hover:text-gray-300 cursor-pointer bg-[#1d2934] p-2 w-9 h-9 rounded shadow-xl" />
                         <BsTwitterX className="text-white hover:bg-[#151e26] hover:text-gray-300 cursor-pointer bg-[#1d2934] p-2 w-9 h-9 rounded shadow-xl" />
                         <FaFacebookF className="text-white hover:bg-[#151e26] hover:text-gray-300 cursor-pointer bg-[#1d2934] p-2 w-9 h-9 rounded shadow-xl" />
                         <FaInstagram className="text-white hover:bg-[#151e26] hover:text-gray-300 cursor-pointer bg-[#1d2934] p-2 w-9 h-9 rounded shadow-xl" />
                     </div>
                 </div>
-                <div className="w-[20%] ">
+                <div className="lg:w-[20%] max-lg:mt-5">
                     <strong className="text-white text-xl">Services</strong>
                     <ul>
-                        <li className=" mt-7">
+                        <li className=" lg:mt-7 mt-3">
                             <Link
                                 href={"#"}
                                 className="text-white font-light hover:underline hover:decoration-primary cursor-pointer"
@@ -88,12 +90,12 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="w-[15%]">
+                <div className="lg:w-[15%] max-lg:mt-5">
                     <strong className="text-white text-xl">
                         Important Link
                     </strong>
                     <ul>
-                        <li className="mt-7 mb-3">
+                        <li className="lg:mt-7 mt-3 mb-3">
                             <Link
                                 href={"#"}
                                 className="text-white  font-light hover:underline hover:decoration-primary cursor-pointer"
@@ -119,24 +121,24 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="w-[25%]">
+                <div className="lg:w-[25%] max-lg:mt-5">
                     <strong className="text-white text-xl">Join Us</strong>
-                    <p className="text-white font-light mb-5 mt-1">
+                    <p className="text-white font-light mb-5 lg:mt-7 mt-3">
                         Catch the Latest Updates, Insights, and Exclusive
                         Offers.
                     </p>
-                    <div className="flex items-center">
+                    <div className="flex items-center max-lg:justify-center">
                         <input
                             placeholder="Your email address"
                             className="border border-primary bg-transparent p-2 text-white"
                         />
                         <span>
-                            <FaTelegramPlane className="text-white text-xl p-2 w-[42px] h-[42px] bg-primary rounded-r cursor-pointer" />
+                            <FaTelegramPlane className="text-white text-xl p-2 max-lg:w-[42px] max-lg:h-[42px] xl:w-[42px] xl:h-[42px] lg:w-6 lg:h-[42px] bg-primary rounded-r cursor-pointer" />
                         </span>
                     </div>
                     <ul>
                         <li>
-                            <a className="text-white flex items-center gap-x-3 mt-8 hover:underline hover:decoration-primary cursor-pointer ">
+                            <a className="text-white flex items-center max-lg:justify-center gap-x-3 mt-8 hover:underline hover:decoration-primary cursor-pointer ">
                                 <FaWhatsapp className="text-white text-xl" />
                                 <span className="font-light">
                                     +8801613408101
@@ -144,7 +146,7 @@ const Footer = () => {
                             </a>
                         </li>
                         <li>
-                            <a className="text-white flex items-center gap-x-3 mt-1 hover:underline hover:decoration-primary cursor-pointer">
+                            <a className="text-white flex items-center max-lg:justify-center gap-x-3 mt-1 hover:underline hover:decoration-primary cursor-pointer">
                                 <FiMail className="text-white text-xl" />
                                 <span className="font-light">
                                     office@synexdigital.com
