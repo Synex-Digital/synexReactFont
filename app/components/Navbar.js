@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import logo from "@/public/assets/Logo.svg";
 import Link from "next/link";
 import { HiMiniBars3CenterLeft } from "react-icons/hi2";
-import { MdOutlineClose } from "react-icons/md";
+import { MdOutlineClose, MdArrowDropDown } from "react-icons/md";
 
 const Navbar = () => {
     let [isactive, setIsActive] = useState(true);
@@ -33,13 +33,38 @@ const Navbar = () => {
                                     Home<span></span>
                                 </Link>
                             </li>
-                            <li>
+                            <li id="dropdowndiv">
                                 <Link
                                     href={"/services"}
-                                    className="narhoverAni"
+                                    className="hover:text-primary flex items-center gap-x-1"
                                 >
-                                    Services<span></span>
+                                    Services
+                                    <span></span>
+                                    <MdArrowDropDown id="serviceicon" className="text-2xl"/>
                                 </Link>
+                                <ul className="dropdown">
+                                    <li>
+                                        <Link href={"/services"}>
+                                            Website Development
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href={"#"}>
+                                            Digital Marketing
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href={"#"}>
+                                            Mobile App Development
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href={"#"}>UI/UX Design</Link>
+                                    </li>
+                                    <li>
+                                        <Link href={"#"}>Graphics Design</Link>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <Link href={"/project"} className="narhoverAni">

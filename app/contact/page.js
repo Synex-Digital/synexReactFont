@@ -1,7 +1,16 @@
+"use client";
 import Image from "next/image";
 import bgcontact from "@/public/assets/bgcontact.svg";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+import { useState } from "react";
 
 export default function Contact() {
+    let [state, setState] = useState("");
+
+    let hendleChange = (e) => {
+        setState(e);
+    };
     return (
         <section className="">
             <div className="relative">
@@ -37,10 +46,10 @@ export default function Contact() {
                 <div className="flex justify-between text-white mt-8">
                     <div className="w-[49%]">
                         <p className="text-xl font-medium mb-3">Your Number</p>
-                        <input
-                            type="number"
-                            className="w-full bg-transparent border border-primary p-5"
-                            placeholder="+1 1 . . . ."
+                        <PhoneInput
+                            country={"bd"}
+                            value={state}
+                            onChange={hendleChange}
                         />
                     </div>
                     <div className="w-[49%]">
