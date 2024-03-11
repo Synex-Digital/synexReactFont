@@ -836,7 +836,7 @@ export default function Home() {
                 <section className="py-20 bg-[#1d2934]">
                     <div className="container mx-auto px-2">
                         <div className="text-white text-center">
-                            <h6 className="text-3xl font-semibold">
+                            <h6 className="lg:text-3xl text-2xl font-semibold">
                                 Ready to Collaborate with us?
                             </h6>
                             <p className="font-light mt-5">
@@ -845,10 +845,10 @@ export default function Home() {
                                 bring visionary ideas to life.
                             </p>
                         </div>
-                        <div className="flex gap-x-5 justify-center mt-10">
+                        <div className="sm:flex gap-x-5 justify-center mt-10">
                             <Link
                                 href={"/contact"}
-                                className="px-7 py-3 border border-primary text-white hover:shadow hover:shadow-primary transition duration-300 ease-in-out flex items-center gap-x-3"
+                                className="px-7 py-3 border border-primary text-white hover:shadow hover:shadow-primary transition duration-300 ease-in-out flex items-center gap-x-3  max-sm:w-fit max-sm:mx-auto"
                             >
                                 Contact Us
                                 <span>
@@ -856,7 +856,7 @@ export default function Home() {
                                 </span>
                             </Link>
                             <Link
-                                className="px-7 py-3 border border-primary bg-primary text-black hover:shadow hover:shadow-primary transition duration-300 ease-in-out flex items-center gap-x-3"
+                                className="px-7 py-3 border border-primary bg-primary text-black hover:shadow hover:shadow-primary transition duration-300 ease-in-out flex items-center gap-x-3  max-sm:w-fit max-sm:mx-auto max-sm:mt-5"
                                 href={"#"}
                             >
                                 Schedule Meeting
