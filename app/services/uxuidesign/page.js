@@ -15,8 +15,8 @@ export default function uxuidesign() {
                     src={webimg}
                     className="w-full h-[400px] object-cover"
                 />
-                <div className="mt-10 text-white pb-20">
-                    <h2 className=" text-4xl text-primary font-semibold mb-5 flex justify-center items-center gap-x-3">
+                <div className="mt-10 text-white pb-20 max-sm:text-center">
+                    <h2 className=" text-center font-semibold text-primary lg:text-5xl md:text-4xl text-3xl flex justify-center items-center gap-x-3 mb-5">
                         <PiWebhooksLogo /> UX UI Design
                     </h2>
                     <p className=" font-light">
