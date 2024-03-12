@@ -8,7 +8,7 @@ import Breadcrumbs from "@/app/components/Breadcrumbs";
 export default function digitalmarketing() {
     return (
         <section>
-            <Breadcrumbs title={"Digital Marketing"} />
+            <Breadcrumbs title={"Digital Marketing"} stateoff={true} />
             <div className="container mx-auto px-2">
                 <Image
                     alt="contact picture"

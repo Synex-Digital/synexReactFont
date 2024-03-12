@@ -8,7 +8,7 @@ import Breadcrumbs from "@/app/components/Breadcrumbs";
 export default function graphicsdesign() {
     return (
         <section>
-            <Breadcrumbs title={"Graphics Design"} />
+            <Breadcrumbs title={"Graphics Design"} stateoff={true} />
             <div className="container mx-auto px-2">
                 <Image
                     alt="contact picture"

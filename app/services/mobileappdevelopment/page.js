@@ -8,7 +8,7 @@ import Breadcrumbs from "@/app/components/Breadcrumbs";
 export default function mobileapp() {
     return (
         <section>
-            <Breadcrumbs title={"Mobile Apps Development"} />
+            <Breadcrumbs title={"Mobile Apps Development"} stateoff={true}/>
             <div className="container mx-auto px-2">
                 <Image
                     alt="contact picture"

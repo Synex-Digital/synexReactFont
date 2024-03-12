@@ -5,6 +5,7 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { useState } from "react";
 import Link from "next/link";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 export default function Contact() {
     let [state, setState] = useState("");
@@ -14,29 +15,8 @@ export default function Contact() {
     };
     return (
         <section>
-            <div className="relative">
-                <Image
-                    alt="contact picture"
-                    src={bgcontact}
-                    className="w-full h-[350px] object-cover "
-                />
-                <div className="absolute top-1/2 right-1/2">
-                    <h2 className="text-white lg:text-5xl md:text-4xl sm:text-3xl text-xl translate-x-1/2 -translate-y-14 font-semibold">
-                        Get in touch
-                    </h2>
-                    <p className="text-white text-center translate-x-1/2 md:text-lg font-light">
-                        <span>
-                            <Link
-                                href={"/"}
-                                className="hover:underline hover:text-primary"
-                            >
-                                Home
-                            </Link>
-                        </span>{" "}
-                        / <span>Contact</span>
-                    </p>
-                </div>
-            </div>
+            <Breadcrumbs title={"Get in touch"} stateoff={false} />
+
             <div className="container mx-auto px-40 py-20">
                 <div className="flex justify-between text-white">
                     <div className="w-[49%]">

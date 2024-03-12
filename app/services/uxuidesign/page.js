@@ -8,7 +8,7 @@ import Breadcrumbs from "@/app/components/Breadcrumbs";
 export default function uxuidesign() {
     return (
         <section>
-            <Breadcrumbs title={"UX UI Design"} />
+            <Breadcrumbs title={"UX UI Design"} stateoff={true}/>
             <div className="container mx-auto px-2">
                 <Image
                     alt="contact picture"
