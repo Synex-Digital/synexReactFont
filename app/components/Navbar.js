@@ -89,7 +89,7 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href={"#"} className="narhoverAni">
+                                <Link href={"/blogs"} className="narhoverAni">
                                     Blog<span></span>
                                 </Link>
                             </li>

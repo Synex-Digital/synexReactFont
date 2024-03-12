@@ -1,10 +1,7 @@
 "use client";
-import Image from "next/image";
-import bgcontact from "@/public/assets/bgcontact.svg";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { useState } from "react";
-import Link from "next/link";
 import Breadcrumbs from "../components/Breadcrumbs";
 
 export default function Contact() {

@@ -9,7 +9,7 @@ const Breadcrumbs = ({ title, stateoff }) => {
             <Image
                 alt="contact picture"
                 src={bgcontact}
-                className="w-full h-[350px] "
+                className="w-full h-auto object-cover"
             />
 
             <div className="absolute top-1/2 right-1/2 -translate-y-1/2 w-full">

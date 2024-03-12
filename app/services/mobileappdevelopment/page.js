@@ -8,7 +8,7 @@ export default function mobileapp() {
     return (
         <section>
             <Breadcrumbs title={"Mobile App Development"} stateoff={true}/>
-            <div className="container mx-auto px-2">
+            <div className="container mx-auto px-2 mt-16">
                 <Image
                     alt="contact picture"
                     src={webimg}
