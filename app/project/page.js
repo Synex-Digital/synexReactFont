@@ -18,19 +18,19 @@ export default function Project() {
                     You can see many project of us which we have done with our
                     previous clients.
                 </p>
-                <div className="mt-16 flex flex-wrap gap-5 mb-20">
-                    <div className="group w-[32%] overflow-hidden relative ">
+                <div className="mt-16 flex flex-wrap xl:gap-5 gap-4 justify-center mb-20">
+                    <div className="group lg:w-[32%] sm:w-[48%] w-full overflow-hidden relative ">
                         <Image alt="contact picture" src={webimg} />
                         <div
                             id="small1overlay"
                             className=" group-hover:bottom-0 w-full h-full  absolute -bottom-[65%] left-0 flex items-end "
                         >
-                            <div className="text w-full h-1/2 p-7 self-start ">
-                                <h3 className="text-2xl font-semibold">
+                            <div className="text w-full h-1/2 xl:p-7 p-3 self-start ">
+                                <h3 className="xl:text-2xl md:text-xl text-lg font-semibold">
                                     Nugor Tech - Company portfolio
                                 </h3>
                                 <Link
-                                    className="text-primary text-lg mt-4 flex items-center gap-x-2"
+                                    className="text-primary text-lg xl:mt-4 mt-2 flex items-center gap-x-2"
                                     href="/project/1"
                                 >
                                     Explore <GoArrowRight className="text-xl" />
@@ -46,19 +46,19 @@ export default function Project() {
                             </div>
                         </div>
                     </div>
-                    <div className="group w-[32%] overflow-hidden relative ">
+                    <div className="group lg:w-[32%] sm:w-[48%] w-full overflow-hidden relative ">
                         <Image alt="contact picture" src={webimg} />
                         <div
                             id="small1overlay"
                             className=" group-hover:bottom-0 w-full h-full  absolute -bottom-[65%] left-0 flex items-end "
                         >
-                            <div className="text w-full h-1/2 p-7 self-start ">
-                                <h3 className="text-2xl font-semibold">
+                            <div className="text w-full h-1/2 xl:p-7 p-3 self-start ">
+                                <h3 className="xl:text-2xl md:text-xl text-lg font-semibold">
                                     Nugor Tech - Company portfolio
                                 </h3>
                                 <Link
-                                    className="text-primary text-lg mt-4 flex items-center gap-x-2"
-                                    href="#"
+                                    className="text-primary text-lg xl:mt-4 mt-2 flex items-center gap-x-2"
+                                    href="/project/1"
                                 >
                                     Explore <GoArrowRight className="text-xl" />
                                 </Link>
@@ -73,19 +73,19 @@ export default function Project() {
                             </div>
                         </div>
                     </div>
-                    <div className="group w-[32%] overflow-hidden relative ">
+                    <div className="group lg:w-[32%] sm:w-[48%] w-full overflow-hidden relative ">
                         <Image alt="contact picture" src={webimg} />
                         <div
                             id="small1overlay"
                             className=" group-hover:bottom-0 w-full h-full  absolute -bottom-[65%] left-0 flex items-end "
                         >
-                            <div className="text w-full h-1/2 p-7 self-start ">
-                                <h3 className="text-2xl font-semibold">
+                            <div className="text w-full h-1/2 xl:p-7 p-3 self-start ">
+                                <h3 className="xl:text-2xl md:text-xl text-lg font-semibold">
                                     Nugor Tech - Company portfolio
                                 </h3>
                                 <Link
-                                    className="text-primary text-lg mt-4 flex items-center gap-x-2"
-                                    href="#"
+                                    className="text-primary text-lg xl:mt-4 mt-2 flex items-center gap-x-2"
+                                    href="/project/1"
                                 >
                                     Explore <GoArrowRight className="text-xl" />
                                 </Link>
@@ -100,19 +100,19 @@ export default function Project() {
                             </div>
                         </div>
                     </div>
-                    <div className="group w-[32%] overflow-hidden relative ">
+                    <div className="group lg:w-[32%] sm:w-[48%] w-full overflow-hidden relative ">
                         <Image alt="contact picture" src={webimg} />
                         <div
                             id="small1overlay"
                             className=" group-hover:bottom-0 w-full h-full  absolute -bottom-[65%] left-0 flex items-end "
                         >
-                            <div className="text w-full h-1/2 p-7 self-start ">
-                                <h3 className="text-2xl font-semibold">
+                            <div className="text w-full h-1/2 xl:p-7 p-3 self-start ">
+                                <h3 className="xl:text-2xl md:text-xl text-lg font-semibold">
                                     Nugor Tech - Company portfolio
                                 </h3>
                                 <Link
-                                    className="text-primary text-lg mt-4 flex items-center gap-x-2"
-                                    href="#"
+                                    className="text-primary text-lg xl:mt-4 mt-2 flex items-center gap-x-2"
+                                    href="/project/1"
                                 >
                                     Explore <GoArrowRight className="text-xl" />
                                 </Link>
@@ -127,19 +127,19 @@ export default function Project() {
                             </div>
                         </div>
                     </div>
-                    <div className="group w-[32%] overflow-hidden relative ">
+                    <div className="group lg:w-[32%] sm:w-[48%] w-full overflow-hidden relative ">
                         <Image alt="contact picture" src={webimg} />
                         <div
                             id="small1overlay"
                             className=" group-hover:bottom-0 w-full h-full  absolute -bottom-[65%] left-0 flex items-end "
                         >
-                            <div className="text w-full h-1/2 p-7 self-start ">
-                                <h3 className="text-2xl font-semibold">
+                            <div className="text w-full h-1/2 xl:p-7 p-3 self-start ">
+                                <h3 className="xl:text-2xl md:text-xl text-lg font-semibold">
                                     Nugor Tech - Company portfolio
                                 </h3>
                                 <Link
-                                    className="text-primary text-lg mt-4 flex items-center gap-x-2"
-                                    href="#"
+                                    className="text-primary text-lg xl:mt-4 mt-2 flex items-center gap-x-2"
+                                    href="/project/1"
                                 >
                                     Explore <GoArrowRight className="text-xl" />
                                 </Link>
@@ -154,19 +154,19 @@ export default function Project() {
                             </div>
                         </div>
                     </div>
-                    <div className="group w-[32%] overflow-hidden relative ">
+                    <div className="group lg:w-[32%] sm:w-[48%] w-full overflow-hidden relative ">
                         <Image alt="contact picture" src={webimg} />
                         <div
                             id="small1overlay"
                             className=" group-hover:bottom-0 w-full h-full  absolute -bottom-[65%] left-0 flex items-end "
                         >
-                            <div className="text w-full h-1/2 p-7 self-start ">
-                                <h3 className="text-2xl font-semibold">
+                            <div className="text w-full h-1/2 xl:p-7 p-3 self-start ">
+                                <h3 className="xl:text-2xl md:text-xl text-lg font-semibold">
                                     Nugor Tech - Company portfolio
                                 </h3>
                                 <Link
-                                    className="text-primary text-lg mt-4 flex items-center gap-x-2"
-                                    href="#"
+                                    className="text-primary text-lg xl:mt-4 mt-2 flex items-center gap-x-2"
+                                    href="/project/1"
                                 >
                                     Explore <GoArrowRight className="text-xl" />
                                 </Link>
