@@ -3,6 +3,7 @@ import bgcontact from "@/public/assets/bgcontact.svg";
 import Link from "next/link";
 import Collaborate from "../components/Collaborate";
 import webicon from "@/public/assets/webicon.png";
+import { PiWebhooksLogo } from "react-icons/pi";
 
 export default function Services() {
     return (
@@ -30,11 +31,11 @@ export default function Services() {
                     </p>
                 </div>
             </div>
-            <div className="container mx-auto px-2 py-20 text-white">
-                <h2 className="text-center font-semibold text-primary lg:text-5xl md:text-4xl text-3xl">
-                    Let's see our service
+            <div className="container mx-auto px-2 pb-20 text-white">
+                <h2 className="text-center font-semibold text-primary lg:text-5xl md:text-4xl text-3xl flex justify-center items-center gap-x-3 mt-5">
+                    <PiWebhooksLogo /> Let's see our service
                 </h2>
-                <p className="text-center mt-5 md:text-lg">
+                <p className="text-center mt-5 md:text-lg text-gray-300">
                     You can see many service of us which we have done with our
                     previous clients.
                 </p>

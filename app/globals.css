@@ -262,3 +262,20 @@ nav .dropdown li:hover {
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
 }
+
+#small1overlay {
+    z-index: 10;
+    background: linear-gradient(#1c1e53cd, rgba(28, 30, 83, 0.511));
+    transition: 0.5s;
+}
+
+#small1overlayptag {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#small1overlay:hover #small1overlayptag {
+    visibility: visible;
+    opacity: 1;
+}

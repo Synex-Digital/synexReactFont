@@ -1,5 +1,4 @@
 import Image from "next/image";
-import bgcontact from "@/public/assets/bgcontact.svg";
 import webimg from "@/public/assets/thumbBody.jpg";
 import { PiWebhooksLogo } from "react-icons/pi";
 import Collaborate from "@/app/components/Collaborate";
@@ -8,7 +7,7 @@ import Breadcrumbs from "@/app/components/Breadcrumbs";
 export default function mobileapp() {
     return (
         <section>
-            <Breadcrumbs title={"Mobile Apps Development"} stateoff={true}/>
+            <Breadcrumbs title={"Mobile App Development"} stateoff={true}/>
             <div className="container mx-auto px-2">
                 <Image
                     alt="contact picture"
@@ -17,7 +16,7 @@ export default function mobileapp() {
                 />
                 <div className="mt-10 text-white pb-20">
                     <h2 className=" text-4xl text-primary font-semibold mb-5 flex justify-center items-center gap-x-3">
-                        <PiWebhooksLogo /> Mobile Apps Development
+                        <PiWebhooksLogo /> Mobile App Development
                     </h2>
                     <p className=" font-light">
                         Flaidex is a top web architecture and web advancement
