@@ -2,15 +2,25 @@ import React from "react";
 import Image from "next/image";
 import bgcontact from "@/public/assets/bgcontact.svg";
 import Link from "next/link";
-import { FaReact, FaLaravel, FaNode, FaPhp, FaAws } from "react-icons/fa";
+import {
+    FaReact,
+    FaLaravel,
+    FaNode,
+    FaPhp,
+    FaAws,
+    FaFigma,
+    FaPython,
+    FaVuejs,
+} from "react-icons/fa";
 import {
     SiMysql,
     SiMongodb,
     SiFirebase,
     SiPostgresql,
     SiJavascript,
+    SiFlutter,
 } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandNextjs, TbSeo } from "react-icons/tb";
 
 const Breadcrumbs = ({ title, stateoff }) => {
     return (
@@ -43,11 +53,26 @@ const Breadcrumbs = ({ title, stateoff }) => {
                 <div className="round2 absolute rounded-full text-primary top-[250px] left-[100px] text-4xl">
                     <FaPhp />
                 </div>
-                <div className="round2 absolute rounded-full text-primary top-[150px] left-[100px] text-4xl">
+                <div className="round2 absolute rounded-full text-primary top-[150px] left-[100px] text-3xl">
                     <SiJavascript />
                 </div>
                 <div className="cross1 absolute rounded-full text-primary top-[70px] left-1/2 text-4xl">
                     <TbBrandNextjs />
+                </div>
+                <div className="round2 absolute rounded-full text-primary top-[0px] left-20 text-4xl">
+                    <TbSeo />
+                </div>
+                <div className="round2 absolute rounded-full text-primary top-[20px] left-1/2 text-3xl">
+                    <FaFigma />
+                </div>
+                <div className="round2 absolute rounded-full text-primary top-[40px] left-1/3 text-3xl">
+                    <SiFlutter />
+                </div>
+                <div className="round2 absolute rounded-full text-primary top-[240px] left-3/4 text-4xl">
+                    <FaPython />
+                </div>
+                <div className="round2 absolute rounded-full text-primary top-[40px] left-3/4 text-4xl">
+                    <FaVuejs />
                 </div>
                 <div className="cross2"></div>
             </div>

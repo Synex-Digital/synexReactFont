@@ -275,7 +275,7 @@ nav .dropdown li:hover {
     transition: 0.5s;
 }
 
-#small1overlay:hover #small1overlayptag {
+#small1overlaydiv:hover #small1overlayptag {
     visibility: visible;
     opacity: 1;
 }
