@@ -49,7 +49,7 @@ const Footer = () => {
                     <ul>
                         <li className=" lg:mt-7 mt-3">
                             <Link
-                                href={"#"}
+                                href={"/services/websitedevelopment"}
                                 className="text-white font-light hover:underline hover:decoration-primary cursor-pointer"
                             >
                                 Website Development
@@ -57,7 +57,7 @@ const Footer = () => {
                         </li>
                         <li className="my-3">
                             <Link
-                                href={"#"}
+                                href={"/services/digitalmarketing"}
                                 className="text-white font-light hover:underline hover:decoration-primary cursor-pointer"
                             >
                                 Digital Marketing
@@ -66,7 +66,7 @@ const Footer = () => {
                         <li>
                             {" "}
                             <Link
-                                href={"#"}
+                                href={"/services/mobileappdevelopment"}
                                 className="text-white  font-light hover:underline hover:decoration-primary cursor-pointer"
                             >
                                 Mobile App Development
@@ -74,7 +74,7 @@ const Footer = () => {
                         </li>
                         <li className="my-3">
                             <Link
-                                href={"#"}
+                                href={"/services/uxuidesign"}
                                 className="text-white   font-light hover:underline hover:decoration-primary cursor-pointer"
                             >
                                 UI/UX Design
@@ -82,7 +82,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <Link
-                                href={"#"}
+                                href={"/services/graphicsdesign"}
                                 className="text-white font-light hover:underline hover:decoration-primary cursor-pointer"
                             >
                                 Graphics Design

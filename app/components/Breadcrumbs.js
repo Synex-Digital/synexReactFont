@@ -32,7 +32,7 @@ const Breadcrumbs = ({ title, stateoff }) => {
                 <div className="cross1 absolute text-primary text-4xl top-[80px] right-[400px]">
                     <FaReact />
                 </div>
-                <div className="round3 absolute rounded-full text-primary top-[120px] left-[400px] text-4xl">
+                <div className="round3 absolute rounded-full text-primary top-[120px] sm:left-[400px] left-20 text-4xl">
                     <FaNode />
                 </div>
                 <div className="round2 absolute rounded-full text-primary top-[20px] left-[300px] text-4xl">
@@ -44,7 +44,7 @@ const Breadcrumbs = ({ title, stateoff }) => {
                 <div className="round1 absolute rounded-full text-primary top-[188px] right-[150px] text-4xl">
                     <SiPostgresql />
                 </div>
-                <div className="round2 absolute rounded-full text-primary top-[200px] left-[350px] text-4xl">
+                <div className="round2 absolute rounded-full text-primary top-[200px] sm:left-[350px] left-16 text-4xl">
                     <SiMysql />
                 </div>
                 <div className="round1 absolute rounded-full text-primary top-[200px] right-[400px] text-4xl">
@@ -68,7 +68,7 @@ const Breadcrumbs = ({ title, stateoff }) => {
                 <div className="round2 absolute rounded-full text-primary top-[40px] left-1/3 text-3xl">
                     <SiFlutter />
                 </div>
-                <div className="round2 absolute rounded-full text-primary top-[240px] left-3/4 text-4xl">
+                <div className="round2 absolute rounded-full text-primary top-[250px] left-3/4 text-4xl">
                     <FaPython />
                 </div>
                 <div className="round2 absolute rounded-full text-primary top-[40px] left-3/4 text-4xl">

@@ -382,3 +382,8 @@ nav .dropdown li:hover {
         transform: scale(1.5);
     }
 }
+
+#stickybg {
+    background: url("../public/assets/blogimg.webp") no-repeat fixed center;
+    background-size: cover;
+}

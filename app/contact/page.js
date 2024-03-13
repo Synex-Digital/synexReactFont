@@ -14,16 +14,16 @@ export default function Contact() {
         <section>
             <Breadcrumbs title={"Get in touch"} stateoff={false} />
 
-            <div className="container mx-auto px-40 py-20">
-                <div className="flex justify-between text-white">
-                    <div className="w-[49%]">
+            <div className="container mx-auto xl:px-40 md:px-10 px-5 md:py-20 py-10">
+                <div className="flex max-md:flex-col max-md:gap-y-5 justify-between text-white">
+                    <div className="md:w-[49%] w-full">
                         <p className="text-xl font-medium mb-3">Your Name</p>
                         <input
                             className="w-full bg-transparent border border-primary p-5"
                             placeholder="Your full name"
                         />
                     </div>
-                    <div className="w-[49%]">
+                    <div className="md:w-[49%] w-full">
                         <p className="text-xl font-medium mb-3">Your Email</p>
                         <input
                             type="email"
@@ -32,8 +32,8 @@ export default function Contact() {
                         />
                     </div>
                 </div>
-                <div className="flex justify-between text-white mt-8">
-                    <div className="w-[49%]">
+                <div className="flex max-md:flex-col max-md:gap-y-5 justify-between text-white mt-8">
+                    <div className="md:w-[49%] w-full">
                         <p className="text-xl font-medium mb-3">Your Number</p>
                         <PhoneInput
                             country={"bd"}
@@ -41,7 +41,7 @@ export default function Contact() {
                             onChange={hendleChange}
                         />
                     </div>
-                    <div className="w-[49%]">
+                    <div className="md:w-[49%] w-full">
                         <p className="text-xl font-medium mb-3">
                             Your Company Name
                         </p>
