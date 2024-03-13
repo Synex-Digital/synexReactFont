@@ -279,3 +279,28 @@ nav .dropdown li:hover {
     visibility: visible;
     opacity: 1;
 }
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c2e812;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c2e812;
+}
+
+* {
+    scrollbar-width: 3px;
+    scrollbar-color: #c2e812;
+}
+
+* {
+    overflow: -ms-autohide-scrollbar;
+}

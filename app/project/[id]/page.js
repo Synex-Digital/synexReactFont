@@ -11,7 +11,7 @@ export default async function ProjectPage({ params }) {
         <section>
             <Breadcrumbs
                 title={"Multi BD Shop - Gaming eCommerce Store "}
-                stateoff={true}
+                stateoff={false}
             />
             <div className="container mx-auto px-2 ">
                 <Image
