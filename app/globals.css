@@ -285,7 +285,7 @@ nav .dropdown li:hover {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #190525;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -303,4 +303,82 @@ nav .dropdown li:hover {
 
 * {
     overflow: -ms-autohide-scrollbar;
+}
+
+#banner .round1 {
+    animation: tb 3s infinite linear alternate;
+}
+@keyframes tb {
+    from {
+        transform: translateY(-70px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+#banner .round2 {
+    animation: php 2s infinite linear alternate;
+}
+@keyframes php {
+    from {
+        transform: translateX(-50px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+#banner .round3 {
+    animation: node 1.5s infinite linear alternate;
+}
+@keyframes node {
+    from {
+        transform: translateX(-50px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+#banner .cross {
+    color: #c087ee;
+    position: absolute;
+    font-size: 38px;
+    top: 200px;
+    right: 400px;
+    animation: cross 8s linear infinite;
+}
+@keyframes cross {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+#banner .cross1 {
+    animation: cross1 3s linear infinite;
+}
+@keyframes cross1 {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+#banner .cross2 {
+    position: absolute;
+    font-size: 20px;
+    top: 425px;
+    right: 400px;
+    animation: cross2 2s linear infinite alternate;
+}
+@keyframes cross2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
 }

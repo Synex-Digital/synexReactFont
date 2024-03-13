@@ -4,34 +4,13 @@ import Link from "next/link";
 import Collaborate from "../components/Collaborate";
 import webicon from "@/public/assets/webicon.png";
 import { PiWebhooksLogo } from "react-icons/pi";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 export default function Services() {
     return (
         <section>
-            <div className="relative">
-                <Image
-                    alt="contact picture"
-                    src={bgcontact}
-                    className="w-full h-auto object-cover "
-                />
-                <div className="absolute top-1/2 right-1/2">
-                    <h2 className="text-white lg:text-5xl md:text-4xl sm:text-3xl text-xl translate-x-1/2 -translate-y-14 font-semibold">
-                        All Services
-                    </h2>
-                    <p className="text-white text-center translate-x-1/2 md:text-lg font-light">
-                        <span>
-                            <Link
-                                href={"/"}
-                                className="hover:underline hover:text-primary"
-                            >
-                                Home
-                            </Link>
-                        </span>{" "}
-                        / <span>Services</span>
-                    </p>
-                </div>
-            </div>
-            <div className="container mx-auto px-2 pb-20 mt-16 text-white">
+            <Breadcrumbs title={"All Service"} stateoff={false}/>
+            <div className="container mx-auto px-2 pb-20 text-white">
                 <h2 className="text-center font-semibold text-primary lg:text-5xl md:text-4xl text-3xl flex justify-center items-center gap-x-3 mt-5">
                     <PiWebhooksLogo /> Let's see our service
                 </h2>
