@@ -1,1 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1440" height="560" preserveAspectRatio="none" viewBox="0 0 1440 560"><g mask="url(&quot;#SvgjsMask1001&quot;)" fill="none"><path d="M329.26 201.78 a32.35 32.35 0 1 0 64.7 0 a32.35 32.35 0 1 0 -64.7 0z" fill="#d3b714"></path><path d="M1092.58 63.27 a42.93 42.93 0 1 0 85.86 0 a42.93 42.93 0 1 0 -85.86 0z" stroke="#d3b714"></path><path d="M208.05 181.32L215.16 181.32L215.16 188.43L208.05 188.43z" fill="#e73635"></path><path d="M675.58 85.86a8.04 8.04 0 1 0-11.27-11.47z" stroke="#d3b714"></path><path d="M915.4 291.27L956.86 291.27L956.86 332.73L915.4 332.73z" fill="#d3b714"></path><path d="M1021.85 220.48L1048.57 220.48L1048.57 247.2L1021.85 247.2z" stroke="#037b0b"></path><path d="M293.01 327.25L318.21 327.25L318.21 352.45L293.01 352.45z" fill="#e73635"></path><path d="M802.2 42.11a24.91 24.91 0 1 0-13.69-47.91z" fill="#d3b714"></path><path d="M1055.69 84.74a22.1 22.1 0 1 0 43.8 5.86z" fill="#d3b714"></path><path d="M1000.54 63.15L1043.76 63.15L1043.76 106.37L1000.54 106.37z" fill="#d3b714"></path><path d="M894.48 335.81 a13.62 13.62 0 1 0 27.24 0 a13.62 13.62 0 1 0 -27.24 0z" stroke="#d3b714"></path><path d="M112.2 338.87 a19.83 19.83 0 1 0 39.66 0 a19.83 19.83 0 1 0 -39.66 0z" stroke="#d3b714"></path><path d="M1205.11 554.46L1243.42 554.46L1243.42 591.18L1205.11 591.18z" fill="#037b0b"></path><path d="M1224.32 270.38 a25.96 25.96 0 1 0 51.92 0 a25.96 25.96 0 1 0 -51.92 0z" fill="#d3b714"></path><path d="M1339.76 535.14 a7.2 7.2 0 1 0 14.4 0 a7.2 7.2 0 1 0 -14.4 0z" stroke="#037b0b"></path><path d="M1284.48 502.24L1308.73 502.24L1308.73 505.22L1284.48 505.22z" fill="#037b0b"></path><path d="M1171.3 84.09 a33.33 33.33 0 1 0 66.66 0 a33.33 33.33 0 1 0 -66.66 0z" stroke="#d3b714"></path><path d="M508.86 520.88L516.25 520.88L516.25 528.27L508.86 528.27z" stroke="#d3b714"></path><path d="M1071.08 553.2L1088.82 553.2L1088.82 601.31L1071.08 601.31z" stroke="#e73635"></path><path d="M508.79 496.86L554.97 496.86L554.97 543.04L508.79 543.04z" fill="#d3b714"></path><path d="M735.02 524.18a21.82 21.82 0 1 0-43.36-4.9z" stroke="#d3b714"></path><path d="M171.87 318.25 a55.36 55.36 0 1 0 110.72 0 a55.36 55.36 0 1 0 -110.72 0z" fill="#037b0b"></path><path d="M979.99 24.45L1027.37 24.45L1027.37 71.83L979.99 71.83z" fill="#037b0b"></path><path d="M15.91 171.78L26.59 171.78L26.59 216.6L15.91 216.6z" stroke="#e73635"></path><path d="M1323.86 412.71a33.81 33.81 0 1 0-64.76 19.44z" stroke="#d3b714"></path><path d="M1258.14 303.28L1291.97 303.28L1291.97 337.11L1258.14 337.11z" stroke="#e73635"></path><path d="M135.03 489.78a55.47 55.47 0 1 0 107.36 27.98z" stroke="#037b0b"></path><path d="M1086.64 546.25a3.22 3.22 0 1 0-6.41 0.57z" stroke="#e73635"></path><path d="M1264.86 267.48a44.83 44.83 0 1 0 88.04 16.92z" stroke="#d3b714"></path><path d="M1370.1 358.01 a40.58 40.58 0 1 0 81.16 0 a40.58 40.58 0 1 0 -81.16 0z" fill="#d3b714"></path><path d="M1374.24 330.82L1404.72 330.82L1404.72 361.3L1374.24 361.3z" stroke="#d3b714"></path><path d="M123.75 150.47L136.78 150.47L136.78 206.15L123.75 206.15z" stroke="#d3b714"></path><path d="M364.93 454.58 a18.26 18.26 0 1 0 36.52 0 a18.26 18.26 0 1 0 -36.52 0z" stroke="#e73635"></path></g><defs><mask id="SvgjsMask1001"><rect width="1440" height="560" fill="#ffffff"></rect></mask></defs></svg>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1440" height="350" preserveAspectRatio="none" viewBox="0 0 1440 560"><g mask="url(&quot;#SvgjsMask1001&quot;)" fill="none"><path d="M329.26 201.78 a32.35 32.35 0 1 0 64.7 0 a32.35 32.35 0 1 0 -64.7 0z" fill="#d3b714" class="triangle-float2"></path><path d="M1092.58 63.27 a42.93 42.93 0 1 0 85.86 0 a42.93 42.93 0 1 0 -85.86 0z" stroke="#d3b714" class="triangle-float1"></path><path d="M208.05 181.32L215.16 181.32L215.16 188.43L208.05 188.43z" fill="#e73635"></path><path d="M675.58 85.86a8.04 8.04 0 1 0-11.27-11.47z" stroke="#d3b714" class="triangle-float1"></path><path d="M915.4 291.27L956.86 291.27L956.86 332.73L915.4 332.73z" fill="#d3b714"></path><path d="M1021.85 220.48L1048.57 220.48L1048.57 247.2L1021.85 247.2z" stroke="#037b0b"></path><path d="M293.01 327.25L318.21 327.25L318.21 352.45L293.01 352.45z" fill="#e73635"></path><path d="M802.2 42.11a24.91 24.91 0 1 0-13.69-47.91z" fill="#d3b714"></path><path d="M1055.69 84.74a22.1 22.1 0 1 0 43.8 5.86z" fill="#d3b714"></path><path d="M1000.54 63.15L1043.76 63.15L1043.76 106.37L1000.54 106.37z" fill="#d3b714"></path>
+<path d="M894.48 335.81 a13.62 13.62 0 1 0 27.24 0 a13.62 13.62 0 1 0 -27.24 0z" stroke="#d3b714"></path>
+<path d="M112.2 338.87 a19.83 19.83 0 1 0 39.66 0 a19.83 19.83 0 1 0 -39.66 0z" stroke="#d3b714"></path><path d="M1205.11 554.46L1243.42 554.46L1243.42 591.18L1205.11 591.18z" fill="#037b0b" class="triangle-float1"></path>
+<path d="M1224.32 270.38 a25.96 25.96 0 1 0 51.92 0 a25.96 25.96 0 1 0 -51.92 0z" fill="#d3b714"></path>
+<path d="M1339.76 535.14 a7.2 7.2 0 1 0 14.4 0 a7.2 7.2 0 1 0 -14.4 0z" stroke="#037b0b"></path>
+<path d="M1284.48 502.24L1308.73 502.24L1308.73 505.22L1284.48 505.22z" fill="#037b0b" class="triangle-float1"></path>
+<path d="M1171.3 84.09 a33.33 33.33 0 1 0 66.66 0 a33.33 33.33 0 1 0 -66.66 0z" stroke="#d3b714"></path>
+<path d="M508.86 520.88L516.25 520.88L516.25 528.27L508.86 528.27z" stroke="#d3b714"></path>
+<path d="M1071.08 553.2L1088.82 553.2L1088.82 601.31L1071.08 601.31z" stroke="#e73635"></path>
+<path d="M508.79 496.86L554.97 496.86L554.97 543.04L508.79 543.04z" fill="#d3b714"></path>
+
+<path d="M735.02 524.18a21.82 21.82 0 1 0-43.36-4.9z" stroke="#d3b714" class="triangle-float2"></path>
+
+<path d="M171.87 318.25 a55.36 55.36 0 1 0 110.72 0 a55.36 55.36 0 1 0 -110.72 0z" fill="#037b0b" class="triangle-float1">
+
+</path>
+
+<path d="M979.99 24.45L1027.37 24.45L1027.37 71.83L979.99 71.83z" fill="#037b0b" class="triangle-float2"></path>
+<path d="M15.91 171.78L26.59 171.78L26.59 216.6L15.91 216.6z" stroke="#e73635" class="triangle-float2">
+</path>
+<path d="M1323.86 412.71a33.81 33.81 0 1 0-64.76 19.44z" stroke="#d3b714"></path>
+<path d="M1258.14 303.28L1291.97 303.28L1291.97 337.11L1258.14 337.11z" stroke="#e73635" class="triangle-float2">
+</path>
+<path d="M135.03 489.78a55.47 55.47 0 1 0 107.36 27.98z" stroke="#037b0b" class="triangle-float3"></path>
+<path d="M1086.64 546.25a3.22 3.22 0 1 0-6.41 0.57z" stroke="#e73635" class="triangle-float2"></path>
+
+<path d="M1264.86 267.48a44.83 44.83 0 1 0 88.04 16.92z" stroke="#d3b714" ></path>
+
+<path d="M1370.1 358.01 a40.58 40.58 0 1 0 81.16 0 a40.58 40.58 0 1 0 -81.16 0z" fill="#d3b714" class="triangle-float3"></path>
+<path d="M1374.24 330.82L1404.72 330.82L1404.72 361.3L1374.24 361.3z" stroke="#d3b714" >
+</path>
+<path d="M123.75 150.47L136.78 150.47L136.78 206.15L123.75 206.15z" stroke="#d3b714" ></path>
+<path d="M364.93 454.58 a18.26 18.26 0 1 0 36.52 0 a18.26 18.26 0 1 0 -36.52 0z" stroke="#e73635" ></path>
+</g><defs><mask id="SvgjsMask1001"><rect width="1440" height="560" fill="#ffffff"></rect></mask></defs>
+
+<style>
+                @keyframes float1 {
+                    0%{transform: translate(0, 0)}
+                    50%{transform: translate(-10px, 0)}
+                    100%{transform: translate(0, 0)}
+                }
+
+                .triangle-float1 {
+                    animation: float1 5s infinite;
+                }
+
+                @keyframes float2 {
+                    0%{transform: translate(0, 0)}
+                    50%{transform: translate(-5px, -5px)}
+                    100%{transform: translate(0, 0)}
+                }
+
+                .triangle-float2 {
+                    animation: float2 4s infinite;
+                }
+
+                @keyframes float3 {
+                    0%{transform: translate(0, 0)}
+                    50%{transform: translate(0, -10px)}
+                    100%{transform: translate(0, 0)}
+                }
+
+                .triangle-float3 {
+                    animation: float3 6s infinite;
+                }
+
+                
+            </style>
+   
+
+</svg>

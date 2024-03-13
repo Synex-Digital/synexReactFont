@@ -1,10 +1,8 @@
 "use client";
-import Image from "next/image";
-import bgcontact from "@/public/assets/bgcontact.svg";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { useState } from "react";
-import Link from "next/link";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 export default function Contact() {
     let [state, setState] = useState("");
@@ -14,39 +12,18 @@ export default function Contact() {
     };
     return (
         <section>
-            <div className="relative">
-                <Image
-                    alt="contact picture"
-                    src={bgcontact}
-                    className="w-full h-[300px] object-cover bg-[#1d2934]"
-                />
-                <div className="absolute top-1/2 right-1/2">
-                    <h2 className="text-white lg:text-5xl md:text-4xl sm:text-3xl text-xl translate-x-1/2 -translate-y-14 font-semibold">
-                        Get in touch
-                    </h2>
-                    <p className="text-white text-center translate-x-1/2 md:text-lg font-light">
-                        <span>
-                            <Link
-                                href={"/"}
-                                className="hover:underline hover:text-primary"
-                            >
-                                Home
-                            </Link>
-                        </span>{" "}
-                        / <span>Contact</span>
-                    </p>
-                </div>
-            </div>
-            <div className="container mx-auto px-40 mt-28 pb-20">
-                <div className="flex justify-between text-white">
-                    <div className="w-[49%]">
+            <Breadcrumbs title={"Get in touch"} stateoff={false} />
+
+            <div className="container mx-auto xl:px-40 md:px-10 px-5 md:py-20 py-10">
+                <div className="flex max-md:flex-col max-md:gap-y-5 justify-between text-white">
+                    <div className="md:w-[49%] w-full">
                         <p className="text-xl font-medium mb-3">Your Name</p>
                         <input
                             className="w-full bg-transparent border border-primary p-5"
                             placeholder="Your full name"
                         />
                     </div>
-                    <div className="w-[49%]">
+                    <div className="md:w-[49%] w-full">
                         <p className="text-xl font-medium mb-3">Your Email</p>
                         <input
                             type="email"
@@ -55,8 +32,8 @@ export default function Contact() {
                         />
                     </div>
                 </div>
-                <div className="flex justify-between text-white mt-8">
-                    <div className="w-[49%]">
+                <div className="flex max-md:flex-col max-md:gap-y-5 justify-between text-white mt-8">
+                    <div className="md:w-[49%] w-full">
                         <p className="text-xl font-medium mb-3">Your Number</p>
                         <PhoneInput
                             country={"bd"}
@@ -64,7 +41,7 @@ export default function Contact() {
                             onChange={hendleChange}
                         />
                     </div>
-                    <div className="w-[49%]">
+                    <div className="md:w-[49%] w-full">
                         <p className="text-xl font-medium mb-3">
                             Your Company Name
                         </p>

@@ -661,10 +661,10 @@ export default function Home() {
                         <div className="lg:flex justify-between">
                             <AosAnimation
                                 aosvalue={"zoom-in-up"}
-                                className="lg:w-[49.5%]"
+                                className="lg:w-[49.5%] "
                             >
                                 <div
-                                    className=" p-3 pb-5  cursor-pointer bg-[#4cc39430] h-full"
+                                    className=" p-3 pb-5 rounded-xl  cursor-pointer bg-[#4cc39430] h-full"
                                     id="hover_img"
                                 >
                                     <figure>
@@ -674,6 +674,7 @@ export default function Home() {
                                             priority
                                             placeholder="blur"
                                             quality={80}
+                                            className=" rounded-xl"
                                         />
                                     </figure>
 
@@ -708,7 +709,7 @@ export default function Home() {
                                     className="sm:w-[49%]"
                                 >
                                     <div
-                                        className=" p-3 pb-5 cursor-pointer  bg-[#4cc39430] h-fit"
+                                        className=" p-3 pb-5 rounded-xl cursor-pointer  bg-[#4cc39430] h-fit"
                                         id="hover_img"
                                     >
                                         <figure>
@@ -718,6 +719,7 @@ export default function Home() {
                                                 priority
                                                 placeholder="blur"
                                                 quality={80}
+                                                className=" rounded-xl"
                                             />
                                         </figure>
                                         <div className="text-white">
@@ -737,7 +739,7 @@ export default function Home() {
                                     className="sm:w-[49%]"
                                 >
                                     <div
-                                        className=" p-3 pb-5 cursor-pointer  bg-[#4cc39430] h-fit"
+                                        className=" p-3 pb-5 cursor-pointer rounded-xl  bg-[#4cc39430] h-fit"
                                         id="hover_img"
                                     >
                                         <figure>
@@ -747,6 +749,7 @@ export default function Home() {
                                                 priority
                                                 placeholder="blur"
                                                 quality={80}
+                                                className=" rounded-xl"
                                             />
                                         </figure>
                                         <div className="text-white">
@@ -766,7 +769,7 @@ export default function Home() {
                                     className="sm:w-[49%]"
                                 >
                                     <div
-                                        className=" p-3 pb-5 cursor-pointer  bg-[#4cc39430] h-fit"
+                                        className=" p-3 pb-5 rounded-xl cursor-pointer  bg-[#4cc39430] h-fit"
                                         id="hover_img"
                                     >
                                         <figure>
@@ -776,6 +779,7 @@ export default function Home() {
                                                 priority
                                                 placeholder="blur"
                                                 quality={80}
+                                                className=" rounded-xl"
                                             />
                                         </figure>
                                         <div className="text-white">
@@ -795,7 +799,7 @@ export default function Home() {
                                     className="sm:w-[49%]"
                                 >
                                     <div
-                                        className=" p-3 pb-5 cursor-pointer  bg-[#4cc39430] h-fit"
+                                        className=" p-3 pb-5 rounded-xl cursor-pointer  bg-[#4cc39430] h-fit"
                                         id="hover_img"
                                     >
                                         <figure>
@@ -805,6 +809,7 @@ export default function Home() {
                                                 priority
                                                 placeholder="blur"
                                                 quality={80}
+                                                className=" rounded-xl"
                                             />
                                         </figure>
                                         <div className="text-white">

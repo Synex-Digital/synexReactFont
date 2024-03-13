@@ -116,27 +116,6 @@ nav .dropdown li:hover {
     text-decoration: underline #c2e812;
 }
 
-.swiper {
-    width: 100%;
-    height: 500px;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .blob {
     opacity: 0.6;
     top: -80px;
@@ -239,4 +218,172 @@ nav .dropdown li:hover {
 .flag-dropdown {
     background-color: #c2e812 !important;
     color: black !important;
+    border: 1px solid #c2e812 !important;
+}
+
+/* #serviseslink {
+    width: 10% !important;
+    background: #c2e812;
+    padding: 10px 20px;
+    position: absolute;
+    z-index: -10;
+}
+
+#serviseslink:hover {
+    width: 120%;
+} */
+
+#serviseslink {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    color: #000000;
+    z-index: 2;
+    transition: 0.4s;
+}
+#serviseslink::after {
+    width: 0px;
+    height: 40px;
+    background: #f2f4e8;
+    top: -6px;
+    right: -22px;
+    content: "";
+    position: absolute;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    z-index: -1;
+    transition: 0.7s;
+}
+#serviseslinkdiv:hover #serviseslink::after {
+    background: #f2f4e8;
+    width: 150%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+#small1overlay {
+    z-index: 10;
+    background: linear-gradient(#1c1e53cd, rgba(28, 30, 83, 0.511));
+    transition: 0.5s;
+}
+
+#small1overlayptag {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#small1overlaydiv:hover #small1overlayptag {
+    visibility: visible;
+    opacity: 1;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #190525;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c2e812;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c2e812;
+}
+
+* {
+    scrollbar-width: 3px;
+    scrollbar-color: #c2e812;
+}
+
+* {
+    overflow: -ms-autohide-scrollbar;
+}
+
+#banner .round1 {
+    animation: tb 3s infinite linear alternate;
+}
+@keyframes tb {
+    from {
+        transform: translateY(-70px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+#banner .round2 {
+    animation: php 2s infinite linear alternate;
+}
+@keyframes php {
+    from {
+        transform: translateX(-50px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+#banner .round3 {
+    animation: node 1.5s infinite linear alternate;
+}
+@keyframes node {
+    from {
+        transform: translateX(-50px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+#banner .cross {
+    color: #c087ee;
+    position: absolute;
+    font-size: 38px;
+    top: 200px;
+    right: 400px;
+    animation: cross 8s linear infinite;
+}
+@keyframes cross {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+#banner .cross1 {
+    animation: cross1 3s linear infinite;
+}
+@keyframes cross1 {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+#banner .cross2 {
+    position: absolute;
+    font-size: 20px;
+    top: 425px;
+    right: 400px;
+    animation: cross2 2s linear infinite alternate;
+}
+@keyframes cross2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+}
+
+#stickybg {
+    background: url("../public/assets/blogimg.webp") no-repeat fixed center;
+    background-size: cover;
 }

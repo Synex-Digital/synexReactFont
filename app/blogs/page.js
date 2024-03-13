@@ -6,20 +6,23 @@ import Link from "next/link";
 import { GoArrowRight } from "react-icons/go";
 import Collaborate from "../components/Collaborate";
 
-export default function Project() {
+export default function Blogs() {
     return (
         <section>
-            <Breadcrumbs title={"All Projects"} stateoff={false} />
+            <Breadcrumbs title={"All Blog"} stateoff={false} />
             <div className="container mx-auto px-2 text-white">
                 <h2 className="text-center font-semibold text-primary lg:text-5xl md:text-4xl text-3xl flex justify-center items-center gap-x-3 mt-5">
-                    <PiWebhooksLogo /> Let's see our project
+                    <PiWebhooksLogo /> Let's see our Blog
                 </h2>
                 <p className="text-center mt-5 md:text-lg text-gray-300">
                     You can see many project of us which we have done with our
                     previous clients.
                 </p>
                 <div className="mt-16 flex flex-wrap xl:gap-5 gap-4 justify-center mb-20">
-                    <div id="small1overlaydiv" className="group lg:w-[32%]  rounded-xl sm:w-[48%] w-full overflow-hidden relative ">
+                    <div
+                        id="small1overlaydiv"
+                        className="group lg:w-[32%]  rounded-xl sm:w-[48%] w-full overflow-hidden relative "
+                    >
                         <Image alt="contact picture" src={webimg} />
                         <div
                             id="small1overlay"
@@ -46,7 +49,10 @@ export default function Project() {
                             </div>
                         </div>
                     </div>
-                    <div id="small1overlaydiv" className="group lg:w-[32%] sm:w-[48%]  rounded-xl w-full overflow-hidden relative ">
+                    <div
+                        id="small1overlaydiv"
+                        className="group lg:w-[32%] rounded-xl sm:w-[48%] w-full overflow-hidden relative "
+                    >
                         <Image alt="contact picture" src={webimg} />
                         <div
                             id="small1overlay"
@@ -73,7 +79,10 @@ export default function Project() {
                             </div>
                         </div>
                     </div>
-                    <div id="small1overlaydiv" className="group lg:w-[32%] sm:w-[48%]  rounded-xl w-full overflow-hidden relative ">
+                    <div
+                        id="small1overlaydiv"
+                        className="group lg:w-[32%] rounded-xl sm:w-[48%] w-full overflow-hidden relative "
+                    >
                         <Image alt="contact picture" src={webimg} />
                         <div
                             id="small1overlay"
@@ -100,7 +109,10 @@ export default function Project() {
                             </div>
                         </div>
                     </div>
-                    <div id="small1overlaydiv" className="group lg:w-[32%] sm:w-[48%] rounded-xl w-full overflow-hidden relative ">
+                    <div
+                        id="small1overlaydiv"
+                        className="group lg:w-[32%] rounded-xl sm:w-[48%] w-full overflow-hidden relative "
+                    >
                         <Image alt="contact picture" src={webimg} />
                         <div
                             id="small1overlay"
@@ -127,7 +139,10 @@ export default function Project() {
                             </div>
                         </div>
                     </div>
-                    <div id="small1overlaydiv" className="group lg:w-[32%] sm:w-[48%] rounded-xl w-full overflow-hidden relative ">
+                    <div
+                        id="small1overlaydiv"
+                        className="group lg:w-[32%] rounded-xl sm:w-[48%] w-full overflow-hidden relative "
+                    >
                         <Image alt="contact picture" src={webimg} />
                         <div
                             id="small1overlay"
@@ -154,7 +169,10 @@ export default function Project() {
                             </div>
                         </div>
                     </div>
-                    <div id="small1overlaydiv" className="group lg:w-[32%] sm:w-[48%] rounded-xl w-full overflow-hidden relative ">
+                    <div
+                        id="small1overlaydiv"
+                        className="group lg:w-[32%] rounded-xl sm:w-[48%] w-full overflow-hidden relative "
+                    >
                         <Image alt="contact picture" src={webimg} />
                         <div
                             id="small1overlay"
