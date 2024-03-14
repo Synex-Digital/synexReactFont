@@ -1,7 +1,3 @@
-import Image from "next/image";
-import bgcontact from "@/public/assets/bgcontact.svg";
-import webimg from "@/public/assets/thumbBody.jpg";
-import { PiWebhooksLogo } from "react-icons/pi";
 import Collaborate from "@/app/components/Collaborate";
 import Breadcrumbs from "@/app/components/Breadcrumbs";
 
