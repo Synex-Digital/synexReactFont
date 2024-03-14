@@ -1,8 +1,34 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { GoArrowRight, GoArrowUpRight } from "react-icons/go";
+import { InlineWidget } from "react-calendly";
+import Modal from "react-modal";
 
 const Collaborate = () => {
+    const customStyles = {
+        content: {
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            right: "auto",
+            bottom: "auto",
+            transform: "translate(-50%, -50%)",
+            width: "80%",
+            height: "90vh",
+            padding: "50px",
+        },
+        overlay: { zIndex: 1000 },
+    };
+    const [modalIsOpen, setIsOpen] = useState(false);
+
+    function openModal() {
+        setIsOpen(true);
+    }
+
+    function closeModal() {
+        setIsOpen(false);
+    }
     return (
         <section className="py-20 bg-[#1d2934]">
             <div className="container mx-auto px-2">
@@ -26,17 +52,26 @@ const Collaborate = () => {
                             <GoArrowRight className="text-2xl" />
                         </span>
                     </Link>
-                    <Link
+
+                    <li
                         className="px-7 py-3 border border-primary bg-primary text-black hover:shadow hover:shadow-primary transition duration-300 ease-in-out flex items-center gap-x-3  max-sm:w-fit max-sm:mx-auto max-sm:mt-5"
-                        href={"#"}
+                        onClick={openModal}
                     >
                         Schedule Meeting
                         <span>
                             <GoArrowUpRight className="text-2xl" />
                         </span>
-                    </Link>
+                    </li>
                 </div>
             </div>
+
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={closeModal}
+                style={customStyles}
+            >
+                <InlineWidget url="https://calendly.com/synexdigital" />
+            </Modal>
         </section>
     );
 };
