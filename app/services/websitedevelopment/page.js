@@ -28,13 +28,13 @@ export default function websitedevelopment() {
                 </div>
             </section>
             <section className="pb-20">
-                <div className="container mx-auto px-2 flex justify-between text-white">
-                    <div className="w-[48%] relative">
+                <div className="container mx-auto px-2 sm:flex justify-between text-white">
+                    <div className="sm:w-[48%] max-sm:text-center relative">
                         <div className="sticky top-10">
-                            <h2 className="font-bold text-4xl mt-10 mb-5 text-primary">
+                            <h2 className="font-bold xl:text-4xl lg:text-3xl text-2xl mt-10 mb-5 text-primary">
                                 Exploring Project Idea
                             </h2>
-                            <p className="font-light">
+                            <p className="font-light max-lg:text-sm">
                                 The initial phase of application development
                                 involves discussing ideas with stakeholders,
                                 conducting research, and brainstorming to
@@ -46,46 +46,14 @@ export default function websitedevelopment() {
                             </p>
                         </div>
                     </div>
-                    <div className="w-[48%] mt-10">
+                    <div className="sm:w-[48%] max-sm:text-center flex flex-col gap-y-7 xl:gap-y-10 mt-10">
                         <div className="flex gap-x-4">
-                            <div className="self-start rounded bg-gradient bg-red-500 p-5"></div>
+                            <div className="self-start rounded max-sm:hidden bg-gradient bg-red-500 lg:p-5 sm:p-3"></div>
                             <div>
-                                <h3 className="font-semibold text-3xl  mb-5 text-primary">
+                                <h3 className="font-bold xl:text-4xl lg:text-3xl text-2xl mb-5 text-primary">
                                     Discussing ideas with stakeholders
                                 </h3>
-                                <p className="font-light">
-                                    During the initial phase of the project, we
-                                    will engage in extensive discussions with
-                                    stakeholders to gain a deep understanding of
-                                    the key requirements and expectations,
-                                    ensuring that we have a clear and thorough
-                                    grasp of the project's objectives.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="flex gap-x-4 my-10">
-                            <div className="self-start rounded bg-gradient bg-red-500 p-5"></div>
-                            <div>
-                                <h3 className="font-semibold text-3xl  mb-5 text-primary">
-                                    Discussing ideas with stakeholders
-                                </h3>
-                                <p className="font-light">
-                                    During the initial phase of the project, we
-                                    will engage in extensive discussions with
-                                    stakeholders to gain a deep understanding of
-                                    the key requirements and expectations,
-                                    ensuring that we have a clear and thorough
-                                    grasp of the project's objectives.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="flex gap-x-4 mb-10">
-                            <div className="self-start rounded bg-gradient bg-red-500 p-5"></div>
-                            <div>
-                                <h3 className="font-semibold text-3xl  mb-5 text-primary">
-                                    Discussing ideas with stakeholders
-                                </h3>
-                                <p className="font-light">
+                                <p className="font-light max-lg:text-sm">
                                     During the initial phase of the project, we
                                     will engage in extensive discussions with
                                     stakeholders to gain a deep understanding of
@@ -96,12 +64,44 @@ export default function websitedevelopment() {
                             </div>
                         </div>
                         <div className="flex gap-x-4">
-                            <div className="self-start rounded bg-gradient bg-red-500 p-5"></div>
+                            <div className="self-start rounded max-sm:hidden bg-gradient bg-red-500 lg:p-5 sm:p-3"></div>
                             <div>
-                                <h3 className="font-semibold text-3xl  mb-5 text-primary">
-                                    Research
+                                <h3 className="font-bold xl:text-4xl lg:text-3xl text-2xl mb-5 text-primary">
+                                    Discussing ideas with stakeholders
                                 </h3>
-                                <p className="font-light">
+                                <p className="font-light max-lg:text-sm">
+                                    During the initial phase of the project, we
+                                    will engage in extensive discussions with
+                                    stakeholders to gain a deep understanding of
+                                    the key requirements and expectations,
+                                    ensuring that we have a clear and thorough
+                                    grasp of the project's objectives.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="flex gap-x-4">
+                            <div className="self-start rounded max-sm:hidden bg-gradient bg-red-500 lg:p-5 sm:p-3"></div>
+                            <div>
+                                <h3 className="font-bold xl:text-4xl lg:text-3xl text-2xl mb-5 text-primary">
+                                    Discussing ideas with stakeholders
+                                </h3>
+                                <p className="font-light max-lg:text-sm">
+                                    During the initial phase of the project, we
+                                    will engage in extensive discussions with
+                                    stakeholders to gain a deep understanding of
+                                    the key requirements and expectations,
+                                    ensuring that we have a clear and thorough
+                                    grasp of the project's objectives.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="flex gap-x-4">
+                            <div className="self-start rounded max-sm:hidden bg-gradient bg-red-500 lg:p-5 sm:p-3"></div>
+                            <div>
+                                <h3 className="font-bold xl:text-4xl lg:text-3xl text-2xl mb-5 text-primary">
+                                    Discussing ideas with stakeholders
+                                </h3>
+                                <p className="font-light max-lg:text-sm">
                                     During the initial phase of the project, we
                                     will engage in extensive discussions with
                                     stakeholders to gain a deep understanding of
@@ -117,14 +117,14 @@ export default function websitedevelopment() {
 
             <section id="stickybg" className="h-screen"></section>
 
-            <section className="pb-20 ">
-                <div className="container mx-auto px-2 flex justify-between text-white">
-                    <div className="w-[48%] relative">
-                        <div className="sticky top-10 ">
-                            <h2 className="font-bold text-4xl mt-10 mb-5 text-primary">
+            <section className="pb-20">
+                <div className="container mx-auto px-2 sm:flex justify-between text-white">
+                    <div className="sm:w-[48%] max-sm:text-center relative">
+                        <div className="sticky top-10">
+                            <h2 className="font-bold xl:text-4xl lg:text-3xl text-2xl mt-10 mb-5 text-primary">
                                 Exploring Project Idea
                             </h2>
-                            <p className="font-light">
+                            <p className="font-light max-lg:text-sm">
                                 The initial phase of application development
                                 involves discussing ideas with stakeholders,
                                 conducting research, and brainstorming to
@@ -136,46 +136,14 @@ export default function websitedevelopment() {
                             </p>
                         </div>
                     </div>
-                    <div className="w-[48%] mt-10">
+                    <div className="sm:w-[48%] max-sm:text-center flex flex-col gap-y-7 xl:gap-y-10 mt-10">
                         <div className="flex gap-x-4">
-                            <div className="self-start rounded bg-gradient bg-red-500 p-5"></div>
+                            <div className="self-start rounded max-sm:hidden bg-gradient bg-red-500 lg:p-5 sm:p-3"></div>
                             <div>
-                                <h3 className="font-semibold text-3xl  mb-5 text-primary">
+                                <h3 className="font-bold xl:text-4xl lg:text-3xl text-2xl mb-5 text-primary">
                                     Discussing ideas with stakeholders
                                 </h3>
-                                <p className="font-light">
-                                    During the initial phase of the project, we
-                                    will engage in extensive discussions with
-                                    stakeholders to gain a deep understanding of
-                                    the key requirements and expectations,
-                                    ensuring that we have a clear and thorough
-                                    grasp of the project's objectives.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="flex gap-x-4 my-10">
-                            <div className="self-start rounded bg-gradient bg-red-500 p-5"></div>
-                            <div>
-                                <h3 className="font-semibold text-3xl  mb-5 text-primary">
-                                    Discussing ideas with stakeholders
-                                </h3>
-                                <p className="font-light">
-                                    During the initial phase of the project, we
-                                    will engage in extensive discussions with
-                                    stakeholders to gain a deep understanding of
-                                    the key requirements and expectations,
-                                    ensuring that we have a clear and thorough
-                                    grasp of the project's objectives.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="flex gap-x-4 mb-10">
-                            <div className="self-start rounded bg-gradient bg-red-500 p-5"></div>
-                            <div>
-                                <h3 className="font-semibold text-3xl  mb-5 text-primary">
-                                    Discussing ideas with stakeholders
-                                </h3>
-                                <p className="font-light">
+                                <p className="font-light max-lg:text-sm">
                                     During the initial phase of the project, we
                                     will engage in extensive discussions with
                                     stakeholders to gain a deep understanding of
@@ -186,12 +154,44 @@ export default function websitedevelopment() {
                             </div>
                         </div>
                         <div className="flex gap-x-4">
-                            <div className="self-start rounded bg-gradient bg-red-500 p-5"></div>
+                            <div className="self-start rounded max-sm:hidden bg-gradient bg-red-500 lg:p-5 sm:p-3"></div>
                             <div>
-                                <h3 className="font-semibold text-3xl  mb-5 text-primary">
-                                    Research
+                                <h3 className="font-bold xl:text-4xl lg:text-3xl text-2xl mb-5 text-primary">
+                                    Discussing ideas with stakeholders
                                 </h3>
-                                <p className="font-light">
+                                <p className="font-light max-lg:text-sm">
+                                    During the initial phase of the project, we
+                                    will engage in extensive discussions with
+                                    stakeholders to gain a deep understanding of
+                                    the key requirements and expectations,
+                                    ensuring that we have a clear and thorough
+                                    grasp of the project's objectives.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="flex gap-x-4">
+                            <div className="self-start rounded max-sm:hidden bg-gradient bg-red-500 lg:p-5 sm:p-3"></div>
+                            <div>
+                                <h3 className="font-bold xl:text-4xl lg:text-3xl text-2xl mb-5 text-primary">
+                                    Discussing ideas with stakeholders
+                                </h3>
+                                <p className="font-light max-lg:text-sm">
+                                    During the initial phase of the project, we
+                                    will engage in extensive discussions with
+                                    stakeholders to gain a deep understanding of
+                                    the key requirements and expectations,
+                                    ensuring that we have a clear and thorough
+                                    grasp of the project's objectives.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="flex gap-x-4">
+                            <div className="self-start rounded max-sm:hidden bg-gradient bg-red-500 lg:p-5 sm:p-3"></div>
+                            <div>
+                                <h3 className="font-bold xl:text-4xl lg:text-3xl text-2xl mb-5 text-primary">
+                                    Discussing ideas with stakeholders
+                                </h3>
+                                <p className="font-light max-lg:text-sm">
                                     During the initial phase of the project, we
                                     will engage in extensive discussions with
                                     stakeholders to gain a deep understanding of
