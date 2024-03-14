@@ -35,6 +35,6 @@
     attributeName="transform"
     type="rotate"
     repeatCount="indefinite"
-    dur="3300ms"
+    dur="5500ms"
   />
 </svg>

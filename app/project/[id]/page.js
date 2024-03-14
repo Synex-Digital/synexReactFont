@@ -94,10 +94,10 @@ export default async function ProjectPage({ params }) {
                             <Image
                                 alt="contact picture"
                                 src={webimg}
-                                className="w-24 h-24 rounded-full"
+                                className="w-24 h-24 sm:max-md:w-16 sm:max-md:h-16 rounded-full"
                             />
                             <div>
-                                <p className="font-medium text-2xl">
+                                <p className="font-medium text-2xl sm:max-md:text-lg">
                                     Shafin Mahmud
                                 </p>
                                 <p className="text-lg">800$</p>
