@@ -13,18 +13,17 @@ export default async function ProjectPage({ params }) {
                 title={"Multi BD Shop - Gaming eCommerce Store "}
                 stateoff={false}
             />
-            <div className="container mx-auto px-2 ">
+            <div className="container mx-auto px-2 pb-20">
                 <Image
                     alt="contact picture"
                     src={webimg}
                     className="w-full h-[400px] object-cover "
                 />
 
-                <div className="flex justify-between mt-10">
-                    <div className=" text-white pb-20 w-[68%]">
-                        <h2 className=" text-4xl text-primary font-semibold mb-5 flex justify-center items-center gap-x-3">
-                            <PiWebhooksLogo /> Multi BD Shop - Gaming eCommerce
-                            Store
+                <div className="sm:flex justify-between mt-10">
+                    <div className=" text-white pb-20 sm:w-[68%]">
+                        <h2 className="text-center font-semibold text-primary lg:text-5xl md:text-4xl text-3xl gap-x-3 mb-[72px]">
+                            Multi BD Shop - Gaming eCommerce Store
                         </h2>
                         <p className=" font-light">
                             Flaidex is a top web architecture and web
@@ -87,7 +86,7 @@ export default async function ProjectPage({ params }) {
                             <li>Custom Enterprise Web Development</li>
                         </ul>
                     </div>
-                    <div className="w-[30%]">
+                    <div className="sm:w-[30%]">
                         <p className="text-3xl text-white font-semibold">
                             Author
                         </p>
@@ -95,10 +94,10 @@ export default async function ProjectPage({ params }) {
                             <Image
                                 alt="contact picture"
                                 src={webimg}
-                                className="w-24 h-24 rounded-full"
+                                className="w-24 h-24 sm:max-md:w-16 sm:max-md:h-16 rounded-full"
                             />
                             <div>
-                                <p className="font-medium text-2xl">
+                                <p className="font-medium text-2xl sm:max-md:text-lg">
                                     Shafin Mahmud
                                 </p>
                                 <p className="text-lg">800$</p>
@@ -112,9 +111,8 @@ export default async function ProjectPage({ params }) {
                         </div>
                     </div>
                 </div>
-
-                <Collaborate />
             </div>
+            <Collaborate />
         </section>
     );
 }

@@ -180,8 +180,8 @@ export default function Services() {
                         </div>
                     </div>
                 </div>
-                <Collaborate />
             </div>
+            <Collaborate />
         </section>
     );
 }

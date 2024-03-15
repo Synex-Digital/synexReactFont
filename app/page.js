@@ -288,8 +288,8 @@ export default function Home() {
                                         rem corrupti dolor quisquam doloremque
                                         autem!
                                     </p>
-                                    <div className="flex justify-between mt-7 ">
-                                        <div className="bg-primary px-2 md:py-5 py-3 md:font-semibold font-medium text-center w-[32%] rounded-xl">
+                                    <div className="flex max-sm:flex-col max-sm:gap-y-5 justify-between mt-7 ">
+                                        <div className="border border-primary text-primary px-2 md:py-5 py-3 max-sm:py-5 md:font-semibold font-medium text-center sm:w-[32%] rounded-xl">
                                             <div className="flex gap-1 text-2xl items-center justify-center mb-2">
                                                 <SimpleHook endtime={5} />
                                                 <span>+</span>{" "}
@@ -298,7 +298,7 @@ export default function Home() {
                                                 YEARS OF EXPERIENCE
                                             </p>
                                         </div>
-                                        <div className="bg-primary px-2 md:py-5 py-3 md:font-semibold font-medium  text-center w-[32%] rounded-xl">
+                                        <div className="border border-primary text-primary px-2 md:py-5 py-3 md:font-semibold font-medium  text-center max-sm:py-5 sm:w-[32%] rounded-xl">
                                             <div className="flex gap-1 text-2xl items-center justify-center mb-2">
                                                 <SimpleHook endtime={89} />
                                                 <span>+</span>{" "}
@@ -307,7 +307,7 @@ export default function Home() {
                                                 Project Complete
                                             </p>
                                         </div>
-                                        <div className="bg-primary px-2 md:py-5 py-3 md:font-semibold font-medium  text-center w-[32%] rounded-xl">
+                                        <div className="border border-primary text-primary px-2 md:py-5 py-3 md:font-semibold font-medium  text-center max-sm:py-5 sm:w-[32%] rounded-xl">
                                             <div className="flex gap-1 text-2xl items-center justify-center mb-2">
                                                 <SimpleHook endtime={22} />
                                                 <span>+</span>{" "}

@@ -9,6 +9,7 @@ import { MdOutlineClose, MdArrowDropDown } from "react-icons/md";
 
 const Navbar = () => {
     let [isactive, setIsActive] = useState(true);
+    let [isnav, setIsNav] = useState(false);
     let handleClick = () => {
         setIsActive(!isactive);
     };
@@ -27,16 +28,19 @@ const Navbar = () => {
                     </Link>
 
                     {isactive ? (
-                        <ul className="text-white lg:flex gap-x-10 items-center hidden">
+                        <ul className="text-white lg:flex gap-x-14 items-center hidden">
                             <li>
-                                <Link href={"/"} className="narhoverAni">
+                                <Link
+                                    href={"/"}
+                                    className="hover:text-primary ease-in-out duration-300"
+                                >
                                     Home<span></span>
                                 </Link>
                             </li>
                             <li id="dropdowndiv">
                                 <Link
                                     href={"/services"}
-                                    className="hover:text-primary flex items-center gap-x-1"
+                                    className="hover:text-primary flex items-center"
                                 >
                                     Services
                                     <span></span>
@@ -84,13 +88,27 @@ const Navbar = () => {
                                 </ul>
                             </li>
                             <li>
-                                <Link href={"/project"} className="narhoverAni">
+                                <Link
+                                    href={"/project"}
+                                    className="hover:text-primary ease-in-out duration-300"
+                                >
                                     Project<span></span>
                                 </Link>
                             </li>
                             <li>
-                                <Link href={"/blogs"} className="narhoverAni">
+                                <Link
+                                    href={"/blogs"}
+                                    className="hover:text-primary ease-in-out duration-300"
+                                >
                                     Blog<span></span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    href={"/techpartner"}
+                                    className="hover:text-primary ease-in-out duration-300"
+                                >
+                                    Be a Tech Partner<span></span>
                                 </Link>
                             </li>
                         </ul>
@@ -104,13 +122,70 @@ const Navbar = () => {
                                     Home<span></span>
                                 </Link>
                             </li>
-                            <li>
-                                <Link
-                                    href={"/services"}
-                                    onClick={() => setIsActive(!isactive)}
-                                >
-                                    Services<span></span>
-                                </Link>
+                            <li onClick={() => setIsNav(!isnav)}>
+                                Services<span></span>
+                                {isnav && (
+                                    <ul className="flex flex-col gap-y-5 mt-5 text-primary">
+                                        <li>
+                                            <Link
+                                                onClick={() =>
+                                                    setIsActive(!isactive)
+                                                }
+                                                href={
+                                                    "/services/websitedevelopment"
+                                                }
+                                            >
+                                                Website Development
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link
+                                                onClick={() =>
+                                                    setIsActive(!isactive)
+                                                }
+                                                href={
+                                                    "/services/digitalmarketing"
+                                                }
+                                            >
+                                                Digital Marketing
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link
+                                                onClick={() =>
+                                                    setIsActive(!isactive)
+                                                }
+                                                href={
+                                                    "/services/mobileappdevelopment"
+                                                }
+                                            >
+                                                Mobile App Development
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link
+                                                onClick={() =>
+                                                    setIsActive(!isactive)
+                                                }
+                                                href={"/services/uxuidesign"}
+                                            >
+                                                UI/UX Design
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link
+                                                onClick={() =>
+                                                    setIsActive(!isactive)
+                                                }
+                                                href={
+                                                    "/services/graphicsdesign"
+                                                }
+                                            >
+                                                Graphics Design
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                )}
                             </li>
                             <li>
                                 <Link
@@ -122,10 +197,18 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <Link
-                                    href={"#"}
+                                    href={"/blogs"}
                                     onClick={() => setIsActive(!isactive)}
                                 >
                                     Blog<span></span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    href={"/techpartner"}
+                                    onClick={() => setIsActive(!isactive)}
+                                >
+                                    Be a Tech Partner<span></span>
                                 </Link>
                             </li>
                         </ul>

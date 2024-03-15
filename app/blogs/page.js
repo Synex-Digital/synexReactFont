@@ -200,8 +200,8 @@ export default function Blogs() {
                         </div>
                     </div>
                 </div>
-                <Collaborate />
             </div>
+            <Collaborate />
         </section>
     );
 }
