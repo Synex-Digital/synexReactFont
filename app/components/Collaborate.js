@@ -53,7 +53,7 @@ const Collaborate = () => {
                         </span>
                     </Link>
 
-                    <li
+                    <button
                         className="px-7 py-3 border border-primary bg-primary text-black hover:shadow hover:shadow-primary transition duration-300 ease-in-out flex items-center gap-x-3  max-sm:w-fit max-sm:mx-auto max-sm:mt-5"
                         onClick={openModal}
                     >
@@ -61,7 +61,7 @@ const Collaborate = () => {
                         <span>
                             <GoArrowUpRight className="text-2xl" />
                         </span>
-                    </li>
+                    </button>
                 </div>
             </div>
 
