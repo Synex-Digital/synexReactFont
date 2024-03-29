@@ -138,7 +138,7 @@ const Footer = () => {
                     </div>
                     <ul>
                         <li>
-                            <a className="text-white flex items-center max-lg:justify-center gap-x-3 mt-8 hover:underline hover:decoration-primary cursor-pointer ">
+                            <a href="tel:+8801613408101" className="text-white flex items-center max-lg:justify-center gap-x-3 mt-8 hover:underline hover:decoration-primary cursor-pointer ">
                                 <FaWhatsapp className="text-white text-xl" />
                                 <span className="font-light">
                                     +8801613408101
@@ -146,7 +146,7 @@ const Footer = () => {
                             </a>
                         </li>
                         <li>
-                            <a className="text-white flex items-center max-lg:justify-center gap-x-3 mt-1 hover:underline hover:decoration-primary cursor-pointer">
+                            <a href="mailto:office@synexdigital.com" className="text-white flex items-center max-lg:justify-center gap-x-3 mt-1 hover:underline hover:decoration-primary cursor-pointer">
                                 <FiMail className="text-white text-xl" />
                                 <span className="font-light">
                                     office@synexdigital.com
