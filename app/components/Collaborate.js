@@ -33,9 +33,9 @@ const Collaborate = () => {
         <section className="py-20 bg-[#1d2934]">
             <div className="container mx-auto px-2">
                 <div className="text-white text-center">
-                    <h6 className="lg:text-3xl text-2xl font-semibold">
+                    <div className="lg:text-3xl text-2xl font-semibold">
                         Ready to Collaborate with us?
-                    </h6>
+                    </div>
                     <p className="font-light mt-5">
                         Let's unite and craft something truly remarkable. We're
                         excited to collaborate and bring visionary ideas to

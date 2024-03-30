@@ -97,7 +97,7 @@ const Footer = () => {
                     <ul>
                         <li className="lg:mt-7 mt-3 mb-3">
                             <Link
-                                href={"#"}
+                                href={"/about"}
                                 className="text-white  font-light hover:underline hover:decoration-primary cursor-pointer"
                             >
                                 About
@@ -113,7 +113,7 @@ const Footer = () => {
                         </li>
                         <li className="my-3">
                             <Link
-                                href={"#"}
+                                href={"contact"}
                                 className="text-white   font-light hover:underline hover:decoration-primary cursor-pointer"
                             >
                                 Contact us
@@ -159,7 +159,7 @@ const Footer = () => {
             <div>
                 <div className="border-t border-t-primary w-80 mx-auto"></div>
                 <div className="text-center py-5">
-                    <h6 className="text-white">
+                    <div className="text-white">
                         Copyright © 2024{" "}
                         <a
                             target="_black"
@@ -168,7 +168,7 @@ const Footer = () => {
                         >
                             Synex Digital
                         </a>
-                    </h6>
+                    </div>
                 </div>
             </div>
         </footer>

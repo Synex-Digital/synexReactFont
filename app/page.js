@@ -77,24 +77,7 @@ export default function Home() {
                                 Your Technological Needs
                             </h1>
                             <h2 className="text-white mt-5 mb-8 max-md:font-light max-lg:text-center">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Fuga maiores iusto, error
-                                reprehenderit suscipit perferendis omnis alias
-                                eos ipsa repudiandae optio architecto. Facere
-                                porro optio, quaerat nam deserunt quo quia
-                                voluptatum, hic amet inventore delectus. Facilis
-                                laudantium impedit alias. Vero necessitatibus
-                                distinctio animi similique nisi reiciendis
-                                blanditiis praesentium officiis possimus
-                                accusantium magni perferendis magnam esse, non,
-                                vitae maxime ut temporibus consequatur officia
-                                eveniet odit! Dicta recusandae sint magnam
-                                similique maiores temporibus eius tempora
-                                voluptas, repudiandae ratione nam, placeat
-                                dignissimos qui ipsum officiis pariatur expedita
-                                odio veniam cupiditate esse dolorem? Officiis,
-                                necessitatibus. Doloribus accusamus quibusdam
-                                explicabo qui vero ex minimaet.
+                            Welcome to Synex Digital, your corporate IT partner. As a Digital Solutions Expert, we are excited to help you through our extensive variety of services to elevate your business in the ever-changing digital landscape. Synex Digital's commercial IT solutions reflect our dedication to excellence. We are your one-stop technological solution supplier, meeting your business's particular demands with precision and competence.
                             </h2>
                             <div className="max-lg:text-center">
                                 <Link
