@@ -10,6 +10,7 @@ import AosAnimation from "./components/AosAnimation";
 import TiltAnimation from "./components/TiltAnimation";
 import Heading from "./components/Heading";
 import Collaborate from "./components/Collaborate";
+import getAllServices from "@/lio/getAllServices";
 
 const jsonLd = {
     "@context": "https://schema.org",
@@ -60,7 +61,10 @@ const jsonLd = {
         "web development, web application development, UI/UX design, digital agency",
 };
 
-export default function Home() {
+export default async function Home() {
+    const data_services = await getAllServices();
+    console.log(data_services.status);
+    console.log(data_services.services);
     return (
         <>
             <main>
@@ -77,7 +81,16 @@ export default function Home() {
                                 Your Technological Needs
                             </h1>
                             <h2 className="text-white mt-5 mb-8 max-md:font-light max-lg:text-center">
-                            Welcome to Synex Digital, your corporate IT partner. As a Digital Solutions Expert, we are excited to help you through our extensive variety of services to elevate your business in the ever-changing digital landscape. Synex Digital's commercial IT solutions reflect our dedication to excellence. We are your one-stop technological solution supplier, meeting your business's particular demands with precision and competence.
+                                Welcome to Synex Digital, your corporate IT
+                                partner. As a Digital Solutions Expert, we are
+                                excited to help you through our extensive
+                                variety of services to elevate your business in
+                                the ever-changing digital landscape. Synex
+                                Digital's commercial IT solutions reflect our
+                                dedication to excellence. We are your one-stop
+                                technological solution supplier, meeting your
+                                business's particular demands with precision and
+                                competence.
                             </h2>
                             <div className="max-lg:text-center">
                                 <Link
@@ -109,33 +122,31 @@ export default function Home() {
                         />
                         <div className="flex justify-between flex-wrap ">
                             <ReactSlick className="w-full h-full">
-                                <div className="xl:p-5 lg:p-4 md:p-3 p-2 cursor-grab">
-                                    <Reacttilt>
-                                        <div className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#c0dbe2]">
-                                            <h2 className="text-center text-3xl font-semibold">
-                                                Website Development
-                                            </h2>
-                                            <h3 className="text-justify mt-5 font-medium">
-                                                Synex Digital develops dynamic
-                                                websites with React on the front
-                                                end and PHP-Laravel on the back
-                                                end. Strengthen your digital
-                                                identity with our creative
-                                                web...
-                                            </h3>
-                                            <Image
-                                                width={250}
-                                                alt="Web Image"
-                                                priority
-                                                placeholder="blur"
-                                                quality={80}
-                                                src={webicon}
-                                                className="mx-auto"
-                                            />
-                                        </div>
-                                    </Reacttilt>
-                                </div>
-                                <div className="xl:p-5 lg:p-4 md:p-3 p-2 cursor-grab">
+                                {data_services.services.map((item) => (
+                                    <div className="xl:p-5 lg:p-4 md:p-3 p-2 cursor-grab">
+                                        <Reacttilt>
+                                            <div className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#c0dbe2]">
+                                                <h2 className="text-center text-3xl font-semibold">
+                                                    {item.title}
+                                                </h2>
+                                                <h3 className="text-justify mt-5 font-medium">
+                                                    {item.description}
+                                                </h3>
+                                                <Image
+                                                    width={250}
+                                                    alt="Web Image"
+                                                    priority
+                                                    placeholder="blur"
+                                                    quality={80}
+                                                    src={webicon}
+                                                    className="mx-auto"
+                                                />
+                                            </div>
+                                        </Reacttilt>
+                                    </div>
+                                ))}
+
+                                {/* <div className="xl:p-5 lg:p-4 md:p-3 p-2 cursor-grab">
                                     <Reacttilt>
                                         <div className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#e0bb7b]">
                                             <h2 className="text-center text-3xl font-semibold">
@@ -264,7 +275,7 @@ export default function Home() {
                                             />
                                         </div>
                                     </Reacttilt>
-                                </div>
+                                </div> */}
                             </ReactSlick>
                         </div>
                     </div>
