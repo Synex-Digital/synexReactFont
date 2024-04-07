@@ -16,7 +16,7 @@ export default async function services({ params }) {
     const { id } = params;
     const Service_data = await getServiceDetails(id);
 
-    console.log(Service_data.services_view.content);
+    // console.log(Service_data.services_view.content);
 
     return (
         <main>

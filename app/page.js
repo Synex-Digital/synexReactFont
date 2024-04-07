@@ -136,8 +136,6 @@ export default async function Home() {
                                                         width={250}
                                                         height={250}
                                                         alt="Web Image"
-                                                        // priority
-                                                        // placeholder="blur"
                                                         quality={80}
                                                         src={`http://sd-admin-backend.synexdigital.com/uploads/service/${item.thumbnail}`}
                                                         className="mx-auto p-5"
