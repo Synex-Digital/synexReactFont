@@ -122,9 +122,9 @@ export default async function Home() {
                         <div className="flex justify-between flex-wrap ">
                             <ReactSlick className="w-full h-full">
                                 {data_services.services.map((item) => (
-                                    <Link href={`/services/${item.id}`}>
-                                        <div className="xl:p-5 lg:p-4 md:p-3 p-2 cursor-pointer">
-                                            <Reacttilt>
+                                    <div className="xl:p-5 lg:p-4 md:p-3 p-2 cursor-pointer">
+                                        <Reacttilt>
+                                            <Link href={`/services/${item.slugs}`}>
                                                 <div className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#c0dbe2]">
                                                     <h2 className="text-center text-3xl font-semibold">
                                                         {item.title}
@@ -140,12 +140,12 @@ export default async function Home() {
                                                         // placeholder="blur"
                                                         quality={80}
                                                         src={`http://sd-admin-backend.synexdigital.com/uploads/service/${item.thumbnail}`}
-                                                        className="mx-auto"
+                                                        className="mx-auto p-5"
                                                     />
                                                 </div>
-                                            </Reacttilt>
-                                        </div>
-                                    </Link>
+                                            </Link>
+                                        </Reacttilt>
+                                    </div>
                                 ))}
 
                                 {/* <div className="xl:p-5 lg:p-4 md:p-3 p-2 cursor-grab">
