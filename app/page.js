@@ -63,8 +63,7 @@ const jsonLd = {
 
 export default async function Home() {
     const data_services = await getAllServices();
-    console.log(data_services.status);
-    console.log(data_services.services);
+
     return (
         <>
             <main>
@@ -123,27 +122,29 @@ export default async function Home() {
                         <div className="flex justify-between flex-wrap ">
                             <ReactSlick className="w-full h-full">
                                 {data_services.services.map((item) => (
-                                    <div className="xl:p-5 lg:p-4 md:p-3 p-2 cursor-grab">
-                                        <Reacttilt>
-                                            <div className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#c0dbe2]">
-                                                <h2 className="text-center text-3xl font-semibold">
-                                                    {item.title}
-                                                </h2>
-                                                <h3 className="text-justify mt-5 font-medium">
-                                                    {item.description}
-                                                </h3>
-                                                <Image
-                                                    width={250}
-                                                    alt="Web Image"
-                                                    priority
-                                                    placeholder="blur"
-                                                    quality={80}
-                                                    src={webicon}
-                                                    className="mx-auto"
-                                                />
-                                            </div>
-                                        </Reacttilt>
-                                    </div>
+                                    <Link href={`/services/${item.id}`}>
+                                        <div className="xl:p-5 lg:p-4 md:p-3 p-2 cursor-pointer">
+                                            <Reacttilt>
+                                                <div className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#c0dbe2]">
+                                                    <h2 className="text-center text-3xl font-semibold">
+                                                        {item.title}
+                                                    </h2>
+                                                    <h3 className="text-justify mt-5 font-medium">
+                                                        {item.description}
+                                                    </h3>
+                                                    <Image
+                                                        width={250}
+                                                        alt="Web Image"
+                                                        priority
+                                                        placeholder="blur"
+                                                        quality={80}
+                                                        src={webicon}
+                                                        className="mx-auto"
+                                                    />
+                                                </div>
+                                            </Reacttilt>
+                                        </div>
+                                    </Link>
                                 ))}
 
                                 {/* <div className="xl:p-5 lg:p-4 md:p-3 p-2 cursor-grab">
