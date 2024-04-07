@@ -134,11 +134,12 @@ export default async function Home() {
                                                     </h3>
                                                     <Image
                                                         width={250}
+                                                        height={250}
                                                         alt="Web Image"
-                                                        priority
-                                                        placeholder="blur"
+                                                        // priority
+                                                        // placeholder="blur"
                                                         quality={80}
-                                                        src={webicon}
+                                                        src={`http://sd-admin-backend.synexdigital.com/uploads/service/${item.thumbnail}`}
                                                         className="mx-auto"
                                                     />
                                                 </div>
