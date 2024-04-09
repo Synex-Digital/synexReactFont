@@ -25,6 +25,7 @@ export default async function Services() {
                     <div className="mb-20 mt-16 flex flex-wrap max-sm:flex-col gap-5 justify-center">
                         {Service_data.services.map((item) => (
                             <div
+                                key={item.id}
                                 className=" rounded-xl xl:p-7 lg:p-6 md:p-5 p-4 bg-[#c0dbe2] xl:w-[32%] sm:w-[48%] text-black "
                                 id="serviseslinkdiv"
                             >

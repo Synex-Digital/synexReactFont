@@ -16,7 +16,7 @@ export default async function services({ params }) {
     const { id } = params;
     const Service_data = await getServiceDetails(id);
 
-    // console.log(Service_data.services_view.content);
+    console.log(Service_data.services_view.content.length);
 
     return (
         <main>
@@ -43,44 +43,41 @@ export default async function services({ params }) {
                 </div>
             </section>
 
-            <section className="pb-20">
-                <div className="container mx-auto px-2 sm:flex justify-between text-white">
-                    <div className="sm:w-[48%] max-sm:text-center relative">
-                        <div className="sticky top-10">
-                            <h2 className="font-bold xl:text-4xl lg:text-3xl text-2xl mt-10 mb-5 text-primary">
-                                Exploring Project Idea
-                            </h2>
-                            <p className="font-light max-lg:text-sm">
-                                The initial phase of application development
-                                involves discussing ideas with stakeholders,
-                                conducting research, and brainstorming to
-                                identify any problems and determine the most
-                                efficient way to solve them. This phase lays the
-                                foundation for the project, ensuring that the
-                                application's objectives and functionality align
-                                with stakeholder requirements.
-                            </p>
+            {Service_data.services_view.content.map((item, index) => (
+                <section key={index} className="pb-20">
+                    <div className="container mx-auto px-2 sm:flex justify-between text-white">
+                        <div className="sm:w-[48%] max-sm:text-center relative">
+                            <div className="sticky top-10">
+                                <h2 className="font-bold xl:text-4xl lg:text-3xl text-2xl mt-10 mb-5 text-primary">
+                                    {item.content_title}
+                                </h2>
+                                <p className="font-light max-lg:text-sm">
+                                    {item.content_description}
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="sm:w-[48%] max-sm:text-center flex flex-col gap-y-7 xl:gap-y-10 mt-10">
-                        {Service_data.services_view.content.map((item) => (
-                            <div className="flex gap-x-4">
-                                <div className="self-start rounded max-sm:hidden bg-gradient bg-red-500 lg:p-5 sm:p-3"></div>
-                                <div>
-                                    <h3 className="font-bold xl:text-4xl lg:text-3xl text-2xl mb-5 text-primary">
-                                        {item.content_title}
-                                    </h3>
-                                    <p className="font-light max-lg:text-sm">
-                                        {item.content_description}
-                                    </p>
+                        <div className="sm:w-[48%] max-sm:text-center flex flex-col gap-y-7 xl:gap-y-10 mt-10">
+                            {item.content_item.map((sitem) => (
+                                <div key={sitem.id} className="flex gap-x-4">
+                                    <div className="self-start rounded max-sm:hidden bg-gradient bg-red-500 lg:p-5 sm:p-3"></div>
+                                    <div>
+                                        <h3 className="font-bold xl:text-4xl lg:text-3xl text-2xl mb-5 text-primary">
+                                            {sitem.item_title}
+                                        </h3>
+                                        <p className="font-light max-lg:text-sm">
+                                            {sitem.item_description}
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
-                </div>
-            </section>
+                    {Service_data.services_view.content.length - 1 ===
+                        index && <div id="stickybg"></div>}
+                </section>
+            ))}
 
-            <section id="stickybg"></section>
+            {/* <section id="stickybg"></section>
 
             <section className="pb-20">
                 <div className="container mx-auto px-2 sm:flex justify-between text-white">
@@ -168,7 +165,7 @@ export default async function services({ params }) {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <Collaborate />
         </main>
