@@ -142,7 +142,7 @@ export default async function Home() {
                                                         height={250}
                                                         alt="Web Image"
                                                         quality={80}
-                                                        src={`http://sd-admin-backend.synexdigital.com/uploads/service/${item.thumbnail}`}
+                                                        src={`https://sd-admin-backend.synexdigital.com/uploads/service/${item.thumbnail}`}
                                                         className="mx-auto p-5"
                                                     />
                                                 </div>
