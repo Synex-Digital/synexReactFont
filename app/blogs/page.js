@@ -1,7 +1,6 @@
 import { PiWebhooksLogo } from "react-icons/pi";
 import Breadcrumbs from "../components/Breadcrumbs";
 import Image from "next/image";
-import webimg from "@/public/assets/thumbBody.jpg";
 import Link from "next/link";
 import { GoArrowRight } from "react-icons/go";
 import Collaborate from "../components/Collaborate";
@@ -29,7 +28,6 @@ export default async function Blogs() {
                                 id="small1overlaydiv"
                                 className="group lg:w-[32%]  rounded-xl sm:w-[48%] w-full overflow-hidden relative "
                             >
-                                {/* <Image alt="contact picture" src={webimg} /> */}
                                 <Image
                                     width={1000}
                                     height={1000}
@@ -50,7 +48,7 @@ export default async function Blogs() {
                                                 </h3>
                                                 <Link
                                                     className="text-primary text-lg xl:mt-4 mt-2 flex items-center gap-x-2"
-                                                    href={`${item.slugs}`}
+                                                    href={`/blogs/${item.slugs}`}
                                                 >
                                                     Explore{" "}
                                                     <GoArrowRight className="text-xl" />
