@@ -2,7 +2,6 @@ import Breadcrumbs from "@/app/components/Breadcrumbs";
 import Image from "next/image";
 import webimg from "@/public/assets/thumbBody.jpg";
 import Collaborate from "@/app/components/Collaborate";
-import { PiWebhooksLogo } from "react-icons/pi";
 
 export default async function ProjectPage({ params }) {
     const { id } = params;

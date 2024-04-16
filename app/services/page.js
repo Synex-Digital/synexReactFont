@@ -34,7 +34,7 @@ export default async function Services() {
                                     height={250}
                                     alt="Web Image"
                                     quality={80}
-                                    src={`http://sd-admin-backend.synexdigital.com/uploads/service/${item.thumbnail}`}
+                                    src={`https://sd-admin-backend.synexdigital.com/uploads/service/${item.thumbnail}`}
                                     className="mx-auto p-5"
                                 />
                                 <h2 className="text-center text-3xl font-semibold mt-5">

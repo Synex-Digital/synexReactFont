@@ -50,7 +50,7 @@ export default function About() {
                         }
                     />
                     <div className="flex flex-wrap justify-evenly gap-y-7">
-                        <div className="w-[23%] text-white text-center p-5 rounded-xl shadow-xl">
+                        <div className="w-[23%] bg-[#1d2934] text-white text-center py-7 rounded-lg">
                             <Image
                                 alt="Developer picture"
                                 src={aboutimg}

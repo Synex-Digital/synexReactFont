@@ -5,6 +5,7 @@ import webimg from "@/public/assets/thumbBody.jpg";
 import Link from "next/link";
 import { GoArrowRight } from "react-icons/go";
 import Collaborate from "../components/Collaborate";
+import getAllProject from "@/lio/getAllProject";
 
 export const metadata = {
     title: "Synex Digital - Projects",
@@ -61,7 +62,12 @@ const jsonLd = {
         "web development, web application development, UI/UX design, digital agency",
 };
 
-export default function Project() {
+export default async function Project() {
+
+    const project_data = await getAllProject();
+
+
+    
     return (
         <main>
             <Breadcrumbs title={"All Projects"} stateoff={false} />
@@ -75,7 +81,8 @@ export default function Project() {
                         our previous clients.
                     </p>
                     <div className="mt-16 flex flex-wrap xl:gap-5 gap-4 justify-center mb-20">
-                        <div
+                        {project_data.projects.map(item=>(
+                            <div
                             id="small1overlaydiv"
                             className="group lg:w-[32%]  rounded-xl sm:w-[48%] w-full overflow-hidden relative "
                         >
@@ -86,7 +93,7 @@ export default function Project() {
                             >
                                 <div className="text w-full h-1/2 xl:p-7 p-3 self-start ">
                                     <h3 className="xl:text-2xl md:text-xl text-lg font-semibold">
-                                        Nugor Tech - Company portfolio
+                                        {item.title}
                                     </h3>
                                     <Link
                                         className="text-primary text-lg xl:mt-4 mt-2 flex items-center gap-x-2"
@@ -106,7 +113,9 @@ export default function Project() {
                                 </div>
                             </div>
                         </div>
-                        <div
+                        ))}
+                        
+                        {/* <div
                             id="small1overlaydiv"
                             className="group lg:w-[32%] sm:w-[48%]  rounded-xl w-full overflow-hidden relative "
                         >
@@ -260,7 +269,7 @@ export default function Project() {
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
