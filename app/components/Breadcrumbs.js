@@ -24,7 +24,7 @@ import { TbBrandNextjs, TbSeo } from "react-icons/tb";
 
 const Breadcrumbs = ({ title, stateoff }) => {
     return (
-        <div>
+        <section>
             <div id="banner" className="!relative container mx-auto">
                 <div className="round1 absolute rounded-full text-primary top-[128px] right-[43px] xl:text-4xl md:text-3xl text-xl">
                     <FaLaravel />
@@ -103,7 +103,7 @@ const Breadcrumbs = ({ title, stateoff }) => {
                     </p>
                 )}
             </div>
-        </div>
+        </section>
     );
 };
 

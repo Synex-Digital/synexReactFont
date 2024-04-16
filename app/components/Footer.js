@@ -97,7 +97,7 @@ const Footer = () => {
                     <ul>
                         <li className="lg:mt-7 mt-3 mb-3">
                             <Link
-                                href={"#"}
+                                href={"/about"}
                                 className="text-white  font-light hover:underline hover:decoration-primary cursor-pointer"
                             >
                                 About
@@ -113,7 +113,7 @@ const Footer = () => {
                         </li>
                         <li className="my-3">
                             <Link
-                                href={"#"}
+                                href={"contact"}
                                 className="text-white   font-light hover:underline hover:decoration-primary cursor-pointer"
                             >
                                 Contact us
@@ -138,7 +138,7 @@ const Footer = () => {
                     </div>
                     <ul>
                         <li>
-                            <a className="text-white flex items-center max-lg:justify-center gap-x-3 mt-8 hover:underline hover:decoration-primary cursor-pointer ">
+                            <a href="tel:+8801613408101" className="text-white flex items-center max-lg:justify-center gap-x-3 mt-8 hover:underline hover:decoration-primary cursor-pointer ">
                                 <FaWhatsapp className="text-white text-xl" />
                                 <span className="font-light">
                                     +8801613408101
@@ -146,7 +146,7 @@ const Footer = () => {
                             </a>
                         </li>
                         <li>
-                            <a className="text-white flex items-center max-lg:justify-center gap-x-3 mt-1 hover:underline hover:decoration-primary cursor-pointer">
+                            <a href="mailto:office@synexdigital.com" className="text-white flex items-center max-lg:justify-center gap-x-3 mt-1 hover:underline hover:decoration-primary cursor-pointer">
                                 <FiMail className="text-white text-xl" />
                                 <span className="font-light">
                                     office@synexdigital.com
@@ -159,7 +159,7 @@ const Footer = () => {
             <div>
                 <div className="border-t border-t-primary w-80 mx-auto"></div>
                 <div className="text-center py-5">
-                    <h6 className="text-white">
+                    <div className="text-white">
                         Copyright © 2024{" "}
                         <a
                             target="_black"
@@ -168,7 +168,7 @@ const Footer = () => {
                         >
                             Synex Digital
                         </a>
-                    </h6>
+                    </div>
                 </div>
             </div>
         </footer>

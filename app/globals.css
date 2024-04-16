@@ -386,4 +386,5 @@ nav .dropdown li:hover {
 #stickybg {
     background: url("../public/assets/blogimg.webp") no-repeat fixed center;
     background-size: cover;
+    height: 90vh;
 }
