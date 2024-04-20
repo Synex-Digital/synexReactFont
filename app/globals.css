@@ -388,3 +388,41 @@ nav .dropdown li:hover {
     background-size: cover;
     height: 90vh;
 }
+
+#developer_profile {
+    width: 23%;
+    color: white;
+    text-align: center;
+    padding: 28px 0;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#developer_profile:hover {
+    background-color: #1d2934;
+    color: #c2e812;
+    border: 0;
+    -webkit-box-shadow: 5px 5px 20px 5px rgba(194, 232, 18, 0.2);
+    -moz-box-shadow: 5px 5px 20px 5px rgba(194, 232, 18, 0.2);
+    box-shadow: 5px 5px 20px 5px rgba(194, 232, 18, 0.2);
+}
+
+#developer_img {
+    width: 144px;
+    height: 144px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 9999px;
+    object-fit: cover;
+    transition: 1s;
+}
+
+#developer_profile:hover #developer_img {
+    transform: scale3d(1.85, 1.85, 1);
+    border-radius: 12px;
+    border: 0;
+    /* -webkit-box-shadow: 5px 5px 20px 5px rgba(194, 232, 18, 0.2);
+    -moz-box-shadow: 5px 5px 20px 5px rgba(194, 232, 18, 0.2);
+    box-shadow: 5px 5px 20px 5px rgba(194, 232, 18, 0.2); */
+}

@@ -49,12 +49,12 @@ export default function About() {
                             "Meet the dedicated minds behind Synex Digital"
                         }
                     />
-                    <div className="flex flex-wrap justify-evenly gap-y-7">
-                        <div className="w-[23%] bg-[#1d2934] text-white text-center py-7 rounded-lg">
+                    <div className="flex flex-wrap justify-evenly gap-y-7 mt-20">
+                        <div id="developer_profile">
                             <Image
+                                id="developer_img"
                                 alt="Developer picture"
                                 src={aboutimg}
-                                className="rounded-full w-32 h-32 mx-auto object-cover"
                             />
                             <div className="font-medium text-xl mt-3">
                                 Ali Imran Mehedi
@@ -65,11 +65,11 @@ export default function About() {
                                 <FaGithub />
                             </div>
                         </div>
-                        <div className="w-[23%] text-white text-center p-5 rounded-xl shadow-xl">
+                        <div id="developer_profile">
                             <Image
+                                id="developer_img"
                                 alt="Developer picture"
                                 src={aboutimg}
-                                className="rounded-full w-32 h-32 mx-auto object-cover"
                             />
                             <div className="font-medium text-xl mt-3">
                                 Ali Imran Mehedi
@@ -80,11 +80,11 @@ export default function About() {
                                 <FaGithub />
                             </div>
                         </div>
-                        <div className="w-[23%] text-white text-center p-5 rounded-xl shadow-xl">
+                        <div id="developer_profile">
                             <Image
+                                id="developer_img"
                                 alt="Developer picture"
                                 src={aboutimg}
-                                className="rounded-full w-32 h-32 mx-auto object-cover"
                             />
                             <div className="font-medium text-xl mt-3">
                                 Ali Imran Mehedi
@@ -95,11 +95,11 @@ export default function About() {
                                 <FaGithub />
                             </div>
                         </div>
-                        <div className="w-[23%] text-white text-center p-5 rounded-xl shadow-xl">
+                        <div id="developer_profile">
                             <Image
+                                id="developer_img"
                                 alt="Developer picture"
                                 src={aboutimg}
-                                className="rounded-full w-32 h-32 mx-auto object-cover"
                             />
                             <div className="font-medium text-xl mt-3">
                                 Ali Imran Mehedi
@@ -110,11 +110,11 @@ export default function About() {
                                 <FaGithub />
                             </div>
                         </div>
-                        <div className="w-[23%] text-white text-center p-5 rounded-xl shadow-xl">
+                        <div id="developer_profile">
                             <Image
+                                id="developer_img"
                                 alt="Developer picture"
                                 src={aboutimg}
-                                className="rounded-full w-32 h-32 mx-auto object-cover"
                             />
                             <div className="font-medium text-xl mt-3">
                                 Ali Imran Mehedi
@@ -125,11 +125,11 @@ export default function About() {
                                 <FaGithub />
                             </div>
                         </div>
-                        <div className="w-[23%] text-white text-center p-5 rounded-xl shadow-xl">
+                        <div id="developer_profile">
                             <Image
+                                id="developer_img"
                                 alt="Developer picture"
                                 src={aboutimg}
-                                className="rounded-full w-32 h-32 mx-auto object-cover"
                             />
                             <div className="font-medium text-xl mt-3">
                                 Ali Imran Mehedi
@@ -140,11 +140,11 @@ export default function About() {
                                 <FaGithub />
                             </div>
                         </div>
-                        <div className="w-[23%] text-white text-center p-5 rounded-xl shadow-xl">
+                        <div id="developer_profile">
                             <Image
+                                id="developer_img"
                                 alt="Developer picture"
                                 src={aboutimg}
-                                className="rounded-full w-32 h-32 mx-auto object-cover"
                             />
                             <div className="font-medium text-xl mt-3">
                                 Ali Imran Mehedi
@@ -201,9 +201,7 @@ export default function About() {
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1096.2305514072784!2d90.36732961145226!3d23.7495884389046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40311a29c1f9eaa9%3A0x7eda334fe00e121c!2sSynex%20Digital!5e0!3m2!1sen!2sbd!4v1711811413537!5m2!1sen!2sbd"
                             width="100%"
                             height="400"
-                            allowfullscreen=""
                             loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
                         ></iframe>
                     </div>
                     <div className="w-[48%] text-white">
