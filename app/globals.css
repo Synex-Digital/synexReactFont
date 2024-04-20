@@ -391,7 +391,6 @@ nav .dropdown li:hover {
 
 #developer_profile {
     width: 23%;
-    border: 2px #c2e812 solid;
     color: white;
     text-align: center;
     padding: 28px 0;
@@ -404,6 +403,9 @@ nav .dropdown li:hover {
     background-color: #1d2934;
     color: #c2e812;
     border: 0;
+    -webkit-box-shadow: 5px 5px 20px 5px rgba(194, 232, 18, 0.2);
+    -moz-box-shadow: 5px 5px 20px 5px rgba(194, 232, 18, 0.2);
+    box-shadow: 5px 5px 20px 5px rgba(194, 232, 18, 0.2);
 }
 
 #developer_img {
@@ -413,8 +415,6 @@ nav .dropdown li:hover {
     margin-right: auto;
     border-radius: 9999px;
     object-fit: cover;
-    border: 2px #c2e812 solid;
-    padding: 4px;
     transition: 1s;
 }
 
@@ -422,4 +422,7 @@ nav .dropdown li:hover {
     transform: scale3d(1.85, 1.85, 1);
     border-radius: 12px;
     border: 0;
+    /* -webkit-box-shadow: 5px 5px 20px 5px rgba(194, 232, 18, 0.2);
+    -moz-box-shadow: 5px 5px 20px 5px rgba(194, 232, 18, 0.2);
+    box-shadow: 5px 5px 20px 5px rgba(194, 232, 18, 0.2); */
 }

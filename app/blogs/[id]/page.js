@@ -17,9 +17,7 @@ export async function generateMetadata({ params }) {
 export default async function BlogView({ params }) {
     const { id } = params;
     const blog_data = await getBlogView(id);
-    console.log(
-        `https://sd-admin-backend.synexdigital.com/uploads/blog/${id}/${blog_data.blogs_view.thumbnail}`
-    );
+
     return (
         <main>
             <section className="py-20">
@@ -52,7 +50,7 @@ export default async function BlogView({ params }) {
 
             <section>
                 <div
-                    className="text-white"
+                    className="text-white container mx-auto px-2"
                     dangerouslySetInnerHTML={{
                         __html: blog_data.blogs_view.content,
                     }}

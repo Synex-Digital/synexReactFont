@@ -49,7 +49,7 @@ export default function About() {
                             "Meet the dedicated minds behind Synex Digital"
                         }
                     />
-                    <div className="flex flex-wrap justify-evenly gap-y-7">
+                    <div className="flex flex-wrap justify-evenly gap-y-7 mt-20">
                         <div id="developer_profile">
                             <Image
                                 id="developer_img"
@@ -65,11 +65,11 @@ export default function About() {
                                 <FaGithub />
                             </div>
                         </div>
-                        <div className="w-[23%] text-white text-center p-5 rounded-xl shadow-xl">
+                        <div id="developer_profile">
                             <Image
+                                id="developer_img"
                                 alt="Developer picture"
                                 src={aboutimg}
-                                className="rounded-full w-32 h-32 mx-auto object-cover"
                             />
                             <div className="font-medium text-xl mt-3">
                                 Ali Imran Mehedi
@@ -80,11 +80,11 @@ export default function About() {
                                 <FaGithub />
                             </div>
                         </div>
-                        <div className="w-[23%] text-white text-center p-5 rounded-xl shadow-xl">
+                        <div id="developer_profile">
                             <Image
+                                id="developer_img"
                                 alt="Developer picture"
                                 src={aboutimg}
-                                className="rounded-full w-32 h-32 mx-auto object-cover"
                             />
                             <div className="font-medium text-xl mt-3">
                                 Ali Imran Mehedi
@@ -95,11 +95,11 @@ export default function About() {
                                 <FaGithub />
                             </div>
                         </div>
-                        <div className="w-[23%] text-white text-center p-5 rounded-xl shadow-xl">
+                        <div id="developer_profile">
                             <Image
+                                id="developer_img"
                                 alt="Developer picture"
                                 src={aboutimg}
-                                className="rounded-full w-32 h-32 mx-auto object-cover"
                             />
                             <div className="font-medium text-xl mt-3">
                                 Ali Imran Mehedi
@@ -110,11 +110,11 @@ export default function About() {
                                 <FaGithub />
                             </div>
                         </div>
-                        <div className="w-[23%] text-white text-center p-5 rounded-xl shadow-xl">
+                        <div id="developer_profile">
                             <Image
+                                id="developer_img"
                                 alt="Developer picture"
                                 src={aboutimg}
-                                className="rounded-full w-32 h-32 mx-auto object-cover"
                             />
                             <div className="font-medium text-xl mt-3">
                                 Ali Imran Mehedi
@@ -125,11 +125,11 @@ export default function About() {
                                 <FaGithub />
                             </div>
                         </div>
-                        <div className="w-[23%] text-white text-center p-5 rounded-xl shadow-xl">
+                        <div id="developer_profile">
                             <Image
+                                id="developer_img"
                                 alt="Developer picture"
                                 src={aboutimg}
-                                className="rounded-full w-32 h-32 mx-auto object-cover"
                             />
                             <div className="font-medium text-xl mt-3">
                                 Ali Imran Mehedi
@@ -140,11 +140,11 @@ export default function About() {
                                 <FaGithub />
                             </div>
                         </div>
-                        <div className="w-[23%] text-white text-center p-5 rounded-xl shadow-xl">
+                        <div id="developer_profile">
                             <Image
+                                id="developer_img"
                                 alt="Developer picture"
                                 src={aboutimg}
-                                className="rounded-full w-32 h-32 mx-auto object-cover"
                             />
                             <div className="font-medium text-xl mt-3">
                                 Ali Imran Mehedi

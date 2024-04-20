@@ -63,11 +63,8 @@ const jsonLd = {
 };
 
 export default async function Project() {
-
     const project_data = await getAllProject();
 
-
-    
     return (
         <main>
             <Breadcrumbs title={"All Projects"} stateoff={false} />
@@ -81,40 +78,47 @@ export default async function Project() {
                         our previous clients.
                     </p>
                     <div className="mt-16 flex flex-wrap xl:gap-5 gap-4 justify-center mb-20">
-                        {project_data.projects.map(item=>(
+                        {project_data.projects.map((item) => (
                             <div
-                            id="small1overlaydiv"
-                            className="group lg:w-[32%]  rounded-xl sm:w-[48%] w-full overflow-hidden relative "
-                        >
-                            <Image alt="contact picture" src={webimg} />
-                            <div
-                                id="small1overlay"
-                                className=" group-hover:bottom-0 w-full h-full  absolute -bottom-[65%] left-0 flex items-end "
+                                id="small1overlaydiv"
+                                className="group lg:w-[32%]  rounded-xl sm:w-[48%] w-full overflow-hidden relative "
                             >
-                                <div className="text w-full h-1/2 xl:p-7 p-3 self-start ">
-                                    <h3 className="xl:text-2xl md:text-xl text-lg font-semibold">
-                                        {item.title}
-                                    </h3>
-                                    <Link
-                                        className="text-primary text-lg xl:mt-4 mt-2 flex items-center gap-x-2"
-                                        href="/project/1"
-                                    >
-                                        Explore{" "}
-                                        <GoArrowRight className="text-xl" />
-                                    </Link>
-                                    <p
-                                        id="small1overlayptag"
-                                        className="mt-5 font-light"
-                                    >
-                                        company in bangladesh since 2019 in
-                                        Bangladesh by synex Digital. A Service
-                                        provider company portfolio
-                                    </p>
+                                <Image
+                                    width={1000}
+                                    height={1000}
+                                    quality={80}
+                                    style={{ width: "100%", height: "390px" }}
+                                    alt="contact picture"
+                                    src={`https://sd-admin-backend.synexdigital.com/uploads/project/${item.thumbnail}`}
+                                />
+                                <div
+                                    id="small1overlay"
+                                    className=" group-hover:bottom-0 w-full h-full  absolute -bottom-[65%] left-0 flex items-end "
+                                >
+                                    <div className="text w-full h-1/2 xl:p-7 p-3 self-start ">
+                                        <h3 className="xl:text-2xl md:text-xl text-lg font-semibold">
+                                            {item.title}
+                                        </h3>
+                                        <Link
+                                            className="text-primary text-lg xl:mt-4 mt-2 flex items-center gap-x-2"
+                                            href="/project/1"
+                                        >
+                                            Explore{" "}
+                                            <GoArrowRight className="text-xl" />
+                                        </Link>
+                                        <p
+                                            id="small1overlayptag"
+                                            className="mt-5 font-light"
+                                        >
+                                            company in bangladesh since 2019 in
+                                            Bangladesh by synex Digital. A
+                                            Service provider company portfolio
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         ))}
-                        
+
                         {/* <div
                             id="small1overlaydiv"
                             className="group lg:w-[32%] sm:w-[48%]  rounded-xl w-full overflow-hidden relative "
