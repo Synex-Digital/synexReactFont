@@ -12,8 +12,6 @@ import Heading from "./components/Heading";
 import Collaborate from "./components/Collaborate";
 import getAllServices from "@/lio/getAllServices";
 
-
-
 export default async function Home() {
     const data_services = await getAllServices();
 
@@ -73,11 +71,11 @@ export default async function Home() {
                             subtitle="Elevating Your Business with Innovative Services"
                         />
                         <div className="flex justify-between flex-wrap ">
-                            <ReactSlick className="w-full h-full">
+                            <ReactSlick className="w-full h-full ">
                                 {data_services.services.map((item, index) => (
                                     <div
                                         key={index}
-                                        className="xl:p-5 lg:p-4 md:p-3 p-2 cursor-pointer"
+                                        className="cursor-pointer !w-[95%] !mx-auto !block py-7"
                                     >
                                         <Reacttilt>
                                             <Link
@@ -87,9 +85,9 @@ export default async function Home() {
                                                     <h2 className="text-center text-3xl font-semibold">
                                                         {item.title}
                                                     </h2>
-                                                    <h3 className="text-justify mt-5 font-medium">
+                                                    <h4 className="text-justify mt-5 font-medium">
                                                         {item.description}
-                                                    </h3>
+                                                    </h4>
                                                     <Image
                                                         width={250}
                                                         height={250}
@@ -132,10 +130,10 @@ export default async function Home() {
                             </div>
                             <div className="lg:w-[48%] max-lg:mt-7 max-lg:text-center">
                                 <AosAnimation aosvalue={"fade-up"}>
-                                    <h5 className="font-semibold max-lg:font-medium text-white lg:mb-5 mb-3 xl:text-4xl lg:text-3xl text-2xl">
+                                    <div className="font-semibold max-lg:font-medium text-white lg:mb-5 mb-3 xl:text-4xl lg:text-3xl text-2xl">
                                         Navigating the IT Landscape with
                                         Precision
-                                    </h5>
+                                    </div>
                                     <p className="text-white leading-7 max-lg:font-light">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Cumque animi magni
@@ -211,7 +209,7 @@ export default async function Home() {
                                     <div className="p-1 absolute z-20">
                                         <Image
                                             src={recordimg}
-                                            alt="Reacording Image"
+                                            alt="Recording Image"
                                             priority
                                             placeholder="blur"
                                             quality={80}
@@ -221,9 +219,9 @@ export default async function Home() {
                                             <time className="bg-[#007d58] text-white font-light text-sm py-2 px-5 rounded-3xl">
                                                 28 sep 2023
                                             </time>
-                                            <h4 className="text-white text-xl font-semibold text-center mt-5 mb-3">
+                                            <div className="text-white text-xl font-semibold text-center mt-5 mb-3">
                                                 Nugor Tech - Company portfolio
-                                            </h4>
+                                            </div>
                                             <p className="text-white text-center">
                                                 company in bangladesh since 2019
                                                 in Bangladesh by synex Digital.
@@ -368,13 +366,13 @@ export default async function Home() {
                                                 </p>
                                             </div>
                                         </div>
-                                        <h3 className="text-justify mt-5 ">
+                                        <div className="text-justify mt-5 ">
                                             Synex Digital develops dynamic
                                             websites with React on the front end
                                             and PHP-Laravel on the back end.
                                             Strengthen your digital identity
                                             with our creative web...
-                                        </h3>
+                                        </div>
                                     </div>
                                 </Reacttilt>
                             </div>
@@ -396,13 +394,13 @@ export default async function Home() {
                                                 </p>
                                             </div>
                                         </div>
-                                        <h3 className="text-justify mt-5 ">
+                                        <div className="text-justify mt-5 ">
                                             Synex Digital develops dynamic
                                             websites with React on the front end
                                             and PHP-Laravel on the back end.
                                             Strengthen your digital identity
                                             with our creative web...
-                                        </h3>
+                                        </div>
                                     </div>
                                 </Reacttilt>
                             </div>
@@ -424,13 +422,13 @@ export default async function Home() {
                                                 </p>
                                             </div>
                                         </div>
-                                        <h3 className="text-justify mt-5 ">
+                                        <div className="text-justify mt-5 ">
                                             Synex Digital develops dynamic
                                             websites with React on the front end
                                             and PHP-Laravel on the back end.
                                             Strengthen your digital identity
                                             with our creative web...
-                                        </h3>
+                                        </div>
                                     </div>
                                 </Reacttilt>
                             </div>
@@ -452,13 +450,13 @@ export default async function Home() {
                                                 </p>
                                             </div>
                                         </div>
-                                        <h3 className="text-justify mt-5 ">
+                                        <div className="text-justify mt-5 ">
                                             Synex Digital develops dynamic
                                             websites with React on the front end
                                             and PHP-Laravel on the back end.
                                             Strengthen your digital identity
                                             with our creative web...
-                                        </h3>
+                                        </div>
                                     </div>
                                 </Reacttilt>
                             </div>
@@ -480,13 +478,13 @@ export default async function Home() {
                                                 </p>
                                             </div>
                                         </div>
-                                        <h3 className="text-justify mt-5 ">
+                                        <div className="text-justify mt-5 ">
                                             Synex Digital develops dynamic
                                             websites with React on the front end
                                             and PHP-Laravel on the back end.
                                             Strengthen your digital identity
                                             with our creative web...
-                                        </h3>
+                                        </div>
                                     </div>
                                 </Reacttilt>
                             </div>
@@ -508,13 +506,13 @@ export default async function Home() {
                                                 </p>
                                             </div>
                                         </div>
-                                        <h3 className="text-justify mt-5 ">
+                                        <div className="text-justify mt-5 ">
                                             Synex Digital develops dynamic
                                             websites with React on the front end
                                             and PHP-Laravel on the back end.
                                             Strengthen your digital identity
                                             with our creative web...
-                                        </h3>
+                                        </div>
                                     </div>
                                 </Reacttilt>
                             </div>
@@ -708,8 +706,6 @@ export default async function Home() {
                 </section>
 
                 <Collaborate />
-
-                
             </main>
         </>
     );

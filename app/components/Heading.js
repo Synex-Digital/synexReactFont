@@ -6,9 +6,9 @@ import anisvg from "@/public/assets/animation.svg";
 const Heading = ({ title, subtitle }) => {
     return (
         <div className="mx-auto flex flex-col justify-center items-center mb-10">
-            <h2 className="text-primary md:text-3xl text-2xl font-semibold text-center z-50 ">
+            <h6 className="text-primary md:text-3xl text-2xl font-semibold text-center z-50 ">
                 {title}
-            </h2>
+            </h6>
             <AosAnimation aosvalue={"fade-up"} className="relative">
                 <div className="bg-transparent"></div>
                 <div className="blob -translate-x-[50%]">
