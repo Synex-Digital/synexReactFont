@@ -85,9 +85,9 @@ export default async function Home() {
                                                     <h2 className="text-center text-3xl font-semibold">
                                                         {item.title}
                                                     </h2>
-                                                    <h4 className="text-justify mt-5 font-medium">
+                                                    <h3 className="text-justify mt-5 font-medium">
                                                         {item.description}
-                                                    </h4>
+                                                    </h3>
                                                     <Image
                                                         width={250}
                                                         height={250}
@@ -250,9 +250,9 @@ export default async function Home() {
                                             <time className="bg-[#007d58] text-white font-light text-sm py-2 px-5 rounded-3xl">
                                                 28 sep 2023
                                             </time>
-                                            <h4 className="text-white text-xl font-semibold text-center mt-5 mb-3">
+                                            <div className="text-white text-xl font-semibold text-center mt-5 mb-3">
                                                 Nugor Tech - Company portfolio
-                                            </h4>
+                                            </div>
                                             <p className="text-white text-center">
                                                 company in bangladesh since 2019
                                                 in Bangladesh by synex Digital.
@@ -281,9 +281,9 @@ export default async function Home() {
                                             <time className="bg-[#007d58] py-2 text-white font-light text-sm px-5 rounded-3xl">
                                                 28 sep 2023
                                             </time>
-                                            <h4 className="text-white text-xl font-semibold text-center mt-5 mb-3">
+                                            <div className="text-white text-xl font-semibold text-center mt-5 mb-3">
                                                 Nugor Tech - Company portfolio
-                                            </h4>
+                                            </div>
                                             <p className="text-white text-center">
                                                 company in bangladesh since 2019
                                                 in Bangladesh by synex Digital.
@@ -312,9 +312,9 @@ export default async function Home() {
                                             <time className="bg-[#007d58] text-white font-light text-sm py-2 px-5 rounded-3xl">
                                                 28 sep 2023
                                             </time>
-                                            <h4 className="text-white text-xl font-semibold text-center mt-5 mb-3">
+                                            <div className="text-white text-xl font-semibold text-center mt-5 mb-3">
                                                 Nugor Tech - Company portfolio
-                                            </h4>
+                                            </div>
                                             <p className="text-white text-center">
                                                 company in bangladesh since 2019
                                                 in Bangladesh by synex Digital.
@@ -553,11 +553,11 @@ export default async function Home() {
                                         <time className="block text-sm my-3 text-gray-400">
                                             15 Nov 2023
                                         </time>
-                                        <h5 className="font-medium text-xl mb-1">
+                                        <h3 className="font-medium text-xl mb-1">
                                             Optimizing Laravel for Search
                                             Engines: Advanced SEO Strategies and
                                             Best Practices
-                                        </h5>
+                                        </h3>
                                         <p className="font-light mt-3 max-md:hidden">
                                             Explore advanced SEO strategies
                                             tailored for Laravel development to
@@ -594,11 +594,11 @@ export default async function Home() {
                                             <time className="block my-3 text-sm text-gray-400">
                                                 15 Nov 2023
                                             </time>
-                                            <h5 className="font-medium ">
+                                            <div className="font-medium ">
                                                 Optimizing Laravel for Search
                                                 Engines: Advanced SEO Strategies
                                                 and Best Practices
-                                            </h5>
+                                            </div>
                                         </div>
                                     </div>
                                 </AosAnimation>
@@ -624,11 +624,11 @@ export default async function Home() {
                                             <time className="block my-3 text-sm text-gray-400">
                                                 15 Nov 2023
                                             </time>
-                                            <h5 className="font-medium ">
+                                            <div className="font-medium ">
                                                 Optimizing Laravel for Search
                                                 Engines: Advanced SEO Strategies
                                                 and Best Practices
-                                            </h5>
+                                            </div>
                                         </div>
                                     </div>
                                 </AosAnimation>
@@ -654,11 +654,11 @@ export default async function Home() {
                                             <time className="block my-3 text-sm text-gray-400">
                                                 15 Nov 2023
                                             </time>
-                                            <h5 className="font-medium ">
+                                            <div className="font-medium ">
                                                 Optimizing Laravel for Search
                                                 Engines: Advanced SEO Strategies
                                                 and Best Practices
-                                            </h5>
+                                            </div>
                                         </div>
                                     </div>
                                 </AosAnimation>
@@ -684,11 +684,11 @@ export default async function Home() {
                                             <time className="block my-3 text-sm text-gray-400">
                                                 15 Nov 2023
                                             </time>
-                                            <h5 className="font-medium ">
+                                            <div className="font-medium ">
                                                 Optimizing Laravel for Search
                                                 Engines: Advanced SEO Strategies
                                                 and Best Practices
-                                            </h5>
+                                            </div>
                                         </div>
                                     </div>
                                 </AosAnimation>
